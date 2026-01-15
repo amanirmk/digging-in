@@ -2,21 +2,21 @@
 
 The Maze experiment used 30 items of the following design.
 
-- Within-Item Contrasts:
-  - Ambiguity
-    - ambiguous: the sentence initially has an incorrect interpretation with an ambiguous NP falling under the subordinate clause.
-    - unambiguous: the NP is disambiguated to the main clause.
-  - Length
-    - short: the ambiguous NP is unaltered.
-    - long: the ambiguous NP includes a post-nominal modifier.
+Within-Item Contrasts:
+- **Ambiguity**
+  - ambiguous: the sentence initially has an incorrect interpretation with an ambiguous NP falling under the subordinate clause.
+  - unambiguous: the NP is disambiguated to the main clause.
+- **Length**
+  - short: the ambiguous NP is unaltered.
+  - long: the ambiguous NP includes a post-nominal modifier.
 
-- Between-Item Contrasts
-  - Resolution (15 items each)
-    - comma: the NP is disambiguated to the main clause by including a comma..
-    - object: the NP is disambiguated to the main clause by including a different NP under the subordinate clause.
-  - Finality (8 items with final, 23 items with nonfinal)
-    - final: the critical disambiguating word (main verb) is at the end of the sentence.
-    - nonfinal: the critical disambiguating word (main verb) is followed by additional words.
+Between-Item Contrasts:
+- **Resolution (15 items each)**
+  - comma: the NP is disambiguated to the main clause by including a comma..
+  - object: the NP is disambiguated to the main clause by including a different NP under the subordinate clause.
+- **Finality (8 items with final, 22 items with nonfinal)**
+  - final: the critical disambiguating word (main verb) is at the end of the sentence.
+  - nonfinal: the critical disambiguating word (main verb) is followed by additional words.
 
 Example Item (Comma, Final):
 - "While the mom dressed the baby *cried*." (ambiguous, short)
