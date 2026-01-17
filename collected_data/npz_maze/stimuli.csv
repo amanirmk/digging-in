@@ -1,0 +1,160 @@
+item_category,item,ambiguity,length,resolution,finality,sentence,critical_word_index,final_word_index
+critical,1,ambiguous,long,object,nonfinal,As the lifeguard watched the kids playing happily splashed each other with water.,8,12
+critical,1,ambiguous,short,object,nonfinal,As the lifeguard watched the kids splashed each other with water.,6,10
+critical,1,unambiguous,long,object,nonfinal,As the lifeguard watched the pool the kids playing happily splashed each other with water.,10,14
+critical,1,unambiguous,short,object,nonfinal,As the lifeguard watched the pool the kids splashed each other with water.,8,12
+critical,2,ambiguous,long,comma,nonfinal,Because the suspect changed the file with the evidence needed to be updated.,9,12
+critical,2,ambiguous,short,comma,nonfinal,Because the suspect changed the file needed to be updated.,6,9
+critical,2,unambiguous,long,comma,nonfinal,"Because the suspect changed, the file with the evidence needed to be updated.",9,12
+critical,2,unambiguous,short,comma,nonfinal,"Because the suspect changed, the file needed to be updated.",6,9
+critical,3,ambiguous,long,object,nonfinal,While the new chef cooked the stew with lamb and vegetables boiled over.,11,12
+critical,3,ambiguous,short,object,nonfinal,While the new chef cooked the stew boiled over.,7,8
+critical,3,unambiguous,long,object,nonfinal,While the new chef cooked the appetizers the stew with lamb and vegetables boiled over.,13,14
+critical,3,unambiguous,short,object,nonfinal,While the new chef cooked the appetizers the stew boiled over.,9,10
+critical,4,ambiguous,long,comma,nonfinal,As the child showered the cat complaining loudly ran around the room.,8,11
+critical,4,ambiguous,short,comma,nonfinal,As the child showered the cat ran around the room.,6,9
+critical,4,unambiguous,long,comma,nonfinal,"As the child showered, the cat complaining loudly ran around the room.",8,11
+critical,4,unambiguous,short,comma,nonfinal,"As the child showered, the cat ran around the room.",6,9
+critical,5,ambiguous,long,comma,final,When the family moved the vases made of porcelain broke.,9,9
+critical,5,ambiguous,short,comma,final,When the family moved the vases broke.,6,6
+critical,5,unambiguous,long,comma,final,"When the family moved, the vases made of porcelain broke.",9,9
+critical,5,unambiguous,short,comma,final,"When the family moved, the vases broke.",6,6
+critical,6,ambiguous,long,comma,nonfinal,After the new doctor left the operation on the brain appeared more likely to succeed.,10,14
+critical,6,ambiguous,short,comma,nonfinal,After the new doctor left the operation appeared more likely to succeed.,7,11
+critical,6,unambiguous,long,comma,nonfinal,"After the new doctor left, the operation on the brain appeared more likely to succeed.",10,14
+critical,6,unambiguous,short,comma,nonfinal,"After the new doctor left, the operation appeared more likely to succeed.",7,11
+critical,7,ambiguous,long,comma,final,While the mom dressed the baby she adored cried.,8,8
+critical,7,ambiguous,short,comma,final,While the mom dressed the baby cried.,6,6
+critical,7,unambiguous,long,comma,final,"While the mom dressed, the baby she adored cried.",8,8
+critical,7,unambiguous,short,comma,final,"While the mom dressed, the baby cried.",6,6
+critical,8,ambiguous,long,comma,nonfinal,As the crowd applauded the cast for the play came back on stage and waived.,9,14
+critical,8,ambiguous,short,comma,nonfinal,As the crowd applauded the cast came back on stage and waived.,6,11
+critical,8,unambiguous,long,comma,nonfinal,"As the crowd applauded, the cast for the play came back on stage and waived.",9,14
+critical,8,unambiguous,short,comma,nonfinal,"As the crowd applauded, the cast came back on stage and waived.",6,11
+critical,9,ambiguous,long,object,nonfinal,Because the mechanic stopped the truck leaking oil needed several more hours before it was ready.,8,15
+critical,9,ambiguous,short,object,nonfinal,Because the mechanic stopped the truck needed several more hours before it was ready.,6,13
+critical,9,unambiguous,long,object,nonfinal,Because the mechanic stopped the repairs the truck leaking oil needed several more hours before it was ready.,10,17
+critical,9,unambiguous,short,object,nonfinal,Because the mechanic stopped the repairs the truck needed several more hours before it was ready.,8,15
+critical,10,ambiguous,long,comma,nonfinal,When the boy hid his toy from childhood fell off the table.,8,11
+critical,10,ambiguous,short,comma,nonfinal,When the boy hid his toy fell off the table.,6,9
+critical,10,unambiguous,long,comma,nonfinal,"When the boy hid, his toy from childhood fell off the table.",8,11
+critical,10,unambiguous,short,comma,nonfinal,"When the boy hid, his toy fell off the table.",6,9
+critical,11,ambiguous,long,comma,final,Whenever the wildlife documentary crew tries to film the bear hunting cautiously leaves.,12,12
+critical,11,ambiguous,short,comma,final,Whenever the wildlife documentary crew tries to film the bear leaves.,10,10
+critical,11,unambiguous,long,comma,final,"Whenever the wildlife documentary crew tries to film, the bear hunting cautiously leaves.",12,12
+critical,11,unambiguous,short,comma,final,"Whenever the wildlife documentary crew tries to film, the bear leaves.",10,10
+critical,12,ambiguous,long,object,nonfinal,After the tutor explained the problem for extra credit was no longer difficult for the student.,9,15
+critical,12,ambiguous,short,object,nonfinal,After the tutor explained the problem was no longer difficult for the student.,6,12
+critical,12,unambiguous,long,object,nonfinal,After the tutor explained the concepts the problem for extra credit was no longer difficult for the student.,11,17
+critical,12,unambiguous,short,object,nonfinal,After the tutor explained the concepts the problem was no longer difficult for the student.,8,14
+critical,13,ambiguous,long,object,final,When the original members left the company that was recently acquired failed.,11,11
+critical,13,ambiguous,short,object,final,When the original members left the company failed.,7,7
+critical,13,unambiguous,long,object,final,When the original members left the engineering team the company that was recently acquired failed.,14,14
+critical,13,unambiguous,short,object,final,When the original members left the engineering team the company failed.,10,10
+critical,14,ambiguous,long,object,nonfinal,Because the student left the backpack he just bought was put in lost and found.,9,14
+critical,14,ambiguous,short,object,nonfinal,Because the student left the backpack was put in lost and found.,6,11
+critical,14,unambiguous,long,object,nonfinal,Because the student left the room the backpack he just bought was put in lost and found.,11,16
+critical,14,unambiguous,short,object,nonfinal,Because the student left the room the backpack was put in lost and found.,8,13
+critical,15,ambiguous,long,object,nonfinal,Once the new assistant started the job as an executive manager became much easier for her boss.,11,16
+critical,15,ambiguous,short,object,nonfinal,Once the new assistant started the job became much easier for her boss.,7,12
+critical,15,unambiguous,long,object,nonfinal,Once the new assistant started work the job as an executive manager became much easier for her boss.,12,17
+critical,15,unambiguous,short,object,nonfinal,Once the new assistant started work the job became much easier for her boss.,8,13
+critical,16,ambiguous,long,object,nonfinal,When the magician tried to juggle the torches burning dangerously fell down.,10,11
+critical,16,ambiguous,short,object,nonfinal,When the magician tried to juggle the torches fell down.,8,9
+critical,16,unambiguous,long,object,nonfinal,When the magician tried to juggle more items the torches burning dangerously fell down.,12,13
+critical,16,unambiguous,short,object,nonfinal,When the magician tried to juggle more items the torches fell down.,10,11
+critical,17,ambiguous,long,comma,nonfinal,When the marathon runner finally stopped his friend sweating profusely collapsed from exhaustion.,10,12
+critical,17,ambiguous,short,comma,nonfinal,When the marathon runner finally stopped his friend collapsed from exhaustion.,8,10
+critical,17,unambiguous,long,comma,nonfinal,"When the marathon runner finally stopped, his friend sweating profusely collapsed from exhaustion.",10,12
+critical,17,unambiguous,short,comma,nonfinal,"When the marathon runner finally stopped, his friend collapsed from exhaustion.",8,10
+critical,18,ambiguous,long,comma,nonfinal,While the martial artists fought the spectator cheering enthusiastically supported the underdog.,9,11
+critical,18,ambiguous,short,comma,nonfinal,While the martial artists fought the spectator supported the underdog.,7,9
+critical,18,unambiguous,long,comma,nonfinal,"While the martial artists fought, the spectator cheering enthusiastically supported the underdog.",9,11
+critical,18,unambiguous,short,comma,nonfinal,"While the martial artists fought, the spectator supported the underdog.",7,9
+critical,19,ambiguous,long,object,final,When the band left the venue with live music closed.,9,9
+critical,19,ambiguous,short,object,final,When the band left the venue closed.,6,6
+critical,19,unambiguous,long,object,final,When the band left the stage the venue with live music closed.,11,11
+critical,19,unambiguous,short,object,final,When the band left the stage the venue closed.,8,8
+critical,20,ambiguous,long,comma,nonfinal,After the customer emailed the company providing phone service responded quickly.,9,10
+critical,20,ambiguous,short,comma,nonfinal,After the customer emailed the company responded quickly.,6,7
+critical,20,unambiguous,long,comma,nonfinal,"After the customer emailed, the company providing phone service responded quickly.",9,10
+critical,20,unambiguous,short,comma,nonfinal,"After the customer emailed, the company responded quickly.",6,7
+critical,21,ambiguous,long,object,nonfinal,As the detective investigated the case about the bank robbery became more complex.,10,12
+critical,21,ambiguous,short,object,nonfinal,As the detective investigated the case became more complex.,6,8
+critical,21,unambiguous,long,object,nonfinal,As the detective investigated the suspects the case about the bank robbery became more complex.,12,14
+critical,21,unambiguous,short,object,nonfinal,As the detective investigated the suspects the case became more complex.,8,10
+critical,22,ambiguous,long,object,nonfinal,Although the team lost the championship in basketball was still a great experience for the players.,8,15
+critical,22,ambiguous,short,object,nonfinal,Although the team lost the championship was still a great experience for the players.,6,13
+critical,22,unambiguous,long,object,nonfinal,Although the team lost the final game the championship in basketball was still a great experience for the players.,11,18
+critical,22,unambiguous,short,object,nonfinal,Although the team lost the final game the championship was still a great experience for the players.,9,16
+critical,23,ambiguous,long,comma,nonfinal,After the director finished filming the actors exhausted from the long day left to go home.,12,15
+critical,23,ambiguous,short,comma,nonfinal,After the director finished filming the actors left to go home.,7,10
+critical,23,unambiguous,long,comma,nonfinal,"After the director finished filming, the actors exhausted from the long day left to go home.",12,15
+critical,23,unambiguous,short,comma,nonfinal,"After the director finished filming, the actors left to go home.",7,10
+critical,24,ambiguous,long,object,final,As the doctor lectured the student watching quietly listened.,8,8
+critical,24,ambiguous,short,object,final,As the doctor lectured the student listened.,6,6
+critical,24,unambiguous,long,object,final,As the doctor lectured the nurse the student watching quietly listened.,10,10
+critical,24,unambiguous,short,object,final,As the doctor lectured the nurse the student listened.,8,8
+critical,25,ambiguous,long,object,nonfinal,After the teacher finished grading the students studying engineering passed the class.,9,11
+critical,25,ambiguous,short,object,nonfinal,After the teacher finished grading the students passed the class.,7,9
+critical,25,unambiguous,long,object,nonfinal,After the teacher finished grading the final the students studying engineering passed the class.,11,13
+critical,25,unambiguous,short,object,nonfinal,After the teacher finished grading the final the students passed the class.,9,11
+critical,26,ambiguous,long,comma,final,As the people gathered the animals in the park scattered.,9,9
+critical,26,ambiguous,short,comma,final,As the people gathered the animals scattered.,6,6
+critical,26,unambiguous,long,comma,final,"As the people gathered, the animals in the park scattered.",9,9
+critical,26,unambiguous,short,comma,final,"As the people gathered, the animals scattered.",6,6
+critical,27,ambiguous,long,comma,nonfinal,Once the audience quieted the man talking loudly put away his phone.,8,11
+critical,27,ambiguous,short,comma,nonfinal,Once the audience quieted the man put away his phone.,6,9
+critical,27,unambiguous,long,comma,nonfinal,"Once the audience quieted, the man talking loudly put away his phone.",8,11
+critical,27,unambiguous,short,comma,nonfinal,"Once the audience quieted, the man put away his phone.",6,9
+critical,28,ambiguous,long,comma,nonfinal,After the corrupt politician signed the bill on taxes received unwelcome attention from southern voters.,9,14
+critical,28,ambiguous,short,comma,nonfinal,After the corrupt politician signed the bill received unwelcome attention from southern voters.,7,12
+critical,28,unambiguous,long,comma,nonfinal,"After the corrupt politician signed, the bill on taxes received unwelcome attention from southern voters.",9,14
+critical,28,unambiguous,short,comma,nonfinal,"After the corrupt politician signed, the bill received unwelcome attention from southern voters.",7,12
+critical,29,ambiguous,long,object,nonfinal,While the art class painted the model in the nude stayed still.,10,11
+critical,29,ambiguous,short,object,nonfinal,While the art class painted the model stayed still.,7,8
+critical,29,unambiguous,long,object,nonfinal,While the art class painted their portraits the model in the nude stayed still.,12,13
+critical,29,unambiguous,short,object,nonfinal,While the art class painted their portraits the model stayed still.,9,10
+critical,30,ambiguous,long,object,final,As the professor wrote the textbook on biology grew.,8,8
+critical,30,ambiguous,short,object,final,As the professor wrote the textbook grew.,6,6
+critical,30,unambiguous,long,object,final,As the professor wrote the chapter the textbook on biology grew.,10,10
+critical,30,unambiguous,short,object,final,As the professor wrote the chapter the textbook grew.,8,8
+filler,1,,,,,The little blonde girls turned out to be daughters of one of the neighbors.,-1,13
+filler,2,,,,,After the show the famous violinist met with some of his devoted fans.,-1,12
+filler,3,,,,,The pharmacologist made sure that the new shipment of patches didn't have any tears.,-1,13
+filler,4,,,,,On returning from abroad the accountant discovered he had a serious case of malaria.,-1,13
+filler,5,,,,,The coach encouraged his team as the game turned increasingly discouraging.,-1,10
+filler,6,,,,,The photographer posed the newlyweds in front of an old oak tree that stood by the pond.,-1,16
+filler,7,,,,,The horse galloped furiously around the field before jumping over the fence.,-1,11
+filler,8,,,,,The talented cartoonists drew a huge illustration of the upcoming mall to be opened in May.,-1,15
+filler,9,,,,,The protesters rallied outside the state capital to petition the widely controversial bill.,-1,12
+filler,10,,,,,The small orange kitten climbed up the curtains behind the couch when the vacuum turned on.,-1,15
+filler,11,,,,,The captain made sure the sailors fixed the rudder before setting sail.,-1,11
+filler,12,,,,,The student felt that he hadn't prepared sufficiently after he finished the midterm.,-1,12
+filler,13,,,,,The boys rode their bikes past the yellow wall that stood in front of the old factory.,-1,16
+filler,14,,,,,The desert bandits joked that the oasis in the horizon was all but a wild fantasy.,-1,15
+filler,15,,,,,The carpenter told all the disappointed applicants that he was not taking any new apprentices.,-1,14
+filler,16,,,,,The California judges requested the opinions of various industry leaders.,-1,9
+filler,17,,,,,The dance troupe forgot most of the steps when they performed for the prime minister.,-1,14
+filler,18,,,,,There were several noblemen who kept insisting that the croutons were too soft.,-1,12
+filler,19,,,,,The priest checked twice that he had all the supplies ready for the event on Sunday.,-1,15
+filler,20,,,,,The jeweler showed off his collection of rare and precious stones at the convention.,-1,13
+filler,21,,,,,The serious man shifted his glasses to indicate the prisoners would be set free.,-1,13
+filler,22,,,,,The doctor made the nurse administer the shot because he didn't like to give shots to children.,-1,16
+filler,23,,,,,The football player performed a humorous victory dance at the end zone.,-1,11
+filler,24,,,,,The journalists were riled up to hear that the famous British actor threw a fit on the set.,-1,17
+filler,25,,,,,The salesman made sure that there were people all around to witness his biggest sale.,-1,14
+filler,26,,,,,The guides were in the process of explaining the delay when the boat started to move again.,-1,16
+filler,27,,,,,The detective's computer crashed and all the important documents were lost.,-1,10
+filler,28,,,,,The chiefs perform a ceremony for each family's oldest child every time there is a full moon.,-1,16
+filler,29,,,,,The saleslady found herself surrounded by angry shoppers who wanted their money back.,-1,12
+filler,30,,,,,The scientist forgot to make sure that the temperature was set to zero degrees.,-1,13
+filler,31,,,,,The candy shop was small but tidy and smelled deliciously of chocolate.,-1,11
+filler,32,,,,,The virus caused an unusual amount of workers at the city hall to call in sick.,-1,15
+filler,33,,,,,The furious man standing at the mayor's door was angry about the high cost of electricity.,-1,15
+filler,34,,,,,The bartender tried several times to get the woman to order from the secret menu.,-1,14
+filler,35,,,,,The seamstress fretted over whether the dress would be finished in time.,-1,11
+practice,1,,,,,The owner of the store selling jewelry gave a discount to the regular customers.,-1,13
+practice,2,,,,,The mother of the child packed him a lunch that contained chicken nuggets and leftovers from the night before.,-1,18
+practice,3,,,,,No one liked the song I wrote.,-1,6
+practice,4,,,,,"The semester will start next week, but the students and teachers are not ready.",-1,13
