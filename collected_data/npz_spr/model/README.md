@@ -2,7 +2,7 @@
 
 CSV column descriptions:
 - `item_category (str)`: The type of item. Only "critical" is included for LLMs.
-- `item (int)`: The integer id of the item.
+- `item (int)`: The integer id of the item (unique within same item category).
 - `ambiguity (str)`: Either "ambiguous" or "unambiguous".
 - `length (str)`:  Either "short" or "long".
 - `resolution (str)`: The type of ambiguity resolution. Either "comma", "object". NA when the condition is ambiguous. 

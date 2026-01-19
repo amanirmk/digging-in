@@ -3,7 +3,7 @@
 CSV column descriptions:
 - `participant (int)`: The integer id of the participant.
 - `item_category (str)`: The type of item. Can be "critical", "filler", or "practice".
-- `item (int)`: The integer id of the item.
+- `item (int)`: The integer id of the item (unique within same item category).
 - `ambiguity (str)`: Either "ambiguous" or "unambiguous".
 - `length (str)`:  Either "short" or "long".
 - `resolution (str)`: The type of ambiguity resolution. Either "comma" or "object". NA when the condition is ambiguous.

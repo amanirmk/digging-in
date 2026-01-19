@@ -3,7 +3,7 @@
 CSV column descriptions:
 - `participant (int)`: The integer id of the participant.
 - `item_category (str)`: The type of item. Can be "critical", "filler", or "practice".
-- `item (int)`: The integer id of the item.
+- `item (int)`: The integer id of the item (unique within same item category).
 - `ambiguity (str)`: Either "ambiguous" or "unambiguous".
 - `length (str)`:  Either "short" or "long".
 - `resolution (str)`: The type of ambiguity resolution. Either "comma" or "object".
@@ -23,6 +23,6 @@ The `unfiltered.csv` file contains the above data without any filtering for part
 
 The `filtered.csv` file is the result of filtering for:
 1. Excluding participants with <80% accuracy on words in filler items, excluding the first word in the sentence.
-2. Excluding trials (a complete sentence/item) containing any RTs less than 100ms or above 5000ms.
+2. Excluding trials (a complete sentence/item) containing any RTs less than 100ms or above 5000ms, excluding the first word in the sentence.
 
 Additional filtering is applied depending on the analysis conducted.
