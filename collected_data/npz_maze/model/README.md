@@ -3,11 +3,11 @@
 CSV column descriptions:
 - `item_category (str)`: The type of item. Only "critical" is included for LLMs.
 - `item (int)`: The integer id of the item (unique within same item category).
-- `ambiguity (str)`: Either "ambiguous" or "unambiguous".
-- `length (str)`:  Either "short" or "long".
-- `resolution (str)`: The type of ambiguity resolution. Either "comma" or "object".
-- `finality (str)`: The location of the critical word. Either "final" or "nonfinal".
-- `critical_word_index (int)`: The index of the critical word in the sentence. Starts with zero.
+- `ambiguity (str)`: Either "ambiguous" or "unambiguous". NA if not a critical item.
+- `length (str)`:  Either "short" or "long". NA if not a critical item.
+- `resolution (str)`: The type of ambiguity resolution. Either "comma" or "object". NA if not a critical item.
+- `finality (str)`: The location of the critical word. Either "final" or "nonfinal". NA if not a critical item.
+- `critical_word_index (int)`: The index of the critical word in the sentence. Starts with zero. -1 if not a critical item.
 - `word_index (int)`: The index of the word in the sentence. Starts with zero.
 - `word (str)`: The actual word, including any attached punctuation.
 - `surprisal (float)`: The word's surprisal estimate from the LLM in base 2 (bits).

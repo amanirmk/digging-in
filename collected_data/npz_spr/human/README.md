@@ -4,11 +4,11 @@ CSV column descriptions:
 - `participant (int)`: The integer id of the participant.
 - `item_category (str)`: The type of item. Can be "critical", "filler", or "practice".
 - `item (int)`: The integer id of the item (unique within same item category).
-- `ambiguity (str)`: Either "ambiguous" or "unambiguous".
-- `length (str)`:  Either "short" or "long".
+- `ambiguity (str)`: Either "ambiguous" or "unambiguous". NA if not a critical item.
+- `length (str)`:  Either "short" or "long". NA if not a critical item.
 - `resolution (str)`: The type of ambiguity resolution. Either "comma" or "object". NA when the condition is ambiguous.
-- `finality (str)`: The location of the critical word. Either "final" or "nonfinal".
-- `critical_word_index (int)`: The index of the critical word in the sentence. Starts with zero.
+- `finality (str)`: The location of the critical word. Either "final" or "nonfinal". NA if not a critical item.
+- `critical_word_index (int)`: The index of the critical word in the sentence. Starts with zero. -1 if not a critical item.
 - `final_word_index (int)`: The index of the final word in the sentence. Starts with zero.
 - `region (str)`: The sentence region for the current word. Can be "beginning" (anything before the noun phrase or disambiguation), "comma" (disambiguation via word with comma), "object" (disambiguation via another object), "would_be_comma" (word that would have had the comma attached if disambiguating) "art/pos" (article or possessive), "noun", "postmod" (postnominal modifier for long items), "critical", "ending" (anything after the critical word). NA when not a critical item.
 - `word_index (int)`: The index of the word in the sentence. Starts with zero.
