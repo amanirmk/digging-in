@@ -10,9 +10,8 @@ scatter_plot <- function(coded_data, x_var, y_var, color, color_manual, shape, s
     theme(legend.position = legend_position) +
     geom_smooth(method = "loess", se = FALSE, span = 1, linewidth=1, aes_string(linetype = loess_linetype)) +
     coord_fixed() +
-    # add slight margin to axes
-    scale_x_continuous(expand = expansion(mult = 0.1)) +
-    scale_y_continuous(expand = expansion(mult = 0.1))
+    # add margin to x-axis for better y=x line visibility
+    scale_x_continuous(expand = expansion(mult = 0.25))
 
   if (!is.null(facet_var)) {
     if (is.null(facet_ncol)) {

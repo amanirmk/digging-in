@@ -1,7 +1,5 @@
 # EXPECTS human_data, model_data, pred_data, img_filetype, line_plot.R, by_item.R, comprehension_filter.R to be loaded already
 
-excluded_regions <- c("would_be_comma", "comma", "object", "postmod")
-
 for (finality in c("all", "final", "nonfinal")) {
   if (finality == "all") {
     data_subset <- human_data
@@ -17,15 +15,14 @@ for (finality in c("all", "final", "nonfinal")) {
   plot_data <- data_subset %>%
     # only critical items
     filter(item_category == "critical") %>%
-    # filter for pre-critical word accuracy
-    comprehension_filter(type="maze") %>%
-    # remove regions not in all conditions
-    filter(!(region %in% excluded_regions)) %>%
-    # average by item and condition, ignore finality and resolution (between-item contrasts in Maze)
-    by_item_condition_average(resolution = "ignore", y_var = "RT", x_var = "region", ignore_contrasts = c("finality")) %>%
+    # filter for comprehension question accuracy
+    comprehension_filter(type="spr") %>%
+    # average by item and condition, average resolution (combines unambiguous levels)
+    by_item_condition_average(resolution = "average", y_var = "RT", x_var = "critical_relative", ignore_contrasts = if (finality == "all") c("finality") else NULL) %>%
     # get error bars for condition means over items
-    over_item_average(y_var = "RT", x_var = "region") %>%
-    code_npz_data()
+    over_item_average(y_var = "RT", x_var = "critical_relative") %>%
+    code_npz_data() %>%
+    filter(critical_relative >= -3 & critical_relative <= 3)
   
   line_plot(plot_data,
     grouping = "interaction(ambiguity, length)",
@@ -34,15 +31,15 @@ for (finality in c("all", "final", "nonfinal")) {
     color = "length",
     color_manual = c("short" = "#00BFC4", "long" = "#F8766D"),
     y_var = "RT",
-    x_var = "region",
-    y_min = 700,
-    y_max = 2200,
+    x_var = "critical_relative",
+    y_min = 300,
+    y_max = 1100,
     y_lab = "Response Time (ms)",
-    x_lab = "Sentence Region",
-    title = paste0("Empirical RTs by Sentence Region (", figure_suffix, " items)"),
+    x_lab = "Critical-Relative Index",
+    title = paste("Empirical RTs by Critical-Relative Index (", figure_suffix, " items)"),
     width = 6,
     height = 4,
-    figure_path = here("analysis_outputs", "npz_maze_figs", "region_lineplots", paste0("rt_by_region_", figure_suffix, img_filetype))
+    figure_path = here("analysis_outputs", "npz_spr_figs", "critrel_lineplots", paste0("rt_by_critical_relative_", figure_suffix, img_filetype))
   )
 }
 
@@ -63,13 +60,12 @@ for (finality in c("all", "final", "nonfinal")) {
   plot_data <- data_subset %>%
     # only critical items
     filter(item_category == "critical") %>%
-    # remove regions not in all conditions
-    filter(!(region %in% excluded_regions)) %>%
-    # average by item and condition, ignore finality and resolution (between-item contrasts in Maze)
-    by_item_condition_average(resolution = "ignore", y_var = "surprisal", x_var = "region", ignore_contrasts = c("finality")) %>%
+    # average by item and condition, average resolution (combines unambiguous levels)
+    by_item_condition_average(resolution = "average", y_var = "surprisal", x_var = "critical_relative", ignore_contrasts = if (finality == "all") c("finality") else NULL) %>%
     # get error bars for condition means over items
-    over_item_average(y_var = "surprisal", x_var = "region") %>%
-    code_npz_data()
+    over_item_average(y_var = "surprisal", x_var = "critical_relative") %>%
+    code_npz_data() %>%
+    filter(critical_relative >= -3 & critical_relative <= 3)
   
   line_plot(plot_data,
     grouping = "interaction(ambiguity, length)",
@@ -78,15 +74,15 @@ for (finality in c("all", "final", "nonfinal")) {
     color = "length",
     color_manual = c("short" = "#18999D", "long" = "#C66059"),
     y_var = "surprisal",
-    x_var = "region",
-    y_min = 0,
-    y_max = 24,
+    x_var = "critical_relative",
+    y_min = -5,
+    y_max = 30,
     y_lab = "Surprisal (bits)",
-    x_lab = "Sentence Region",
-    title = paste0("LLM Surprisal by Sentence Region (", figure_suffix, " items)"),
+    x_lab = "Critical-Relative Index",
+    title = paste0("LLM Surprisal by Critical-Relative Index (", figure_suffix, " items)"),
     width = 6,
     height = 4,
-    figure_path = here("analysis_outputs", "npz_maze_figs", "region_lineplots", paste0("surprisal_by_region_", figure_suffix, img_filetype))
+    figure_path = here("analysis_outputs", "npz_spr_figs", "critrel_lineplots", paste0("surprisal_by_critical_relative_", figure_suffix, img_filetype))
   )
 }
 
@@ -107,13 +103,12 @@ for (finality in c("all", "final", "nonfinal")) {
   plot_data <- data_subset %>%
     # only critical items
     filter(item_category == "critical") %>%
-    # remove regions not in all conditions
-    filter(!(region %in% excluded_regions)) %>%
-    # average by item and condition, ignore finality and resolution (between-item contrasts in Maze)
-    by_item_condition_average(resolution = "ignore", y_var = "RT", x_var = "region", ignore_contrasts = c("finality")) %>%
+    # average by item and condition, average resolution (combines unambiguous levels)
+    by_item_condition_average(resolution = "average", y_var = "RT", x_var = "critical_relative", ignore_contrasts = if (finality == "all") c("finality") else NULL) %>%
     # get error bars for condition means over items
-    over_item_average(y_var = "RT", x_var = "region") %>%
-    code_npz_data()
+    over_item_average(y_var = "RT", x_var = "critical_relative") %>%
+    code_npz_data() %>%
+    filter(critical_relative >= -3 & critical_relative <= 3)
   
   line_plot(plot_data,
     grouping = "interaction(ambiguity, length)",
@@ -122,15 +117,15 @@ for (finality in c("all", "final", "nonfinal")) {
     color = "length",
     color_manual = c("short" = "#18999D", "long" = "#C66059"),
     y_var = "RT",
-    x_var = "region",
-    y_min = 700,
-    y_max = 1500,
+    x_var = "critical_relative",
+    y_min = 350,
+    y_max = 550,
     y_lab = "Response Time (ms)",
-    x_lab = "Sentence Region",
-    title = paste0("Predicted RTs by Sentence Region (", figure_suffix, " items)"),
+    x_lab = "Critical-Relative Index",
+    title = paste0("Predicted RTs by Critical-Relative Index (", figure_suffix, " items)"),
     width = 6,
     height = 4,
-    figure_path = here("analysis_outputs", "npz_maze_figs", "region_lineplots", paste0("pred_rt_by_region_", figure_suffix, img_filetype))
+    figure_path = here("analysis_outputs", "npz_spr_figs", "critrel_lineplots", paste0("pred_rt_by_critical_relative_", figure_suffix, img_filetype))
   )
 }
 
@@ -151,15 +146,14 @@ for (finality in c("all", "final", "nonfinal")) {
   plot_data <- data_subset %>%
     # only critical items
     filter(item_category == "critical") %>%
-    # filter for pre-critical word accuracy
-    comprehension_filter(type="maze") %>%
-    # remove regions not in all conditions
-    filter(!(region %in% excluded_regions)) %>%
-    # average by item and condition, ignore finality and resolution (between-item contrasts in Maze)
-    resid_by_item_condition_average(pred_data, resolution = "ignore", x_var = "region", ignore_contrasts = c("finality")) %>%
+    # filter for comprehension question accuracy
+    comprehension_filter(type="spr") %>%
+    # average by item and condition, average resolution (combines unambiguous levels)
+    resid_by_item_condition_average(pred_data, resolution = "average", x_var = "critical_relative", ignore_contrasts = if (finality == "all") c("finality") else NULL) %>%
     # get error bars for condition means over items
-    over_item_average(y_var = "RT", x_var = "region") %>%
-    code_npz_data()
+    over_item_average(y_var = "RT", x_var = "critical_relative") %>%
+    code_npz_data() %>%
+    filter(critical_relative >= -3 & critical_relative <= 3)
   
   line_plot(plot_data,
     grouping = "interaction(ambiguity, length)",
@@ -168,14 +162,14 @@ for (finality in c("all", "final", "nonfinal")) {
     color = "length",
     color_manual = c("short" = "#18999D", "long" = "#C66059"),
     y_var = "RT",
-    x_var = "region",
-    y_min = -400,
-    y_max = 800,
+    x_var = "critical_relative",
+    y_min = -100,
+    y_max = 600,
     y_lab = "Residual Response Time (ms)",
-    x_lab = "Sentence Region",
-    title = paste0("Residual RTs by Sentence Region (", figure_suffix, " items)"),
+    x_lab = "Critical-Relative Index",
+    title = paste0("Residual RTs by Critical-Relative Index (", figure_suffix, " items)"),
     width = 6,
     height = 4,
-    figure_path = here("analysis_outputs", "npz_maze_figs", "region_lineplots", paste0("resid_rt_by_region_", figure_suffix, img_filetype))
+    figure_path = here("analysis_outputs", "npz_spr_figs", "critrel_lineplots", paste0("resid_rt_by_critical_relative_", figure_suffix, img_filetype))
   )
 }
