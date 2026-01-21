@@ -106,7 +106,7 @@ predict_rts <- function(human_data, model_data, make_figure = FALSE, figure_path
       ) +
       scale_fill_brewer(palette = "Pastel1")
 
-    ggsave(figure_path, plot = plot, width = 8, height = 5)
+    ggsave(figure_path, plot = plot, width = 8, height = 5, create.dir = TRUE)
   }
   
   return(predicted_rt_data)

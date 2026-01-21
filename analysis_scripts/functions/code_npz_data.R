@@ -2,10 +2,10 @@ code_npz_data <- function(df) {
     coded_df <- df
     # +1/-1 sum-coded contrasts
     contrasts <- list(
-      ambiguity = c("ambiguous" = 1, "unambiguous" = -1),
-      length = c("long" = 1, "short" = -1),
-      resolution = c("comma" = 1, "object" = -1),
-      finality = c("final" = 1, "nonfinal" = -1)
+      ambiguity = c("unambiguous" = -1, "ambiguous" = 1),
+      length = c("short" = -1, "long" = 1),
+      resolution = c("object" = -1, "comma" = 1),
+      finality = c("nonfinal" = -1, "final" = 1)
     )
     for (var in names(contrasts)) {
       if (var %in% names(coded_df)) {

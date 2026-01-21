@@ -1,5 +1,6 @@
 library(here)
 library(tidyverse)
+library(ggpattern)
 library(patchwork)
 library(lme4)
 library(lmerTest)
@@ -33,3 +34,13 @@ source(here("analysis_scripts", "pipelines", "sub_pipelines", "all_maze_region_l
 source(here("analysis_scripts", "pipelines", "sub_pipelines", "all_maze_critrel_lineplots.R"))
 
 # Bar plots
+source(here("analysis_scripts", "functions", "bar_plot.R"))
+source(here("analysis_scripts", "pipelines", "sub_pipelines", "all_maze_gp_barplots.R"))
+source(here("analysis_scripts", "pipelines", "sub_pipelines", "all_maze_critical_barplots.R"))
+
+# Scatter plot
+source(here("analysis_scripts", "functions", "scatter_plot.R"))
+source(here("analysis_scripts", "pipelines", "sub_pipelines", "all_maze_scatterplots.R"))
+
+# Accuracy plots
+source(here("analysis_scripts", "pipelines", "sub_pipelines", "all_maze_accuracy_plots.R"))

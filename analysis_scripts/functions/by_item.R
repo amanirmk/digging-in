@@ -119,7 +119,7 @@ resid_by_item_condition_average <- function(human_df, pred_df, resolution = "ign
 }
 
 
-by_item_difference_average <- function(by_item_condition_df, y_var = "RT", x_var = "critical_relative", difference_var = "ambiguity") {
+over_item_difference_average <- function(by_item_condition_df, y_var = "RT", x_var = "critical_relative", difference_var = "ambiguity") {
   stopifnot(difference_var %in% c("ambiguity", "length", "finality"))
   stopifnot(y_var %in% names(by_item_condition_df))
   stopifnot(x_var %in% c("word_index", "critical_relative", "final_relative", "region"))

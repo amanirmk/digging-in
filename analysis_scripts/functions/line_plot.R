@@ -15,7 +15,7 @@ line_plot <- function(coded_data, grouping, linetype, linetype_manual, color, co
     geom_errorbar(aes(ymin = lower, ymax = upper), width = 0.25, linewidth=1) +
     labs(title = title, x = x_lab, y = y_lab) +
     theme(legend.position = "bottom") +
-    scale_y_continuous(limits = c(y_min, y_max))
+    coord_cartesian(ylim = c(y_min, y_max))
 
   if (!is.null(linetype_manual)) {
     plot <- plot + scale_linetype_manual(values = linetype_manual) 
@@ -23,5 +23,5 @@ line_plot <- function(coded_data, grouping, linetype, linetype_manual, color, co
   if (!is.null(color_manual)) {
     plot <- plot + scale_color_manual(values = color_manual) 
   }
-  ggsave(figure_path, plot = plot, width = width, height = height)
+  ggsave(figure_path, plot = plot, width = width, height = height, create.dir = TRUE)
 }
