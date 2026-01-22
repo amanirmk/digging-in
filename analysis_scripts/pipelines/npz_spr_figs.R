@@ -1,7 +1,6 @@
 library(here)
 library(tidyverse)
 library(ggpattern)
-library(patchwork)
 library(lme4)
 library(lmerTest)
 
@@ -30,17 +29,17 @@ source(here("analysis_scripts", "functions", "combine_critical_onward.R"))
 
 # Line plots
 source(here("analysis_scripts", "functions", "line_plot.R"))
-source(here("analysis_scripts", "pipelines", "sub_pipelines", "all_spr_region_lineplots.R"))
-source(here("analysis_scripts", "pipelines", "sub_pipelines", "all_spr_critrel_lineplots.R"))
+source(here("analysis_scripts", "pipelines", "sub_pipelines", "spr_region_lineplots.R"))
+source(here("analysis_scripts", "pipelines", "sub_pipelines", "spr_critrel_lineplots.R"))
 
 # Bar plots
 source(here("analysis_scripts", "functions", "bar_plot.R"))
-source(here("analysis_scripts", "pipelines", "sub_pipelines", "all_spr_gp_barplots.R"))
-source(here("analysis_scripts", "pipelines", "sub_pipelines", "all_spr_critical_barplots.R"))
+source(here("analysis_scripts", "pipelines", "sub_pipelines", "spr_gp_barplots.R"))
+source(here("analysis_scripts", "pipelines", "sub_pipelines", "spr_critical_barplots.R"))
 
 # Scatter plot
 source(here("analysis_scripts", "functions", "scatter_plot.R"))
-source(here("analysis_scripts", "pipelines", "sub_pipelines", "all_spr_scatterplots.R"))
+source(here("analysis_scripts", "pipelines", "sub_pipelines", "spr_scatterplots.R"))
 
 # Accuracy plots
-source(here("analysis_scripts", "pipelines", "sub_pipelines", "all_spr_accuracy_plots.R"))
+source(here("analysis_scripts", "pipelines", "sub_pipelines", "spr_accuracy_plots.R"))
