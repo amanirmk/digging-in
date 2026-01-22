@@ -1,0 +1,85 @@
+ Family: gaussian 
+  Links: mu = identity; sigma = identity 
+Formula: RT ~ ambiguity * length + (ambiguity * length | participant) + (ambiguity * length | item) 
+   Data: data (Number of observations: 1247) 
+  Draws: 5 chains, each with iter = 5000; warmup = 2500; thin = 1;
+         total post-warmup draws = 12500
+
+Multilevel Hyperparameters:
+~item (Number of levels: 36) 
+                                   Estimate Est.Error l-95% CI u-95% CI Rhat
+sd(Intercept)                         42.11      9.40    24.90    62.13 1.00
+sd(ambiguity1)                        10.36      7.39     0.39    27.32 1.00
+sd(length1)                           12.58      8.43     0.52    30.61 1.00
+sd(ambiguity1:length1)                 8.38      6.32     0.33    23.19 1.00
+cor(Intercept,ambiguity1)             -0.04      0.41    -0.79     0.74 1.00
+cor(Intercept,length1)                -0.04      0.40    -0.77     0.73 1.00
+cor(ambiguity1,length1)               -0.12      0.44    -0.86     0.75 1.00
+cor(Intercept,ambiguity1:length1)     -0.04      0.43    -0.81     0.76 1.00
+cor(ambiguity1,ambiguity1:length1)    -0.05      0.44    -0.82     0.78 1.00
+cor(length1,ambiguity1:length1)        0.10      0.44    -0.76     0.86 1.00
+                                   Bulk_ESS Tail_ESS
+sd(Intercept)                          4463     5766
+sd(ambiguity1)                         3987     5708
+sd(length1)                            3605     5320
+sd(ambiguity1:length1)                 6142     6464
+cor(Intercept,ambiguity1)             13855     9010
+cor(Intercept,length1)                11356     7862
+cor(ambiguity1,length1)                6935     8888
+cor(Intercept,ambiguity1:length1)     15503     9155
+cor(ambiguity1,ambiguity1:length1)    11069    10015
+cor(length1,ambiguity1:length1)        9950    10687
+
+~participant (Number of levels: 225) 
+                                   Estimate Est.Error l-95% CI u-95% CI Rhat
+sd(Intercept)                        128.81      8.47   112.94   146.22 1.00
+sd(ambiguity1)                        19.43     10.40     1.28    39.27 1.00
+sd(length1)                           36.08     10.73    12.38    54.80 1.00
+sd(ambiguity1:length1)                17.98      9.79     1.14    36.98 1.00
+cor(Intercept,ambiguity1)              0.16      0.30    -0.51     0.72 1.00
+cor(Intercept,length1)                 0.34      0.19    -0.03     0.74 1.00
+cor(ambiguity1,length1)               -0.41      0.36    -0.90     0.50 1.00
+cor(Intercept,ambiguity1:length1)     -0.16      0.30    -0.72     0.50 1.00
+cor(ambiguity1,ambiguity1:length1)    -0.35      0.41    -0.91     0.62 1.00
+cor(length1,ambiguity1:length1)        0.41      0.37    -0.52     0.91 1.00
+                                   Bulk_ESS Tail_ESS
+sd(Intercept)                          5113     7885
+sd(ambiguity1)                         1446     2966
+sd(length1)                            1850     2835
+sd(ambiguity1:length1)                 2178     4260
+cor(Intercept,ambiguity1)             12223     5378
+cor(Intercept,length1)                 5186     4811
+cor(ambiguity1,length1)                1838     2671
+cor(Intercept,ambiguity1:length1)     10740     7120
+cor(ambiguity1,ambiguity1:length1)     2586     5507
+cor(length1,ambiguity1:length1)        3497     5689
+
+Regression Coefficients:
+                   Estimate Est.Error l-95% CI u-95% CI Rhat Bulk_ESS Tail_ESS
+Intercept            462.99     12.29   438.71   486.99 1.00     5599     7645
+ambiguity1            20.12      5.87     8.74    31.69 1.00    15870    10652
+length1                8.80      6.42    -3.83    21.55 1.00    15092    10074
+ambiguity1:length1    -8.39      5.75   -19.59     2.85 1.00    19929     9481
+
+Further Distributional Parameters:
+      Estimate Est.Error l-95% CI u-95% CI Rhat Bulk_ESS Tail_ESS
+sigma   180.79      5.25   170.69   191.18 1.00     2383     5459
+
+Draws were sampled using sampling(NUTS). For each parameter, Bulk_ESS
+and Tail_ESS are effective sample size measures, and Rhat is the potential
+scale reduction factor on split chains (at convergence, Rhat = 1).
+Summary of Posterior Distribution
+
+Parameter          | Median |           95% CI |     pd |            ROPE
+-------------------------------------------------------------------------
+(Intercept)        | 463.03 | [438.71, 486.99] |   100% | [-23.17, 23.17]
+ambiguity1         |  20.09 | [  8.74,  31.69] | 99.98% | [-23.17, 23.17]
+length1            |   8.85 | [ -3.83,  21.55] | 91.61% | [-23.17, 23.17]
+ambiguity1:length1 |  -8.38 | [-19.59,   2.85] | 92.78% | [-23.17, 23.17]
+
+Parameter          | % in ROPE |  Rhat |      ESS
+-------------------------------------------------
+(Intercept)        |        0% | 1.000 |  5606.00
+ambiguity1         |    70.68% | 1.000 | 15789.00
+length1            |      100% | 1.000 | 14990.00
+ambiguity1:length1 |      100% | 1.000 | 20049.00

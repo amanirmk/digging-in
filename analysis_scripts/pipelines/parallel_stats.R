@@ -73,10 +73,10 @@ call_sub_pipeline <- function(sub_pipeline) {
 
 # Run sub-pipelines in parallel
 sub_pipelines <- c(
-  # "spr_stats_human.R",
-  # "maze_stats_human.R",
-  # "spr_stats_pred.R",
-  # "maze_stats_pred.R",
+  "spr_stats_human.R",
+  "maze_stats_human.R",
+  "spr_stats_pred.R",
+  "maze_stats_pred.R",
   "spr_stats_surp.R",
   "maze_stats_surp.R"
 )

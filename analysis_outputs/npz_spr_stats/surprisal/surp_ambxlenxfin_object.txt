@@ -1,0 +1,284 @@
+ Family: gaussian 
+  Links: mu = identity; sigma = identity 
+Formula: surprisal ~ ambiguity * length * finality + (ambiguity * length * finality | model) + (ambiguity * length * finality | item) 
+   Data: data (Number of observations: 4608) 
+  Draws: 5 chains, each with iter = 5000; warmup = 2500; thin = 1;
+         total post-warmup draws = 12500
+
+Multilevel Hyperparameters:
+~item (Number of levels: 36) 
+                                                       Estimate Est.Error
+sd(Intercept)                                              3.73      0.47
+sd(ambiguity1)                                             1.10      0.15
+sd(length1)                                                1.13      0.15
+sd(finality1)                                              0.75      0.11
+sd(ambiguity1:length1)                                     0.42      0.07
+sd(ambiguity1:finality1)                                   0.13      0.06
+sd(length1:finality1)                                      0.04      0.03
+sd(ambiguity1:length1:finality1)                           0.04      0.03
+cor(Intercept,ambiguity1)                                 -0.00      0.15
+cor(Intercept,length1)                                    -0.01      0.16
+cor(ambiguity1,length1)                                   -0.16      0.16
+cor(Intercept,finality1)                                  -0.02      0.16
+cor(ambiguity1,finality1)                                 -0.32      0.15
+cor(length1,finality1)                                     0.02      0.16
+cor(Intercept,ambiguity1:length1)                         -0.43      0.16
+cor(ambiguity1,ambiguity1:length1)                        -0.07      0.17
+cor(length1,ambiguity1:length1)                           -0.07      0.18
+cor(finality1,ambiguity1:length1)                         -0.16      0.18
+cor(Intercept,ambiguity1:finality1)                        0.14      0.26
+cor(ambiguity1,ambiguity1:finality1)                       0.30      0.26
+cor(length1,ambiguity1:finality1)                         -0.15      0.26
+cor(finality1,ambiguity1:finality1)                        0.22      0.27
+cor(ambiguity1:length1,ambiguity1:finality1)              -0.16      0.28
+cor(Intercept,length1:finality1)                           0.03      0.33
+cor(ambiguity1,length1:finality1)                         -0.09      0.33
+cor(length1,length1:finality1)                             0.04      0.33
+cor(finality1,length1:finality1)                           0.06      0.33
+cor(ambiguity1:length1,length1:finality1)                  0.00      0.33
+cor(ambiguity1:finality1,length1:finality1)               -0.00      0.33
+cor(Intercept,ambiguity1:length1:finality1)               -0.05      0.33
+cor(ambiguity1,ambiguity1:length1:finality1)              -0.00      0.33
+cor(length1,ambiguity1:length1:finality1)                  0.00      0.33
+cor(finality1,ambiguity1:length1:finality1)               -0.03      0.33
+cor(ambiguity1:length1,ambiguity1:length1:finality1)       0.04      0.33
+cor(ambiguity1:finality1,ambiguity1:length1:finality1)    -0.02      0.33
+cor(length1:finality1,ambiguity1:length1:finality1)       -0.00      0.33
+                                                       l-95% CI u-95% CI Rhat
+sd(Intercept)                                              2.94     4.78 1.00
+sd(ambiguity1)                                             0.85     1.42 1.00
+sd(length1)                                                0.87     1.47 1.00
+sd(finality1)                                              0.57     0.98 1.00
+sd(ambiguity1:length1)                                     0.30     0.57 1.00
+sd(ambiguity1:finality1)                                   0.02     0.25 1.00
+sd(length1:finality1)                                      0.00     0.12 1.00
+sd(ambiguity1:length1:finality1)                           0.00     0.10 1.00
+cor(Intercept,ambiguity1)                                 -0.30     0.30 1.00
+cor(Intercept,length1)                                    -0.32     0.30 1.00
+cor(ambiguity1,length1)                                   -0.45     0.15 1.00
+cor(Intercept,finality1)                                  -0.33     0.30 1.00
+cor(ambiguity1,finality1)                                 -0.60     0.00 1.00
+cor(length1,finality1)                                    -0.30     0.34 1.00
+cor(Intercept,ambiguity1:length1)                         -0.70    -0.09 1.00
+cor(ambiguity1,ambiguity1:length1)                        -0.40     0.28 1.00
+cor(length1,ambiguity1:length1)                           -0.41     0.28 1.00
+cor(finality1,ambiguity1:length1)                         -0.49     0.20 1.00
+cor(Intercept,ambiguity1:finality1)                       -0.40     0.62 1.00
+cor(ambiguity1,ambiguity1:finality1)                      -0.27     0.74 1.00
+cor(length1,ambiguity1:finality1)                         -0.62     0.40 1.00
+cor(finality1,ambiguity1:finality1)                       -0.35     0.69 1.00
+cor(ambiguity1:length1,ambiguity1:finality1)              -0.65     0.41 1.00
+cor(Intercept,length1:finality1)                          -0.61     0.65 1.00
+cor(ambiguity1,length1:finality1)                         -0.70     0.58 1.00
+cor(length1,length1:finality1)                            -0.60     0.65 1.00
+cor(finality1,length1:finality1)                          -0.59     0.67 1.00
+cor(ambiguity1:length1,length1:finality1)                 -0.62     0.63 1.00
+cor(ambiguity1:finality1,length1:finality1)               -0.63     0.64 1.00
+cor(Intercept,ambiguity1:length1:finality1)               -0.67     0.60 1.00
+cor(ambiguity1,ambiguity1:length1:finality1)              -0.63     0.63 1.00
+cor(length1,ambiguity1:length1:finality1)                 -0.63     0.63 1.00
+cor(finality1,ambiguity1:length1:finality1)               -0.66     0.60 1.00
+cor(ambiguity1:length1,ambiguity1:length1:finality1)      -0.61     0.65 1.00
+cor(ambiguity1:finality1,ambiguity1:length1:finality1)    -0.64     0.62 1.00
+cor(length1:finality1,ambiguity1:length1:finality1)       -0.64     0.62 1.00
+                                                       Bulk_ESS Tail_ESS
+sd(Intercept)                                              1255     2424
+sd(ambiguity1)                                             1725     3958
+sd(length1)                                                2594     4954
+sd(finality1)                                              3105     5601
+sd(ambiguity1:length1)                                     4109     6514
+sd(ambiguity1:finality1)                                   3911     3358
+sd(length1:finality1)                                      8703     6129
+sd(ambiguity1:length1:finality1)                           9566     5328
+cor(Intercept,ambiguity1)                                  1891     3911
+cor(Intercept,length1)                                     2132     4214
+cor(ambiguity1,length1)                                    2031     3571
+cor(Intercept,finality1)                                   3308     5648
+cor(ambiguity1,finality1)                                  3011     4810
+cor(length1,finality1)                                     3288     5396
+cor(Intercept,ambiguity1:length1)                          5608     7578
+cor(ambiguity1,ambiguity1:length1)                         5013     8054
+cor(length1,ambiguity1:length1)                            5661     7869
+cor(finality1,ambiguity1:length1)                          5683     8091
+cor(Intercept,ambiguity1:finality1)                       11377     6870
+cor(ambiguity1,ambiguity1:finality1)                      10327     8053
+cor(length1,ambiguity1:finality1)                         11668     8375
+cor(finality1,ambiguity1:finality1)                       10662     8468
+cor(ambiguity1:length1,ambiguity1:finality1)              10963     9314
+cor(Intercept,length1:finality1)                          15988     8703
+cor(ambiguity1,length1:finality1)                         16332     9330
+cor(length1,length1:finality1)                            15139     8791
+cor(finality1,length1:finality1)                          15776     8524
+cor(ambiguity1:length1,length1:finality1)                 15195    10108
+cor(ambiguity1:finality1,length1:finality1)               11727    10022
+cor(Intercept,ambiguity1:length1:finality1)               15886     9740
+cor(ambiguity1,ambiguity1:length1:finality1)              15740     8365
+cor(length1,ambiguity1:length1:finality1)                 17465     9083
+cor(finality1,ambiguity1:length1:finality1)               15522     8816
+cor(ambiguity1:length1,ambiguity1:length1:finality1)      15370     9196
+cor(ambiguity1:finality1,ambiguity1:length1:finality1)    11301    10214
+cor(length1:finality1,ambiguity1:length1:finality1)        7234     9842
+
+~model (Number of levels: 16) 
+                                                       Estimate Est.Error
+sd(Intercept)                                              1.02      0.20
+sd(ambiguity1)                                             1.02      0.19
+sd(length1)                                                0.10      0.06
+sd(finality1)                                              0.33      0.08
+sd(ambiguity1:length1)                                     0.09      0.05
+sd(ambiguity1:finality1)                                   0.10      0.06
+sd(length1:finality1)                                      0.04      0.03
+sd(ambiguity1:length1:finality1)                           0.04      0.03
+cor(Intercept,ambiguity1)                                 -0.44      0.18
+cor(Intercept,length1)                                     0.18      0.29
+cor(ambiguity1,length1)                                   -0.26      0.29
+cor(Intercept,finality1)                                   0.39      0.20
+cor(ambiguity1,finality1)                                  0.22      0.21
+cor(length1,finality1)                                     0.00      0.30
+cor(Intercept,ambiguity1:length1)                         -0.28      0.30
+cor(ambiguity1,ambiguity1:length1)                         0.33      0.30
+cor(length1,ambiguity1:length1)                           -0.13      0.32
+cor(finality1,ambiguity1:length1)                          0.02      0.30
+cor(Intercept,ambiguity1:finality1)                        0.11      0.29
+cor(ambiguity1,ambiguity1:finality1)                       0.25      0.29
+cor(length1,ambiguity1:finality1)                         -0.03      0.33
+cor(finality1,ambiguity1:finality1)                        0.33      0.29
+cor(ambiguity1:length1,ambiguity1:finality1)               0.06      0.32
+cor(Intercept,length1:finality1)                          -0.01      0.33
+cor(ambiguity1,length1:finality1)                         -0.02      0.33
+cor(length1,length1:finality1)                             0.02      0.33
+cor(finality1,length1:finality1)                          -0.01      0.33
+cor(ambiguity1:length1,length1:finality1)                  0.00      0.33
+cor(ambiguity1:finality1,length1:finality1)               -0.01      0.33
+cor(Intercept,ambiguity1:length1:finality1)               -0.03      0.33
+cor(ambiguity1,ambiguity1:length1:finality1)               0.03      0.33
+cor(length1,ambiguity1:length1:finality1)                 -0.02      0.34
+cor(finality1,ambiguity1:length1:finality1)                0.00      0.34
+cor(ambiguity1:length1,ambiguity1:length1:finality1)       0.02      0.33
+cor(ambiguity1:finality1,ambiguity1:length1:finality1)     0.01      0.33
+cor(length1:finality1,ambiguity1:length1:finality1)       -0.01      0.34
+                                                       l-95% CI u-95% CI Rhat
+sd(Intercept)                                              0.71     1.47 1.00
+sd(ambiguity1)                                             0.72     1.47 1.00
+sd(length1)                                                0.01     0.23 1.00
+sd(finality1)                                              0.20     0.51 1.00
+sd(ambiguity1:length1)                                     0.00     0.20 1.00
+sd(ambiguity1:finality1)                                   0.01     0.22 1.00
+sd(length1:finality1)                                      0.00     0.12 1.00
+sd(ambiguity1:length1:finality1)                           0.00     0.11 1.00
+cor(Intercept,ambiguity1)                                 -0.75    -0.04 1.00
+cor(Intercept,length1)                                    -0.43     0.69 1.00
+cor(ambiguity1,length1)                                   -0.75     0.37 1.00
+cor(Intercept,finality1)                                  -0.04     0.73 1.00
+cor(ambiguity1,finality1)                                 -0.22     0.61 1.00
+cor(length1,finality1)                                    -0.57     0.58 1.00
+cor(Intercept,ambiguity1:length1)                         -0.77     0.37 1.00
+cor(ambiguity1,ambiguity1:length1)                        -0.35     0.80 1.00
+cor(length1,ambiguity1:length1)                           -0.70     0.52 1.00
+cor(finality1,ambiguity1:length1)                         -0.57     0.60 1.00
+cor(Intercept,ambiguity1:finality1)                       -0.48     0.64 1.00
+cor(ambiguity1,ambiguity1:finality1)                      -0.36     0.74 1.00
+cor(length1,ambiguity1:finality1)                         -0.65     0.59 1.00
+cor(finality1,ambiguity1:finality1)                       -0.32     0.80 1.00
+cor(ambiguity1:length1,ambiguity1:finality1)              -0.55     0.65 1.00
+cor(Intercept,length1:finality1)                          -0.62     0.61 1.00
+cor(ambiguity1,length1:finality1)                         -0.63     0.61 1.00
+cor(length1,length1:finality1)                            -0.62     0.64 1.00
+cor(finality1,length1:finality1)                          -0.64     0.63 1.00
+cor(ambiguity1:length1,length1:finality1)                 -0.63     0.63 1.00
+cor(ambiguity1:finality1,length1:finality1)               -0.64     0.62 1.00
+cor(Intercept,ambiguity1:length1:finality1)               -0.64     0.60 1.00
+cor(ambiguity1,ambiguity1:length1:finality1)              -0.60     0.64 1.00
+cor(length1,ambiguity1:length1:finality1)                 -0.65     0.62 1.00
+cor(finality1,ambiguity1:length1:finality1)               -0.64     0.63 1.00
+cor(ambiguity1:length1,ambiguity1:length1:finality1)      -0.61     0.64 1.00
+cor(ambiguity1:finality1,ambiguity1:length1:finality1)    -0.62     0.64 1.00
+cor(length1:finality1,ambiguity1:length1:finality1)       -0.63     0.63 1.00
+                                                       Bulk_ESS Tail_ESS
+sd(Intercept)                                              2201     4452
+sd(ambiguity1)                                             2706     4106
+sd(length1)                                                3597     3847
+sd(finality1)                                              4941     7560
+sd(ambiguity1:length1)                                     4385     3384
+sd(ambiguity1:finality1)                                   4990     3706
+sd(length1:finality1)                                      9595     5560
+sd(ambiguity1:length1:finality1)                           8450     4754
+cor(Intercept,ambiguity1)                                  2208     4107
+cor(Intercept,length1)                                    11699     8203
+cor(ambiguity1,length1)                                    9978     7973
+cor(Intercept,finality1)                                   5505     8452
+cor(ambiguity1,finality1)                                  6238     8759
+cor(length1,finality1)                                     4767     7144
+cor(Intercept,ambiguity1:length1)                         10365     8307
+cor(ambiguity1,ambiguity1:length1)                         9762     8733
+cor(length1,ambiguity1:length1)                           11250     9923
+cor(finality1,ambiguity1:length1)                         14964     9383
+cor(Intercept,ambiguity1:finality1)                       12190     8799
+cor(ambiguity1,ambiguity1:finality1)                      12152     8245
+cor(length1,ambiguity1:finality1)                         10064     8805
+cor(finality1,ambiguity1:finality1)                        9111    10026
+cor(ambiguity1:length1,ambiguity1:finality1)              10614    10019
+cor(Intercept,length1:finality1)                          15915     8670
+cor(ambiguity1,length1:finality1)                         17332     9332
+cor(length1,length1:finality1)                            12655     9687
+cor(finality1,length1:finality1)                          15264     9424
+cor(ambiguity1:length1,length1:finality1)                 10991    10184
+cor(ambiguity1:finality1,length1:finality1)                9985     9644
+cor(Intercept,ambiguity1:length1:finality1)               16461     9879
+cor(ambiguity1,ambiguity1:length1:finality1)              16816    10049
+cor(length1,ambiguity1:length1:finality1)                 13670    10026
+cor(finality1,ambiguity1:length1:finality1)               16417     9251
+cor(ambiguity1:length1,ambiguity1:length1:finality1)      10709    10005
+cor(ambiguity1:finality1,ambiguity1:length1:finality1)    10336    10913
+cor(length1:finality1,ambiguity1:length1:finality1)        8084     9872
+
+Regression Coefficients:
+                             Estimate Est.Error l-95% CI u-95% CI Rhat Bulk_ESS
+Intercept                       17.05      0.67    15.75    18.37 1.01      523
+ambiguity1                       3.40      0.32     2.75     4.02 1.00     1305
+length1                          0.71      0.20     0.32     1.10 1.00     1500
+finality1                        2.52      0.16     2.20     2.83 1.00     2237
+ambiguity1:length1              -0.25      0.08    -0.42    -0.08 1.00     2464
+ambiguity1:finality1             0.40      0.06     0.29     0.51 1.00     6478
+length1:finality1                0.03      0.04    -0.06     0.11 1.00    12109
+ambiguity1:length1:finality1     0.02      0.04    -0.07     0.10 1.00    15096
+                             Tail_ESS
+Intercept                        1148
+ambiguity1                       3111
+length1                          2648
+finality1                        4600
+ambiguity1:length1               4628
+ambiguity1:finality1             7999
+length1:finality1                8569
+ambiguity1:length1:finality1     9599
+
+Further Distributional Parameters:
+      Estimate Est.Error l-95% CI u-95% CI Rhat Bulk_ESS Tail_ESS
+sigma     2.73      0.03     2.67     2.79 1.00    15302     9911
+
+Draws were sampled using sampling(NUTS). For each parameter, Bulk_ESS
+and Tail_ESS are effective sample size measures, and Rhat is the potential
+scale reduction factor on split chains (at convergence, Rhat = 1).
+Summary of Posterior Distribution
+
+Parameter                    | Median |         95% CI |     pd |          ROPE
+-------------------------------------------------------------------------------
+(Intercept)                  |  17.05 | [15.75, 18.37] |   100% | [-0.65, 0.65]
+ambiguity1                   |   3.40 | [ 2.75,  4.02] |   100% | [-0.65, 0.65]
+length1                      |   0.71 | [ 0.32,  1.10] | 99.98% | [-0.65, 0.65]
+finality1                    |   2.52 | [ 2.20,  2.83] |   100% | [-0.65, 0.65]
+ambiguity1:length1           |  -0.25 | [-0.42, -0.08] | 99.83% | [-0.65, 0.65]
+ambiguity1:finality1         |   0.40 | [ 0.29,  0.51] |   100% | [-0.65, 0.65]
+length1:finality1            |   0.03 | [-0.06,  0.11] | 71.98% | [-0.65, 0.65]
+ambiguity1:length1:finality1 |   0.02 | [-0.07,  0.10] | 63.74% | [-0.65, 0.65]
+
+Parameter                    | % in ROPE |  Rhat |      ESS
+-----------------------------------------------------------
+(Intercept)                  |        0% | 1.012 |   505.00
+ambiguity1                   |        0% | 1.003 |  1311.00
+length1                      |    37.38% | 1.004 |  1485.00
+finality1                    |        0% | 1.002 |  2219.00
+ambiguity1:length1           |      100% | 1.001 |  2446.00
+ambiguity1:finality1         |      100% | 1.001 |  6431.00
+length1:finality1            |      100% | 1.000 | 11998.00
+ambiguity1:length1:finality1 |      100% | 1.000 | 14960.00
