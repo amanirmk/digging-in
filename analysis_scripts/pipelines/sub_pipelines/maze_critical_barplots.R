@@ -1,4 +1,4 @@
-# EXPECTS human_data, model_data, pred_data, img_filetype, bar_plot.R, by_item.R, combine_critical_onward.R, comprehension_filter.R to be loaded already
+# EXPECTS human_data, model_data, pred_data, img_filetype, bar_plot.R, by_item.R, combine.R, comprehension_filter.R to be loaded already
 
 for (finality in c("all", "final", "nonfinal")) {
   if (finality == "all") {
@@ -36,7 +36,7 @@ for (finality in c("all", "final", "nonfinal")) {
     y_max = 2100,
     y_lab = "Response Time (ms)",
     x_lab = "Length",
-    title = paste0("Empirical RT at Critical (", figure_suffix, " items)"),
+    title = paste0("Empirical RT at Critical (", figure_suffix, ")"),
     width = 5,
     height = 3,
     figure_path = here("analysis_outputs", "npz_maze_figs", "critical_bars", paste0("empirical_crit_bar_", figure_suffix, img_filetype)),
@@ -44,7 +44,81 @@ for (finality in c("all", "final", "nonfinal")) {
   )
 }
 
-# Duplicate of above for surprisal data
+# for spillover
+
+for (critrel in c(1, 2)) {
+  plot_data <- human_data %>%
+    # only critical items
+    filter(item_category == "critical") %>%
+    # only nonfinal
+    filter(finality == "nonfinal") %>%
+    # filter for comprehension question accuracy
+    comprehension_filter(type="maze") %>%
+    # average by item and condition, ignore finality and resolution (between-item contrasts in Maze)
+    by_item_condition_average(resolution = "ignore", y_var = "RT", x_var = "critical_relative", ignore_contrasts = c("finality")) %>%
+    filter(critical_relative == critrel) %>%
+    # get error bars for condition means over items
+    over_item_average(y_var = "RT", x_var = "critical_relative") %>%
+    code_npz_data()
+
+  bar_plot_with_pattern(plot_data,
+    grouping = "length",
+    fill = "length",
+    fill_manual = c("short" = "#00BFC4", "long" = "#F8766D"),
+    pattern_var = "ambiguity",
+    pattern_manual = c("ambiguous" = "stripe", "unambiguous" = "none"),
+    y_var = "RT",
+    x_var = "length",
+    y_min = 0,
+    y_max = 2100,
+    y_lab = "Response Time (ms)",
+    x_lab = "Length",
+    title = paste0("Empirical RT at Critical + ", critrel),
+    width = 5,
+    height = 3,
+    figure_path = here("analysis_outputs", "npz_maze_figs", "critical_bars", paste0("empirical_crit_bar_", critrel, img_filetype)),
+    legend_position = "right"
+  )
+}
+
+# average critical-spillover region
+
+plot_data <- human_data %>%
+  # only critical items
+  filter(item_category == "critical") %>%
+  # only non-final items
+  filter(finality == "nonfinal") %>%
+  # filter for comprehension question accuracy
+  comprehension_filter(type="maze") %>%
+  # combine critical-onward
+  combine_critical_onward(to_crit_plus=2) %>%
+  # average by item and condition, ignore finality and resolution (between-item contrasts in Maze)
+  by_item_condition_average(resolution = "ignore", y_var = "RT", x_var = "critical_relative", ignore_contrasts = c("finality")) %>%
+  filter(critical_relative == 0) %>%
+  # get error bars for condition means over items
+  over_item_average(y_var = "RT", x_var = "critical_relative") %>%
+  code_npz_data()
+
+bar_plot_with_pattern(plot_data,
+  grouping = "length",
+  fill = "length",
+  fill_manual = c("short" = "#00BFC4", "long" = "#F8766D"),
+  pattern_var = "ambiguity",
+  pattern_manual = c("ambiguous" = "stripe", "unambiguous" = "none"),
+  y_var = "RT",
+  x_var = "length",
+  y_min = 0,
+  y_max = 2100,
+  y_lab = "Response Time (ms)",
+  x_lab = "Length",
+  title = paste0("Mean Empirical RT of Critical+[0-2] (nonfinal)"),
+  width = 5,
+  height = 3,
+  figure_path = here("analysis_outputs", "npz_maze_figs", "critical_bars", paste0("empirical_crit_bar_crit_thru_spill", img_filetype)),
+  legend_position = "right"
+)
+
+# for surprisal data
 
 for (finality in c("all", "final", "nonfinal")) {
   if (finality == "all") {
@@ -80,7 +154,7 @@ for (finality in c("all", "final", "nonfinal")) {
     y_max = 24,
     y_lab = "Surprisal (bits)",
     x_lab = "Length",
-    title = paste0("Surprisal at Critical (", figure_suffix, " items)"),
+    title = paste0("Surprisal at Critical (", figure_suffix, ")"),
     width = 5,
     height = 3,
     figure_path = here("analysis_outputs", "npz_maze_figs", "critical_bars", paste0("surprisal_crit_bar_", figure_suffix, img_filetype)),
@@ -88,7 +162,7 @@ for (finality in c("all", "final", "nonfinal")) {
   )
 }
 
-# Duplicate of above for predicted RT data
+# for predicted RT data
 
 for (finality in c("all", "final", "nonfinal")) {
   if (finality == "all") {
@@ -124,7 +198,7 @@ for (finality in c("all", "final", "nonfinal")) {
     y_max = 1500,
     y_lab = "Response Time (ms)",
     x_lab = "Length",
-    title = paste0("Predicted RT at Critical (", figure_suffix, " items)"),
+    title = paste0("Predicted RT at Critical (", figure_suffix, ")"),
     width = 5,
     height = 3,
     figure_path = here("analysis_outputs", "npz_maze_figs", "critical_bars", paste0("pred_rt_crit_bar_", figure_suffix, img_filetype)),
@@ -132,7 +206,7 @@ for (finality in c("all", "final", "nonfinal")) {
   )
 }
 
-# Duplicate of above for residual RT data
+# for residual RT data
 
 for (finality in c("all", "final", "nonfinal")) {
   if (finality == "all") {
@@ -170,7 +244,7 @@ for (finality in c("all", "final", "nonfinal")) {
     y_max = 800,
     y_lab = "Response Time (ms)",
     x_lab = "Length",
-    title = paste0("Residual RT at Critical (", figure_suffix, " items)"),
+    title = paste0("Residual RT at Critical (", figure_suffix, ")"),
     width = 5,
     height = 3,
     figure_path = here("analysis_outputs", "npz_maze_figs", "critical_bars", paste0("residual_crit_bar_", figure_suffix, img_filetype)),
@@ -208,7 +282,7 @@ bar_plot_with_pattern(plot_data,
   y_max = 2100,
   y_lab = "Response Time (ms)",
   x_lab = "Length",
-  title = paste0("Empirical RT at Critical-Onward (nonfinal items)"),
+  title = paste0("Empirical RT at Critical-Onward (nonfinal)"),
   width = 5,
   height = 3,
   figure_path = here("analysis_outputs", "npz_maze_figs", "critical_bars", paste0("empirical_crit_bar_nonfinal_critonward", img_filetype)),
@@ -268,7 +342,7 @@ for (finality in c("all", "final", "nonfinal")) {
     y_max = 2100,
     y_lab = "Response Time (ms)",
     x_lab = "Ambiguity",
-    title = paste0("Response Time at Critical (", figure_suffix, " items, short)"),
+    title = paste0("Response Time at Critical (", figure_suffix, ", short)"),
     width = 5,
     height = 3,
     figure_path = here("analysis_outputs", "npz_maze_figs", "critical_bars", paste0("combined_crit_bar_short_", figure_suffix, img_filetype)),
@@ -287,7 +361,7 @@ for (finality in c("all", "final", "nonfinal")) {
     y_max = 2100,
     y_lab = "Response Time (ms)",
     x_lab = "Ambiguity",
-    title = paste0("Response Time at Critical (", figure_suffix, " items, long)"),
+    title = paste0("Response Time at Critical (", figure_suffix, ", long)"),
     width = 5,
     height = 3,
     figure_path = here("analysis_outputs", "npz_maze_figs", "critical_bars", paste0("combined_crit_bar_long_", figure_suffix, img_filetype)),
@@ -344,7 +418,7 @@ for (resolution in c("comma", "object")) {
     y_max = 2100,
     y_lab = "Response Time (ms)",
     x_lab = "Ambiguity",
-    title = paste0("Response Time at Critical (", figure_suffix, " items, short)"),
+    title = paste0("Response Time at Critical (", figure_suffix, ", short)"),
     width = 5,
     height = 3,
     figure_path = here("analysis_outputs", "npz_maze_figs", "critical_bars", paste0("combined_crit_bar_short_", figure_suffix, img_filetype)),
@@ -363,7 +437,7 @@ for (resolution in c("comma", "object")) {
     y_max = 2100,
     y_lab = "Response Time (ms)",
     x_lab = "Ambiguity",
-    title = paste0("Response Time at Critical (", figure_suffix, " items, long)"),
+    title = paste0("Response Time at Critical (", figure_suffix, ", long)"),
     width = 5,
     height = 3,
     figure_path = here("analysis_outputs", "npz_maze_figs", "critical_bars", paste0("combined_crit_bar_long_", figure_suffix, img_filetype)),

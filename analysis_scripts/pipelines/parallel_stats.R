@@ -58,7 +58,7 @@ call_sub_pipeline <- function(sub_pipeline) {
     source(here("analysis_scripts", "functions", "by_item.R"))
     source(here("analysis_scripts", "functions", "code_npz_data.R"))
     source(here("analysis_scripts", "functions", "comprehension_filter.R"))
-    source(here("analysis_scripts", "functions", "combine_critical_onward.R"))
+    source(here("analysis_scripts", "functions", "combine.R"))
     source(here("analysis_scripts", "functions", "run_brms.R"))
 
     # Run the sub-pipeline
@@ -68,17 +68,20 @@ call_sub_pipeline <- function(sub_pipeline) {
     model_data = model_data,
     pred_data = pred_data,
     sub_pipeline = sub_pipeline
-  ))
+  ),
+  seed = TRUE)
 }
 
 # Run sub-pipelines in parallel
 sub_pipelines <- c(
-  "spr_stats_human.R",
-  "maze_stats_human.R",
-  "spr_stats_pred.R",
-  "maze_stats_pred.R",
-  "spr_stats_surp.R",
-  "maze_stats_surp.R"
+  # "spr_stats_human.R",
+  # "maze_stats_human.R",
+  # "spr_stats_pred.R",
+  # "maze_stats_pred.R",
+  # "spr_stats_surp.R",
+  # "maze_stats_surp.R",
+  "spr_stats_human_vs_pred.R",
+  "maze_stats_human_vs_pred.R"
 )
 futures <- lapply(sub_pipelines, call_sub_pipeline)
 lapply(futures, value)

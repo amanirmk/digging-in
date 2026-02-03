@@ -1,4 +1,4 @@
-# EXPECTS human_data, model_data, pred_data, img_filetype, combine_critical_onward.R, bar_plot.R, by_item.R, comprehension_filter.R to be loaded already
+# EXPECTS human_data, model_data, pred_data, img_filetype, combine.R, bar_plot.R, by_item.R, comprehension_filter.R to be loaded already
 
 for (finality in c("all", "final", "nonfinal")) {
   if (finality == "all") {
@@ -37,12 +37,13 @@ for (finality in c("all", "final", "nonfinal")) {
       y_var = "RT",
       x_var = "length",
       y_min = -50,
-      y_max = 800,
+      y_max = 750,
       y_lab = "Mean GP (ms)",
       x_lab = "Length",
-      title = paste0("Critical + ", critrel, " (", figure_suffix, " items)"),
-      width = 3,
-      height = 3,
+      title = paste0("Critical + ", critrel, " (", figure_suffix, ")"),
+      width = 2.5,
+      height = 4.5,
+      manual_ybreaks = c(0, 200, 400, 600),
       figure_path = here("analysis_outputs", "npz_maze_figs", "gp_bars", paste0("empirical_gp_bar_", figure_suffix, "_", critrel, img_filetype)),
       legend_position = "none"
     )
@@ -86,12 +87,13 @@ for (finality in c("all", "final", "nonfinal")) {
       y_var = "surprisal",
       x_var = "length",
       y_min = -1,
-      y_max = 12,
+      y_max = 10,
       y_lab = "Mean GP (bits)",
       x_lab = "Length",
-      title = paste0("Critical + ", critrel, " (", figure_suffix, " items)"),
-      width = 3,
-      height = 3,
+      title = paste0("Critical + ", critrel, " (", figure_suffix, ")"),
+      width = 2.5,
+      height = 2.5,
+      manual_ybreaks = c(0, 4, 8),
       figure_path = here("analysis_outputs", "npz_maze_figs", "gp_bars", paste0("surprisal_gp_bar_", figure_suffix, "_", critrel, img_filetype)),
       legend_position = "none"
     )
@@ -134,13 +136,14 @@ for (finality in c("all", "final", "nonfinal")) {
       fill_manual = c("short" = "#18999D", "long" = "#C66059"),
       y_var = "RT",
       x_var = "length",
-      y_min = -20,
-      y_max = 300,
+      y_min = -75,
+      y_max = 250,
       y_lab = "Mean GP (ms)",
       x_lab = "Length",
-      title = paste0("Critical + ", critrel, " (", figure_suffix, " items)"),
-      width = 3,
-      height = 3,
+      title = paste0("Critical + ", critrel, " (", figure_suffix, ")"),
+      width = 2.5,
+      height = 2.25,
+      manual_ybreaks = c(0, 200),
       figure_path = here("analysis_outputs", "npz_maze_figs", "gp_bars", paste0("predicted_gp_bar_", figure_suffix, "_", critrel, img_filetype)),
       legend_position = "none"
     )
@@ -189,9 +192,9 @@ for (finality in c("all", "final", "nonfinal")) {
       y_max = 600,
       y_lab = "Mean GP (ms)",
       x_lab = "Length",
-      title = paste0("Critical + ", critrel, " (", figure_suffix, " items)"),
-      width = 3,
-      height = 3,
+      title = paste0("Critical + ", critrel, " (", figure_suffix, ")"),
+      width = 2.5,
+      height = 2.5,
       figure_path = here("analysis_outputs", "npz_maze_figs", "gp_bars", paste0("residual_gp_bar_", figure_suffix, "_", critrel, img_filetype)),
       legend_position = "none"
     )
@@ -227,8 +230,8 @@ bar_plot(plot_data,
   y_lab = "Mean GP (ms)",
   x_lab = "Length",
   title = paste0("Critical-Onward (nonfinal)"),
-  width = 3,
-  height = 3,
+  width = 2.5,
+  height = 2.5,
   figure_path = here("analysis_outputs", "npz_maze_figs", "gp_bars", paste0("empirical_gp_bar_nonfinal_critonward", img_filetype)),
   legend_position = "none"
 )

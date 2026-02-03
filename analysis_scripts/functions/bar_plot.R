@@ -1,4 +1,4 @@
-bar_plot <- function(coded_data, grouping, fill, fill_manual, x_var, y_var, y_min, y_max, x_lab, y_lab, title, figure_path, width, height, legend_position = "bottom", facet_var = NULL, ncols = NULL) {
+bar_plot <- function(coded_data, grouping, fill, fill_manual, x_var, y_var, y_min, y_max, x_lab, y_lab, title, figure_path, width, height, legend_position = "bottom", facet_var = NULL, ncols = NULL, manual_ybreaks = NULL) {
   stopifnot(x_var %in% names(coded_data))
   stopifnot(y_var %in% names(coded_data))
   stopifnot(fill %in% names(coded_data) || is.null(fill))
@@ -13,6 +13,10 @@ bar_plot <- function(coded_data, grouping, fill, fill_manual, x_var, y_var, y_mi
     labs(title = title, x = x_lab, y = y_lab) +
     theme(legend.position = legend_position) +
     coord_cartesian(ylim = c(y_min, y_max))
+
+  if (!is.null(manual_ybreaks)) {
+    plot <- plot + scale_y_continuous(breaks = manual_ybreaks)
+  }
 
   if (!is.null(fill_manual)) {
     plot <- plot + scale_fill_manual(values = fill_manual) 

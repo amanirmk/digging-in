@@ -1,7 +1,7 @@
 by_item_condition_average <- function(df, resolution = "ignore", y_var = "RT", x_var = "word_index", ignore_contrasts = NULL) {
   stopifnot(resolution %in% c("ignore", "average", "separate"))
   stopifnot(y_var %in% names(df))
-  stopifnot(x_var %in% c("word_index", "critical_relative", "final_relative", "region"))
+  stopifnot(x_var %in% c("word_index", "critical_relative", "final_relative", "region", "critrel_group"))
   # ignore contrasts is a vector of condition names to ignore when averaging
   stopifnot(is.null(ignore_contrasts) || all(ignore_contrasts %in% c("ambiguity", "length", "finality")))
 

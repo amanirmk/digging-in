@@ -39,7 +39,7 @@ for (finality in c("all", "final", "nonfinal")) {
     y_max = 1100,
     y_lab = "Response Time (ms)",
     x_lab = "Sentence Region",
-    title = paste0("Empirical RTs by Sentence Region (", figure_suffix, " items)"),
+    title = paste0("Empirical RTs by Sentence Region (", figure_suffix, " conditions)"),
     width = 6,
     height = 4,
     figure_path = here("analysis_outputs", "npz_spr_figs", "region_lineplots", paste0("rt_by_region_", figure_suffix, img_filetype))
@@ -83,7 +83,7 @@ for (finality in c("all", "final", "nonfinal")) {
     y_max = 30,
     y_lab = "Surprisal (bits)",
     x_lab = "Sentence Region",
-    title = paste0("LLM Surprisal by Sentence Region (", figure_suffix, " items)"),
+    title = paste0("LLM Surprisal by Sentence Region (", figure_suffix, " conditions)"),
     width = 6,
     height = 4,
     figure_path = here("analysis_outputs", "npz_spr_figs", "region_lineplots", paste0("surprisal_by_region_", figure_suffix, img_filetype))
@@ -127,7 +127,7 @@ for (finality in c("all", "final", "nonfinal")) {
     y_max = 550,
     y_lab = "Response Time (ms)",
     x_lab = "Sentence Region",
-    title = paste0("Predicted RTs by Sentence Region (", figure_suffix, " items)"),
+    title = paste0("Predicted RTs by Sentence Region (", figure_suffix, " conditions)"),
     width = 6,
     height = 4,
     figure_path = here("analysis_outputs", "npz_spr_figs", "region_lineplots", paste0("pred_rt_by_region_", figure_suffix, img_filetype))
@@ -173,7 +173,7 @@ for (finality in c("all", "final", "nonfinal")) {
     y_max = 600,
     y_lab = "Residual Response Time (ms)",
     x_lab = "Sentence Region",
-    title = paste0("Residual RTs by Sentence Region (", figure_suffix, " items)"),
+    title = paste0("Residual RTs by Sentence Region (", figure_suffix, " conditions)"),
     width = 6,
     height = 4,
     figure_path = here("analysis_outputs", "npz_spr_figs", "region_lineplots", paste0("resid_rt_by_region_", figure_suffix, img_filetype))

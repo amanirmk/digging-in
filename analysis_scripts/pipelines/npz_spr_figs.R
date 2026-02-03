@@ -4,7 +4,7 @@ library(ggpattern)
 library(lme4)
 library(lmerTest)
 
-img_filetype <- ".png"
+img_filetype <- ".pdf"
 
 # Load data
 source(here("analysis_scripts", "functions", "load_npz_data.R"))
@@ -25,7 +25,7 @@ pred_data <- pred_data %>% filter(word_index >= 2)
 source(here("analysis_scripts", "functions", "by_item.R"))
 source(here("analysis_scripts", "functions", "code_npz_data.R"))
 source(here("analysis_scripts", "functions", "comprehension_filter.R"))
-source(here("analysis_scripts", "functions", "combine_critical_onward.R"))
+source(here("analysis_scripts", "functions", "combine.R"))
 
 # Line plots
 source(here("analysis_scripts", "functions", "line_plot.R"))

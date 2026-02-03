@@ -24,7 +24,7 @@ pred_data <- pred_data %>% filter(word_index >= 2)
 source(here("analysis_scripts", "functions", "by_item.R"))
 source(here("analysis_scripts", "functions", "code_npz_data.R"))
 source(here("analysis_scripts", "functions", "comprehension_filter.R"))
-source(here("analysis_scripts", "functions", "combine_critical_onward.R"))
+source(here("analysis_scripts", "functions", "combine.R"))
 
 # Statistics
 source(here("analysis_scripts", "functions", "run_brms.R"))

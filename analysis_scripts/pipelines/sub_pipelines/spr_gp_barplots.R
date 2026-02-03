@@ -1,4 +1,4 @@
-# EXPECTS human_data, model_data, pred_data, img_filetype, combine_critical_onward.R, bar_plot.R, by_item.R, comprehension_filter.R to be loaded already
+# EXPECTS human_data, model_data, pred_data, img_filetype, combine.R, bar_plot.R, by_item.R, comprehension_filter.R to be loaded already
 
 for (finality in c("all", "final", "nonfinal")) {
   if (finality == "all") {
@@ -36,13 +36,14 @@ for (finality in c("all", "final", "nonfinal")) {
       fill_manual = c("short" = "#00BFC4", "long" = "#F8766D"),
       y_var = "RT",
       x_var = "length",
-      y_min = -20,
-      y_max = 300,
+      y_min = -3,
+      y_max = 210,
       y_lab = "Mean GP (ms)",
       x_lab = "Length",
-      title = paste0("Critical + ", critrel, " (", figure_suffix, " items)"),
-      width = 3,
-      height = 3,
+      title = paste0("Critical + ", critrel, " (", figure_suffix, ")"),
+      width = 2.5,
+      height = 4.5,
+      manual_ybreaks = c(0, 50, 100, 150, 200),
       figure_path = here("analysis_outputs", "npz_spr_figs", "gp_bars", paste0("empirical_gp_bar_", figure_suffix, "_", critrel, img_filetype)),
       legend_position = "none"
     )
@@ -89,9 +90,10 @@ for (finality in c("all", "final", "nonfinal")) {
       y_max = 10,
       y_lab = "Mean GP (bits)",
       x_lab = "Length",
-      title = paste0("Critical + ", critrel, " (", figure_suffix, " items)"),
-      width = 3,
-      height = 3,
+      title = paste0("Critical + ", critrel, " (", figure_suffix, ")"),
+      width = 2.5,
+      height = 2.5,
+      manual_ybreaks = c(0, 4, 8),
       figure_path = here("analysis_outputs", "npz_spr_figs", "gp_bars", paste0("surprisal_gp_bar_", figure_suffix, "_", critrel, img_filetype)),
       legend_position = "none"
     )
@@ -134,13 +136,14 @@ for (finality in c("all", "final", "nonfinal")) {
       fill_manual = c("short" = "#18999D", "long" = "#C66059"),
       y_var = "RT",
       x_var = "length",
-      y_min = -5,
-      y_max = 25,
+      y_min = -10,
+      y_max = 55,
       y_lab = "Mean GP (ms)",
       x_lab = "Length",
-      title = paste0("Critical + ", critrel, " (", figure_suffix, " items)"),
-      width = 3,
-      height = 3,
+      title = paste0("Critical + ", critrel, " (", figure_suffix, ")"),
+      width = 2.5,
+      height = 1.9,
+      manual_ybreaks = c(0, 50),
       figure_path = here("analysis_outputs", "npz_spr_figs", "gp_bars", paste0("predicted_gp_bar_", figure_suffix, "_", critrel, img_filetype)),
       legend_position = "none"
     )
@@ -189,14 +192,49 @@ for (finality in c("all", "final", "nonfinal")) {
       y_max = 300,
       y_lab = "Mean GP (ms)",
       x_lab = "Length",
-      title = paste0("Critical + ", critrel, " (", figure_suffix, " items)"),
-      width = 3,
-      height = 3,
+      title = paste0("Critical + ", critrel, " (", figure_suffix, ")"),
+      width = 2.5,
+      height = 2.5,
       figure_path = here("analysis_outputs", "npz_spr_figs", "gp_bars", paste0("residual_gp_bar_", figure_suffix, "_", critrel, img_filetype)),
       legend_position = "none"
     )
   }
 }
+
+# Critical and spill for non-final
+
+plot_data <- human_data %>%
+  # only critical items
+  filter(item_category == "critical") %>%
+  # non-final only
+  filter(finality == "nonfinal") %>%
+  # filter for comprehension question accuracy
+  comprehension_filter(type="spr") %>%
+  # combine critical-onward
+  combine_critical_onward(to_crit_plus=2) %>%
+  # average by item and condition, average resolution (combines unambiguous levels)
+  by_item_condition_average(resolution = "average", y_var = "RT", x_var = "critical_relative", ignore_contrasts = if (finality == "all") c("finality") else NULL) %>%
+  filter(critical_relative == 0) %>%
+  # get error bars for condition means over items
+  over_item_difference_average(y_var = "RT", x_var = "critical_relative") %>%
+  code_npz_data()
+
+bar_plot(plot_data,
+  grouping = "length",
+  fill = "length",
+  fill_manual = c("short" = "#00BFC4", "long" = "#F8766D"),
+  y_var = "RT",
+  x_var = "length",
+  y_min = -20,
+  y_max = 300,
+  y_lab = "Mean GP (ms)",
+  x_lab = "Length",
+  title = paste0("Mean Critical+[0-2]"),
+  width = 2.5,
+  height = 2.5,
+  figure_path = here("analysis_outputs", "npz_spr_figs", "gp_bars", paste0("empirical_gp_bar_nonfinal_crit_thru_spill", img_filetype)),
+  legend_position = "none"
+)
 
 # Critical-onward version for non-final
 
@@ -222,13 +260,13 @@ bar_plot(plot_data,
   fill_manual = c("short" = "#00BFC4", "long" = "#F8766D"),
   y_var = "RT",
   x_var = "length",
-  y_min = -50,
-  y_max = 800,
+  y_min = -20,
+  y_max = 300,
   y_lab = "Mean GP (ms)",
   x_lab = "Length",
   title = paste0("Critical-Onward (nonfinal)"),
-  width = 3,
-  height = 3,
+  width = 2.5,
+  height = 2.5,
   figure_path = here("analysis_outputs", "npz_spr_figs", "gp_bars", paste0("empirical_gp_bar_nonfinal_critonward", img_filetype)),
   legend_position = "none"
 )
