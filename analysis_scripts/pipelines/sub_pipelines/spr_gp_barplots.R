@@ -1,4 +1,3 @@
-# EXPECTS human_data, model_data, pred_data, img_filetype, combine.R, bar_plot.R, by_item.R, comprehension_filter.R to be loaded already
 
 for (finality in c("all", "final", "nonfinal")) {
   if (finality == "all") {
@@ -50,7 +49,7 @@ for (finality in c("all", "final", "nonfinal")) {
   }
 }
 
-# Duplicate of above for surprisal data
+# for surprisal data
 
 for (finality in c("all", "final", "nonfinal")) {
   if (finality == "all") {
@@ -100,7 +99,7 @@ for (finality in c("all", "final", "nonfinal")) {
   }
 }
 
-# Duplicate of above for predicted RT data
+# for predicted RT data
 
 for (finality in c("all", "final", "nonfinal")) {
   if (finality == "all") {
@@ -150,7 +149,7 @@ for (finality in c("all", "final", "nonfinal")) {
   }
 }
 
-# Duplicate of above for residual RT data
+# for residual RT data
 
 for (finality in c("all", "final", "nonfinal")) {
   if (finality == "all") {
@@ -201,7 +200,7 @@ for (finality in c("all", "final", "nonfinal")) {
   }
 }
 
-# Critical and spill for non-final
+# critical and spill for nonfinal
 
 plot_data <- human_data %>%
   # only critical items
@@ -236,7 +235,7 @@ bar_plot(plot_data,
   legend_position = "none"
 )
 
-# Critical-onward version for non-final
+# critical-onward version for nonfinal
 
 plot_data <- human_data %>%
   # only critical items

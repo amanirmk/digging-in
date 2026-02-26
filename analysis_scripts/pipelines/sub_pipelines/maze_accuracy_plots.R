@@ -1,4 +1,3 @@
-# EXPECTS human_data, img_filetype, bar_plot.R, line_plot.R, by_item.R to be loaded already
 
 for (finality in c("all", "final", "nonfinal")) {
   if (finality == "all") {

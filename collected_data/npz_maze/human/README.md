@@ -16,12 +16,12 @@ CSV column descriptions:
 - `alt (str)`: The alternative choice for the word in the Maze task, including any attached punctuation.
 - `RT (int)`: The initial time to select a word (whether correct or incorrect), in milliseconds.
 - `correct (int/bool)`: Whether the initial word selection was correct (1 or 0).
-- `word_log_freq (float)`: The log-frequency of the word in base 2 (bits), from `wordfreq` (cite). Lower-bounded at 1 per 100 million words.
+- `word_log_freq (float)`: The log-frequency of the word in base 2 (bits), from <tt>wordfreq</tt> (Speer, 2022). Lower-bounded at 1 per 100 million words.
 - `word_len (int)`: The length of the word in characters, including any attached punctuation.
 
-The `unfiltered.csv` file contains the above data without any filtering for participant attention or extreme values.
+The <tt>unfiltered.csv</tt> file contains the above data without any filtering for participant attention or extreme values.
 
-The `filtered.csv` file is the result of filtering for:
+The <tt>filtered.csv</tt> file is the result of filtering for:
 1. Excluding participants with <80% accuracy on words in filler items, excluding the first word in the sentence.
 2. Excluding trials (a complete sentence/item) containing any RTs less than 100ms or above 5000ms, excluding the first word in the sentence.
 

@@ -1,4 +1,23 @@
-bar_plot <- function(coded_data, grouping, fill, fill_manual, x_var, y_var, y_min, y_max, x_lab, y_lab, title, figure_path, width, height, legend_position = "bottom", facet_var = NULL, ncols = NULL, manual_ybreaks = NULL) {
+bar_plot <- function(
+  coded_data,
+  grouping,
+  fill,
+  fill_manual,
+  x_var,
+  y_var,
+  y_min,
+  y_max,
+  x_lab,
+  y_lab,
+  title,
+  figure_path,
+  width,
+  height,
+  legend_position = "bottom",
+  facet_var = NULL,
+  ncols = NULL,
+  manual_ybreaks = NULL
+) {
   stopifnot(x_var %in% names(coded_data))
   stopifnot(y_var %in% names(coded_data))
   stopifnot(fill %in% names(coded_data) || is.null(fill))
@@ -33,7 +52,27 @@ bar_plot <- function(coded_data, grouping, fill, fill_manual, x_var, y_var, y_mi
   ggsave(figure_path, plot = plot, width = width, height = height, create.dir = TRUE)
 }
 
-bar_plot_with_pattern <- function(coded_data, grouping, fill, fill_manual, pattern_var, pattern_manual, x_var, y_var, y_min, y_max, x_lab, y_lab, title, figure_path, width, height, legend_position = "bottom", facet_var = NULL, ncols = NULL) {
+bar_plot_with_pattern <- function(
+  coded_data,
+  grouping,
+  fill,
+  fill_manual,
+  pattern_var,
+  pattern_manual,
+  x_var,
+  y_var,
+  y_min,
+  y_max,
+  x_lab,
+  y_lab,
+  title,
+  figure_path,
+  width,
+  height,
+  legend_position = "bottom",
+  facet_var = NULL,
+  ncols = NULL
+) {
   stopifnot(x_var %in% names(coded_data))
   stopifnot(y_var %in% names(coded_data))
   stopifnot(fill %in% names(coded_data) || is.null(fill))

@@ -1,4 +1,10 @@
-by_item_condition_average <- function(df, resolution = "ignore", y_var = "RT", x_var = "word_index", ignore_contrasts = NULL) {
+by_item_condition_average <- function(
+  df,
+  resolution = "ignore",
+  y_var = "RT",
+  x_var = "word_index",
+  ignore_contrasts = NULL
+) {
   stopifnot(resolution %in% c("ignore", "average", "separate"))
   stopifnot(y_var %in% names(df))
   stopifnot(x_var %in% c("word_index", "critical_relative", "final_relative", "region", "critrel_group"))
@@ -45,7 +51,13 @@ by_item_condition_average <- function(df, resolution = "ignore", y_var = "RT", x
 # largely a duplicate of above, but takes two dataframes (human and predicted) and computes residuals, 
 # combining humans and llms separately at the level indicated by x_var
 
-resid_by_item_condition_average <- function(human_df, pred_df, resolution = "ignore", x_var = "word_index", ignore_contrasts = NULL) {
+resid_by_item_condition_average <- function(
+  human_df, 
+  pred_df,
+  resolution = "ignore",
+  x_var = "word_index",
+  ignore_contrasts = NULL
+) {
   y_var <- "RT"
   stopifnot(resolution %in% c("ignore", "average", "separate"))
   stopifnot(x_var %in% c("word_index", "critical_relative", "final_relative", "region"))
@@ -119,7 +131,12 @@ resid_by_item_condition_average <- function(human_df, pred_df, resolution = "ign
 }
 
 
-over_item_difference_average <- function(by_item_condition_df, y_var = "RT", x_var = "critical_relative", difference_var = "ambiguity") {
+over_item_difference_average <- function(
+  by_item_condition_df,
+  y_var = "RT",
+  x_var = "critical_relative",
+  difference_var = "ambiguity"
+) {
   stopifnot(difference_var %in% c("ambiguity", "length", "finality"))
   stopifnot(y_var %in% names(by_item_condition_df))
   stopifnot(x_var %in% c("word_index", "critical_relative", "final_relative", "region"))
@@ -154,7 +171,11 @@ over_item_difference_average <- function(by_item_condition_df, y_var = "RT", x_v
   return(summary_df)
 }
 
-over_item_average <- function(by_item_condition_df, y_var = "RT", x_var = "word_index") {
+over_item_average <- function(
+  by_item_condition_df,
+  y_var = "RT",
+  x_var = "word_index"
+) {
   stopifnot(y_var %in% names(by_item_condition_df))
   stopifnot(x_var %in% c("word_index", "critical_relative", "final_relative", "region"))
   stopifnot(x_var %in% names(by_item_condition_df))

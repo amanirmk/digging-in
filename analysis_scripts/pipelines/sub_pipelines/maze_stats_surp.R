@@ -1,4 +1,3 @@
-# EXPECTS model_data, by_item.R, run_brms.R to be loaded already
 
 # RESPONSE TIME
 

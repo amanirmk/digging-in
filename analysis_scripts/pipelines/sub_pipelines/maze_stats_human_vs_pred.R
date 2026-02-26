@@ -1,6 +1,5 @@
-# EXPECTS human_data, pred_data, by_item.R, comprehension_filter.R, combine.R, run_brms.R to be loaded already
 
- human <- human_data %>%
+human <- human_data %>%
   filter(item_category == "critical") %>%
   comprehension_filter(type="maze") %>%
   by_item_condition_average(resolution = "separate", y_var = "RT", x_var = "word_index")

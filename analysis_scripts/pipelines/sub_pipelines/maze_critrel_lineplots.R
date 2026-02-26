@@ -1,4 +1,3 @@
-# EXPECTS human_data, model_data, pred_data, img_filetype, line_plot.R, by_item.R, comprehension_filter.R to be loaded already
 
 for (finality in c("all", "final", "nonfinal")) {
   if (finality == "all") {
@@ -43,7 +42,7 @@ for (finality in c("all", "final", "nonfinal")) {
   )
 }
 
-# Duplicate of above for surprisal data
+# for surprisal data
 
 for (finality in c("all", "final", "nonfinal")) {
   if (finality == "all") {
@@ -86,7 +85,7 @@ for (finality in c("all", "final", "nonfinal")) {
   )
 }
 
-# Duplicate of above for predicted data
+# for predicted data
 
 for (finality in c("all", "final", "nonfinal")) {
   if (finality == "all") {
@@ -129,7 +128,7 @@ for (finality in c("all", "final", "nonfinal")) {
   )
 }
 
-# Duplicate of above for residual data
+# for residual data
 
 for (finality in c("all", "final", "nonfinal")) {
   if (finality == "all") {

@@ -1,5 +1,22 @@
 
-line_plot <- function(coded_data, grouping, linetype, linetype_manual, color, color_manual, x_var, y_var, y_min, y_max, x_lab, y_lab, title, figure_path, width, height) {
+line_plot <- function(
+  coded_data,
+  grouping,
+  linetype,
+  linetype_manual,
+  color,
+  color_manual,
+  x_var,
+  y_var,
+  y_min,
+  y_max,
+  x_lab,
+  y_lab,
+  title,
+  figure_path,
+  width,
+  height
+) {
   stopifnot(x_var %in% names(coded_data))
   stopifnot(y_var %in% names(coded_data))
   stopifnot(linetype %in% names(coded_data) || is.null(linetype))

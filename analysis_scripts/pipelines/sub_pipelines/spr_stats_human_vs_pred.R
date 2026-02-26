@@ -1,6 +1,5 @@
-# EXPECTS human_data, pred_data, by_item.R, comprehension_filter.R, combine.R, run_brms.R to be loaded already
 
- human <- human_data %>%
+human <- human_data %>%
   filter(item_category == "critical") %>%
   comprehension_filter(type="spr") %>%
   by_item_condition_average(resolution = "separate", y_var = "RT", x_var = "word_index")
@@ -100,17 +99,17 @@ pred <- pred_data %>%
 all <- human %>%
   left_join(pred, by = c("item_category", "item", "ambiguity", "length", "resolution", "finality", "critrel_group"), suffix = c("_human", "_pred"))
 
+# discard any after critical + 2, which is the last within critrel_group = 0
+all <- all %>% filter(critrel_group <= 0)
+
 dfs <- list()
 
 for (finality_type in c("all", "final", "nonfinal")) {
   for (resolution_type in c("all", "comma", "object")) {
-    for (region in c("all", "critical", "non-critical", "pre-critical", "post-critical")) {
+    for (region in c("all", "critical", "non-critical")) {
       for (ambiguity_type in c("all", "ambiguous", "unambiguous")) {
         for (length_type in c("all", "short", "long")) {
 
-          if (region == "post-critical" & finality_type == "final") {
-            next
-          }
           if (ambiguity_type == "ambiguous" & resolution_type != "all") {
             next
           }
@@ -129,10 +128,6 @@ for (finality_type in c("all", "final", "nonfinal")) {
             data <- data %>% filter(critrel_group == 0)
           } else if (region == "non-critical") {
             data <- data %>% filter(critrel_group != 0)
-          } else if (region == "pre-critical") {
-            data <- data %>% filter(critrel_group < 0)
-          } else if (region == "post-critical") {
-            data <- data %>% filter(critrel_group > 0)
           }
 
           if (ambiguity_type != "all") {

@@ -14,7 +14,12 @@ model_data <- data_list$model
 
 # Get predicted RTs
 source(here("analysis_scripts", "functions", "predict_rts.R"))
-pred_data <- predict_rts(human_data, model_data, make_figure = TRUE, figure_path = here("analysis_outputs", "npz_maze_figs", paste0("coefficients", img_filetype)))
+pred_data <- predict_rts(
+  human_data,
+  model_data,
+  make_figure = TRUE,
+  figure_path = here("analysis_outputs", "npz_maze_figs", paste0("coefficients", img_filetype))
+)
 
 # Make sure first two words are removed for all data to be consistent across datasets
 human_data <- human_data %>% filter(word_index >= 2)

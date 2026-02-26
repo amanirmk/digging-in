@@ -1,4 +1,3 @@
-# EXPECTS human_data, by_item.R, comprehension_filter.R, run_brms.R to be loaded already
 
 # RESPONSE TIME
 

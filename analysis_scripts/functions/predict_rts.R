@@ -1,4 +1,9 @@
-predict_rts <- function(human_data, model_data, make_figure = FALSE, figure_path = NULL) {
+predict_rts <- function(
+  human_data,
+  model_data,
+  make_figure = FALSE,
+  figure_path = NULL
+) {
   # average RT per word, only fully correct trials, excluding first and last words
   human_avg <- human_data %>%
     filter(item_category == "filler") %>%

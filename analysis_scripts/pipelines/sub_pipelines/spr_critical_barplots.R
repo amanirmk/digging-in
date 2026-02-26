@@ -1,4 +1,3 @@
-# EXPECTS human_data, model_data, pred_data, img_filetype, bar_plot.R, by_item.R, combine.R, comprehension_filter.R to be loaded already
 
 for (finality in c("all", "final", "nonfinal")) {
   if (finality == "all") {
@@ -253,7 +252,7 @@ for (finality in c("all", "final", "nonfinal")) {
   )
 }
 
-# Critical-onward 
+# critical-onward 
 
 plot_data <- human_data %>%
   # only critical items

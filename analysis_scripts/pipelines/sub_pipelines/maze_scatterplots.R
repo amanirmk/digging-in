@@ -1,4 +1,3 @@
-# EXPECTS human_data, pred_data, img_filetype, scatter_plot.R, by_item.R, comprehension_filter.R to be loaded already
 
 # ALL DATA
 

@@ -27,3 +27,5 @@ Example Item:
 - "When the family packed the vases made of porcelain *shattered* into many pieces." (ambiguous, long, nonfinal)
 - "When the family packed, the vases made of porcelain *shattered* into many pieces." (unambiguous with comma, long, nonfinal)
 - "When the family packed their belongings the vases made of porcelain *shattered* into many pieces." (unambiguous with object, long, nonfinal)
+
+*All items for this experiment can be found in <tt>stimuli.csv</tt>, including practice and filler items.*

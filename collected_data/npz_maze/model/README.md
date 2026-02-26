@@ -1,7 +1,7 @@
 ## Data collected from LLMs (Maze NP/Z)
 
 CSV column descriptions:
-- `item_category (str)`: The type of item. Only "critical" is included for LLMs.
+- `item_category (str)`: The type of item. Either "critical" or "filler" for LLMs.
 - `item (int)`: The integer id of the item (unique within same item category).
 - `ambiguity (str)`: Either "ambiguous" or "unambiguous". NA if not a critical item.
 - `length (str)`:  Either "short" or "long". NA if not a critical item.
@@ -12,7 +12,7 @@ CSV column descriptions:
 - `word (str)`: The actual word, including any attached punctuation.
 - `surprisal (float)`: The word's surprisal estimate from the LLM in base 2 (bits).
 
-Surprisal values were obtained using the `minicons` (Misra, 2022) interface to `transformers` library (Wolf et al., 2020). We prepend the stimuli with beginning-of-sentence tokens (unless the model automatically does so) to ensure the first token gets a surprisal value, and sum surprisals over subword tokens to get a single value per word.
+Surprisal values were obtained using the `minicons` (Misra, 2022) interface to `transformers` library (Wolf et al., 2020). We prepend the stimuli with beginning-of-sentence tokens (unless the model automatically does so) to ensure the first token gets a surprisal value, and sum surprisals over subword tokens to get a single value per word---including any punctuation.
 
 Filenames to transformer model names.
 - `gpt2-small.csv`: "openai-community/gpt2",

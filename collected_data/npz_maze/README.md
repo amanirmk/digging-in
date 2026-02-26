@@ -42,4 +42,4 @@ Example Item (Object, Nonfinal):
 - "As the detective investigated the case about the bank robbery *became* more complex." (ambiguous, long)
 - "As the detective investigated the suspects the case about the bank robbery *became* more complex." (unambiguous, long)
 
-*All items for this experiment can be found in `stimuli.csv`, including practice and filler items.*
+*All items for this experiment can be found in <tt>stimuli.csv</tt>, including practice and filler items.*

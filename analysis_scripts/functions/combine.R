@@ -1,4 +1,8 @@
-combine_critical_onward <- function(df, y_var = "RT", to_crit_plus = NULL) {
+combine_critical_onward <- function(
+  df,
+  y_var = "RT",
+  to_crit_plus = NULL
+) {
   stopifnot(y_var %in% names(df))
 
   # Select words to average
@@ -38,7 +42,11 @@ combine_critical_onward <- function(df, y_var = "RT", to_crit_plus = NULL) {
   return(modified_df)
 }
 
-combine_critrel_groups <- function(df, y_var = "RT", critrel_size = 3) {
+combine_critrel_groups <- function(
+  df,
+  y_var = "RT",
+  critrel_size = 3
+) {
   stopifnot(y_var %in% names(df))
 
   # Average RTs for each critical-relative group (defined by critrel_size)
