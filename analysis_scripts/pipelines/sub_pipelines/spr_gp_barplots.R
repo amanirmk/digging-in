@@ -25,8 +25,7 @@ for (finality in c("all", "final", "nonfinal")) {
 
   for (critrel in c(0, 1, 2)) {
     plot_data_subset <- plot_data %>% filter(critical_relative == critrel)
-    # if data is empty, skip
-    if (nrow(plot_data_subset) == 0) {
+    if (finality != "nonfinal" & critrel > 0) {
       next
     }
     bar_plot(plot_data_subset,
@@ -75,8 +74,7 @@ for (finality in c("all", "final", "nonfinal")) {
 
   for (critrel in c(0, 1, 2)) {
     plot_data_subset <- plot_data %>% filter(critical_relative == critrel)
-    # if data is empty, skip
-    if (nrow(plot_data_subset) == 0) {
+    if (finality != "nonfinal" & critrel > 0) {
       next
     }
     bar_plot(plot_data_subset,
@@ -125,8 +123,7 @@ for (finality in c("all", "final", "nonfinal")) {
 
   for (critrel in c(0, 1, 2)) {
     plot_data_subset <- plot_data %>% filter(critical_relative == critrel)
-    # if data is empty, skip
-    if (nrow(plot_data_subset) == 0) {
+    if (finality != "nonfinal" & critrel > 0) {
       next
     }
     bar_plot(plot_data_subset,
@@ -177,8 +174,7 @@ for (finality in c("all", "final", "nonfinal")) {
 
   for (critrel in c(0, 1, 2)) {
     plot_data_subset <- plot_data %>% filter(critical_relative == critrel)
-    # if data is empty, skip
-    if (nrow(plot_data_subset) == 0) {
+    if (finality != "nonfinal" & critrel > 0) {
       next
     }
     bar_plot(plot_data_subset,

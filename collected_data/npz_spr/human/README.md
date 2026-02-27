@@ -1,7 +1,7 @@
 ## Data collected from participants (SPR NP/Z)
 
 CSV column descriptions:
-- `participant (int)`: The integer id of the participant.
+- `participant (int)`: The integer id of the participant. These ids are by experiment; if you combine data across experiments, make sure to keep participants unique.
 - `item_category (str)`: The type of item. Can be "critical", "filler", or "practice".
 - `item (int)`: The integer id of the item (unique within same item category).
 - `ambiguity (str)`: Either "ambiguous" or "unambiguous". NA if not a critical item.
@@ -23,6 +23,6 @@ The <tt>unfiltered.csv</tt> file contains the above data without any filtering f
 
 The `filtered.csv` file is the result of filtering for:
 1. Excluding participants with <80% accuracy on comprehension questions for filler items.
-2. Excluding trials (a complete sentence/item) containing any RTs less than 100ms or above 5000ms.
+2. Excluding trials (a complete sentence/item) containing any RTs less than 100ms or above 5000ms, excluding the first word in the sentence.
 
 Additional filtering is applied depending on the analysis conducted.

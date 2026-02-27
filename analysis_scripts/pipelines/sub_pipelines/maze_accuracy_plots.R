@@ -125,7 +125,7 @@ for (finality in c("all", "final", "nonfinal")) {
     y_max = 1.05,
     y_lab = "Accuracy",
     x_lab = "Sentence Region",
-    title = paste("Accuracy by Sentence Region (", figure_suffix, " items)"),
+    title = paste0("Accuracy by Sentence Region (", figure_suffix, " items)"),
     width = 6,
     height = 4,
     figure_path = here("analysis_outputs", "npz_maze_figs", "accuracy", paste0("accuracy_by_region_", figure_suffix, img_filetype))
@@ -166,7 +166,7 @@ for (finality in c("all", "final", "nonfinal")) {
     y_max = 1.05,
     y_lab = "Accuracy",
     x_lab = "Critical-Relative Index",
-    title = paste("Accuracy by Critical-Relative Index (", figure_suffix, " items)"),
+    title = paste0("Accuracy by Critical-Relative Index (", figure_suffix, " items)"),
     width = 6,
     height = 4,
     figure_path = here("analysis_outputs", "npz_maze_figs", "accuracy", paste0("accuracy_by_critical_relative_", figure_suffix, img_filetype))

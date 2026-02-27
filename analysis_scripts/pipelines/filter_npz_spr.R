@@ -12,8 +12,9 @@ filler_accuracy <- df %>%
   summarise(accuracy = mean(correct)) %>%
   filter(accuracy >= 0.8)
 
-# Exclude trials with extreme RTs
+# Exclude trials with extreme RTs (excluding first word)
 valid_trials <- df %>%
+  filter(word_index > 0) %>%
   group_by(participant, item_category, item) %>%
   summarise(has_extreme = any(RT < 100 | RT > 5000), .groups = "drop") %>%
   filter(!has_extreme)

@@ -4,7 +4,7 @@ library(ggpattern)
 library(lme4)
 library(lmerTest)
 
-img_filetype <- ".pdf"
+img_filetype <- ".png"
 
 # Load data
 source(here("analysis_scripts", "functions", "load_npz_data.R"))

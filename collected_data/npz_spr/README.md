@@ -15,17 +15,17 @@ Within-Item Contrasts:
   - nonfinal: the critical disambiguating word (main verb) is followed by additional words.
 
 Example Item:
-- "When the family packed the vases *shattered*." (ambiguous, short, final)
-- "When the family packed, the vases *shattered*." (unambiguous with comma, short, final)
-- "When the family packed their belongings the vases *shattered*." (unambiguous with object, short, final)
-- "When the family packed the vases made of porcelain *shattered*. (ambiguous, long, final)
-- "When the family packed, the vases made of porcelain *shattered*." (unambiguous with comma, long, final)
-- "When the family packed their belongings the vases made of porcelain *shattered*." (unambiguous with object, long, final)
-- "When the family packed the vases *shattered* into many pieces." (ambiguous, short, nonfinal)
-- "When the family packed, the vases *shattered* into many pieces." (unambiguous with comma, short, nonfinal)
-- "When the family packed their belongings the vases *shattered* into many pieces." (unambiguous with object, short, nonfinal)
-- "When the family packed the vases made of porcelain *shattered* into many pieces." (ambiguous, long, nonfinal)
-- "When the family packed, the vases made of porcelain *shattered* into many pieces." (unambiguous with comma, long, nonfinal)
-- "When the family packed their belongings the vases made of porcelain *shattered* into many pieces." (unambiguous with object, long, nonfinal)
+- "Before the recruiters could adapt the policy *changed*." (ambiguous, short, final)
+- "Before the recruiters could adapt, the policy *changed*." (unambiguous with comma, short, final)
+- "Before the recruiters could adapt their strategies the policy *changed*." (unambiguous with object, short, final)
+- "Before the recruiters could adapt the policy for hiring *changed*. (ambiguous, long, final)
+- "Before the recruiters could adapt, the policy for hiring *changed*." (unambiguous with comma, long, final)
+- "Before the recruiters could adapt their strategies the policy for hiring *changed*." (unambiguous with object, long, final)
+- "Before the recruiters could adapt the policy *changed* for a second time." (ambiguous, short, nonfinal)
+- "Before the recruiters could adapt, the policy *changed* for a second time." (unambiguous with comma, short, nonfinal)
+- "Before the recruiters could adapt their strategies the policy *changed* for a second time." (unambiguous with object, short, nonfinal)
+- "Before the recruiters could adapt the policy for hiring *changed* for a second time." (ambiguous, long, nonfinal)
+- "Before the recruiters could adapt, the policy for hiring *changed* for a second time." (unambiguous with comma, long, nonfinal)
+- "Before the recruiters could adapt their strategies the policy for hiring *changed* for a second time." (unambiguous with object, long, nonfinal)
 
 *All items for this experiment can be found in <tt>stimuli.csv</tt>, including practice and filler items.*

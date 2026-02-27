@@ -35,7 +35,7 @@ for (finality in c("all", "final", "nonfinal")) {
     y_max = 2200,
     y_lab = "Response Time (ms)",
     x_lab = "Critical-Relative Index",
-    title = paste("Empirical RTs by Critical-Relative Index (", figure_suffix, " items)"),
+    title = paste0("Empirical RTs by Critical-Relative Index (", figure_suffix, " items)"),
     width = 6,
     height = 4,
     figure_path = here("analysis_outputs", "npz_maze_figs", "critrel_lineplots", paste0("rt_by_critical_relative_", figure_suffix, img_filetype))

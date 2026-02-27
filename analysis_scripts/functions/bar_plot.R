@@ -49,7 +49,7 @@ bar_plot <- function(
     }
   }
 
-  ggsave(figure_path, plot = plot, width = width, height = height, create.dir = TRUE)
+  ggsave(figure_path, plot = plot, width = width, height = height, dpi=600, create.dir = TRUE)
 }
 
 bar_plot_with_pattern <- function(
@@ -118,5 +118,5 @@ bar_plot_with_pattern <- function(
     }
   }
 
-  ggsave(figure_path, plot = plot, width = width, height = height, create.dir = TRUE)
+  ggsave(figure_path, plot = plot, width = width, height = height, dpi=600, create.dir = TRUE)
 }

@@ -111,9 +111,24 @@ predict_rts <- function(
         y = 'Estimate (ms/unit)',
         title = 'Regression Coefficient Densities'
       ) +
-      scale_fill_brewer(palette = "Pastel1")
+      scale_fill_brewer(palette = "Pastel1") + 
+      geom_point(aes(shape = "Annotation Info"), alpha = 0, size = 0, na.rm = TRUE) +
+      scale_shape_manual(
+        name = NULL,
+        values = c("Annotation Info" = NA),
+        labels = c("Annotation Info" = "Annotation indicates the\npercentage of models\nwith coefficients that are\nsignificant at alpha=0.05")
+      ) + 
+      guides(
+        fill = guide_legend(order = 1),
+        shape = guide_legend(
+          order = 2, 
+          override.aes = list(alpha = 0, size = 0),
+          keywidth = unit(0, 'cm'),
+          keyheight = unit(0, 'cm')
+        )
+      )
 
-    ggsave(figure_path, plot = plot, width = 8, height = 5, create.dir = TRUE)
+    ggsave(figure_path, plot = plot, width = 8, height = 5, dpi=600, create.dir = TRUE)
   }
 
   return(predicted_rt_data)

@@ -1,7 +1,7 @@
 ## Data collected from participants (Maze NP/Z)
 
 CSV column descriptions:
-- `participant (int)`: The integer id of the participant.
+- `participant (int)`: The integer id of the participant. These ids are by experiment; if you combine data across experiments, make sure to keep participants unique.
 - `item_category (str)`: The type of item. Can be "critical", "filler", or "practice".
 - `item (int)`: The integer id of the item (unique within same item category).
 - `ambiguity (str)`: Either "ambiguous" or "unambiguous". NA if not a critical item.

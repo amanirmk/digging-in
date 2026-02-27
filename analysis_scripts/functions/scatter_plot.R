@@ -137,5 +137,5 @@ scatter_plot <- function(
     }
   }
 
-  ggsave(figure_path, plot = plot, width = width, height = height, create.dir = TRUE)
+  ggsave(figure_path, plot = plot, width = width, height = height, dpi=600, create.dir = TRUE)
 }

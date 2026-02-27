@@ -40,5 +40,5 @@ line_plot <- function(
   if (!is.null(color_manual)) {
     plot <- plot + scale_color_manual(values = color_manual) 
   }
-  ggsave(figure_path, plot = plot, width = width, height = height, create.dir = TRUE)
+  ggsave(figure_path, plot = plot, width = width, height = height, dpi=600, create.dir = TRUE)
 }

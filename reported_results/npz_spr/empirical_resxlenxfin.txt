@@ -8,260 +8,260 @@
  Family: gaussian 
   Links: mu = identity; sigma = identity 
 Formula: RT ~ resolution * length * finality + (resolution * length * finality | participant) + (resolution * length * finality | item) 
-   Data: data (Number of observations: 2532) 
+   Data: data (Number of observations: 2535) 
   Draws: 5 chains, each with iter = 5000; warmup = 2500; thin = 1;
          total post-warmup draws = 12500
 
 Multilevel Hyperparameters:
 ~item (Number of levels: 36) 
                                                          Estimate Est.Error
-sd(Intercept)                                               63.23     11.01
-sd(resolution1)                                             22.04     10.69
-sd(length1)                                                 23.89     10.32
-sd(finality1)                                               30.53      9.90
-sd(resolution1:length1)                                     13.95      9.25
-sd(resolution1:finality1)                                   11.24      8.20
-sd(length1:finality1)                                       22.48      9.84
-sd(resolution1:length1:finality1)                           11.15      7.71
+sd(Intercept)                                               63.18     10.87
+sd(resolution1)                                             21.98     10.58
+sd(length1)                                                 23.86     10.33
+sd(finality1)                                               31.04      9.46
+sd(resolution1:length1)                                     14.06      9.20
+sd(resolution1:finality1)                                   11.50      8.18
+sd(length1:finality1)                                       22.30      9.75
+sd(resolution1:length1:finality1)                           10.70      7.65
 cor(Intercept,resolution1)                                   0.27      0.27
 cor(Intercept,length1)                                       0.21      0.26
-cor(resolution1,length1)                                    -0.08      0.30
-cor(Intercept,finality1)                                     0.43      0.23
-cor(resolution1,finality1)                                  -0.13      0.30
-cor(length1,finality1)                                       0.39      0.27
-cor(Intercept,resolution1:length1)                          -0.17      0.30
+cor(resolution1,length1)                                    -0.07      0.30
+cor(Intercept,finality1)                                     0.43      0.22
+cor(resolution1,finality1)                                  -0.14      0.29
+cor(length1,finality1)                                       0.39      0.26
+cor(Intercept,resolution1:length1)                          -0.17      0.31
 cor(resolution1,resolution1:length1)                        -0.01      0.32
 cor(length1,resolution1:length1)                            -0.08      0.32
 cor(finality1,resolution1:length1)                          -0.09      0.31
-cor(Intercept,resolution1:finality1)                         0.00      0.32
+cor(Intercept,resolution1:finality1)                        -0.00      0.31
 cor(resolution1,resolution1:finality1)                       0.06      0.33
-cor(length1,resolution1:finality1)                          -0.06      0.32
+cor(length1,resolution1:finality1)                          -0.06      0.33
 cor(finality1,resolution1:finality1)                         0.06      0.32
 cor(resolution1:length1,resolution1:finality1)               0.03      0.33
-cor(Intercept,length1:finality1)                             0.17      0.27
-cor(resolution1,length1:finality1)                          -0.12      0.31
-cor(length1,length1:finality1)                               0.28      0.30
-cor(finality1,length1:finality1)                             0.27      0.28
-cor(resolution1:length1,length1:finality1)                  -0.10      0.32
-cor(resolution1:finality1,length1:finality1)                -0.00      0.32
-cor(Intercept,resolution1:length1:finality1)                -0.10      0.31
-cor(resolution1,resolution1:length1:finality1)               0.13      0.33
-cor(length1,resolution1:length1:finality1)                  -0.11      0.32
-cor(finality1,resolution1:length1:finality1)                -0.20      0.32
+cor(Intercept,length1:finality1)                             0.17      0.26
+cor(resolution1,length1:finality1)                          -0.14      0.30
+cor(length1,length1:finality1)                               0.28      0.29
+cor(finality1,length1:finality1)                             0.28      0.28
+cor(resolution1:length1,length1:finality1)                  -0.09      0.32
+cor(resolution1:finality1,length1:finality1)                -0.01      0.32
+cor(Intercept,resolution1:length1:finality1)                -0.10      0.32
+cor(resolution1,resolution1:length1:finality1)               0.12      0.33
+cor(length1,resolution1:length1:finality1)                  -0.10      0.33
+cor(finality1,resolution1:length1:finality1)                -0.20      0.33
 cor(resolution1:length1,resolution1:length1:finality1)       0.05      0.33
 cor(resolution1:finality1,resolution1:length1:finality1)    -0.03      0.33
-cor(length1:finality1,resolution1:length1:finality1)        -0.03      0.32
+cor(length1:finality1,resolution1:length1:finality1)        -0.04      0.32
                                                          l-95% CI u-95% CI Rhat
-sd(Intercept)                                               43.91    86.94 1.00
-sd(resolution1)                                              2.12    43.74 1.00
-sd(length1)                                                  3.24    44.12 1.00
-sd(finality1)                                               10.61    50.65 1.00
-sd(resolution1:length1)                                      0.62    34.33 1.00
-sd(resolution1:finality1)                                    0.50    30.46 1.00
-sd(length1:finality1)                                        3.05    41.73 1.00
-sd(resolution1:length1:finality1)                            0.60    29.05 1.00
-cor(Intercept,resolution1)                                  -0.33     0.72 1.00
-cor(Intercept,length1)                                      -0.33     0.66 1.00
-cor(resolution1,length1)                                    -0.64     0.52 1.00
-cor(Intercept,finality1)                                    -0.06     0.80 1.00
-cor(resolution1,finality1)                                  -0.66     0.48 1.00
-cor(length1,finality1)                                      -0.23     0.81 1.00
-cor(Intercept,resolution1:length1)                          -0.70     0.47 1.00
-cor(resolution1,resolution1:length1)                        -0.62     0.60 1.00
+sd(Intercept)                                               44.08    87.15 1.00
+sd(resolution1)                                              1.85    42.31 1.00
+sd(length1)                                                  3.55    44.43 1.00
+sd(finality1)                                               12.96    50.20 1.00
+sd(resolution1:length1)                                      0.65    34.16 1.00
+sd(resolution1:finality1)                                    0.51    30.47 1.00
+sd(length1:finality1)                                        3.41    41.59 1.00
+sd(resolution1:length1:finality1)                            0.46    28.70 1.00
+cor(Intercept,resolution1)                                  -0.32     0.73 1.00
+cor(Intercept,length1)                                      -0.33     0.68 1.00
+cor(resolution1,length1)                                    -0.63     0.53 1.00
+cor(Intercept,finality1)                                    -0.05     0.80 1.00
+cor(resolution1,finality1)                                  -0.66     0.46 1.00
+cor(length1,finality1)                                      -0.21     0.81 1.00
+cor(Intercept,resolution1:length1)                          -0.72     0.48 1.00
+cor(resolution1,resolution1:length1)                        -0.62     0.61 1.00
 cor(length1,resolution1:length1)                            -0.67     0.55 1.00
-cor(finality1,resolution1:length1)                          -0.67     0.54 1.00
+cor(finality1,resolution1:length1)                          -0.66     0.54 1.00
 cor(Intercept,resolution1:finality1)                        -0.60     0.61 1.00
-cor(resolution1,resolution1:finality1)                      -0.58     0.66 1.00
-cor(length1,resolution1:finality1)                          -0.66     0.58 1.00
-cor(finality1,resolution1:finality1)                        -0.56     0.65 1.00
-cor(resolution1:length1,resolution1:finality1)              -0.61     0.65 1.00
-cor(Intercept,length1:finality1)                            -0.38     0.65 1.00
-cor(resolution1,length1:finality1)                          -0.68     0.49 1.00
-cor(length1,length1:finality1)                              -0.38     0.77 1.00
-cor(finality1,length1:finality1)                            -0.33     0.75 1.00
-cor(resolution1:length1,length1:finality1)                  -0.70     0.54 1.00
+cor(resolution1,resolution1:finality1)                      -0.59     0.65 1.00
+cor(length1,resolution1:finality1)                          -0.65     0.59 1.00
+cor(finality1,resolution1:finality1)                        -0.57     0.64 1.00
+cor(resolution1:length1,resolution1:finality1)              -0.60     0.64 1.00
+cor(Intercept,length1:finality1)                            -0.36     0.65 1.00
+cor(resolution1,length1:finality1)                          -0.69     0.47 1.00
+cor(length1,length1:finality1)                              -0.36     0.77 1.00
+cor(finality1,length1:finality1)                            -0.32     0.75 1.00
+cor(resolution1:length1,length1:finality1)                  -0.67     0.54 1.00
 cor(resolution1:finality1,length1:finality1)                -0.62     0.61 1.00
 cor(Intercept,resolution1:length1:finality1)                -0.68     0.53 1.00
-cor(resolution1,resolution1:length1:finality1)              -0.53     0.71 1.00
-cor(length1,resolution1:length1:finality1)                  -0.69     0.54 1.00
-cor(finality1,resolution1:length1:finality1)                -0.75     0.47 1.00
-cor(resolution1:length1,resolution1:length1:finality1)      -0.59     0.67 1.00
+cor(resolution1,resolution1:length1:finality1)              -0.55     0.71 1.00
+cor(length1,resolution1:length1:finality1)                  -0.69     0.56 1.00
+cor(finality1,resolution1:length1:finality1)                -0.75     0.50 1.00
+cor(resolution1:length1,resolution1:length1:finality1)      -0.59     0.66 1.00
 cor(resolution1:finality1,resolution1:length1:finality1)    -0.65     0.60 1.00
 cor(length1:finality1,resolution1:length1:finality1)        -0.64     0.59 1.00
                                                          Bulk_ESS Tail_ESS
-sd(Intercept)                                                4963     7716
-sd(resolution1)                                              2301     2968
-sd(length1)                                                  3051     2875
-sd(finality1)                                                2640     1644
-sd(resolution1:length1)                                      3671     5138
-sd(resolution1:finality1)                                    4310     5607
-sd(length1:finality1)                                        3886     3603
-sd(resolution1:length1:finality1)                            4700     6017
-cor(Intercept,resolution1)                                   7565     7302
-cor(Intercept,length1)                                       8658     7635
-cor(resolution1,length1)                                     5529     8309
-cor(Intercept,finality1)                                     5625     6178
-cor(resolution1,finality1)                                   4609     6397
-cor(length1,finality1)                                       5168     5465
-cor(Intercept,resolution1:length1)                          12966     9336
-cor(resolution1,resolution1:length1)                        10769     9841
-cor(length1,resolution1:length1)                            10699     9826
-cor(finality1,resolution1:length1)                          11924    10129
-cor(Intercept,resolution1:finality1)                        15143     9426
-cor(resolution1,resolution1:finality1)                      11400     9530
-cor(length1,resolution1:finality1)                          10028     9509
-cor(finality1,resolution1:finality1)                        12008     9864
-cor(resolution1:length1,resolution1:finality1)               9628    10057
-cor(Intercept,length1:finality1)                             9749     8490
-cor(resolution1,length1:finality1)                           6892     8087
-cor(length1,length1:finality1)                               6178     8319
-cor(finality1,length1:finality1)                             7879     8413
-cor(resolution1:length1,length1:finality1)                   7195     9331
-cor(resolution1:finality1,length1:finality1)                 8120     9771
-cor(Intercept,resolution1:length1:finality1)                14568     8920
-cor(resolution1,resolution1:length1:finality1)               8708     8104
-cor(length1,resolution1:length1:finality1)                  11427     9844
-cor(finality1,resolution1:length1:finality1)                10371     9931
-cor(resolution1:length1,resolution1:length1:finality1)      10193    10613
-cor(resolution1:finality1,resolution1:length1:finality1)     9161    10314
-cor(length1:finality1,resolution1:length1:finality1)        10936    10489
+sd(Intercept)                                                4917     7305
+sd(resolution1)                                              2340     2929
+sd(length1)                                                  2944     2810
+sd(finality1)                                                3900     4169
+sd(resolution1:length1)                                      2632     5362
+sd(resolution1:finality1)                                    4422     6581
+sd(length1:finality1)                                        3961     4710
+sd(resolution1:length1:finality1)                            4469     4933
+cor(Intercept,resolution1)                                   7036     7314
+cor(Intercept,length1)                                       9179     8851
+cor(resolution1,length1)                                     5834     8152
+cor(Intercept,finality1)                                     7787     9121
+cor(resolution1,finality1)                                   4727     6398
+cor(length1,finality1)                                       5714     6577
+cor(Intercept,resolution1:length1)                          12026     9247
+cor(resolution1,resolution1:length1)                        11535     9602
+cor(length1,resolution1:length1)                            10401     8979
+cor(finality1,resolution1:length1)                          11891     9940
+cor(Intercept,resolution1:finality1)                        13699     9118
+cor(resolution1,resolution1:finality1)                      11717     9405
+cor(length1,resolution1:finality1)                          10203     9562
+cor(finality1,resolution1:finality1)                        11917    10064
+cor(resolution1:length1,resolution1:finality1)              10019    10451
+cor(Intercept,length1:finality1)                            10114     8666
+cor(resolution1,length1:finality1)                           6787     8020
+cor(length1,length1:finality1)                               6591     7970
+cor(finality1,length1:finality1)                             7490     8000
+cor(resolution1:length1,length1:finality1)                   7569     8996
+cor(resolution1:finality1,length1:finality1)                 8675    10327
+cor(Intercept,resolution1:length1:finality1)                14069     9196
+cor(resolution1,resolution1:length1:finality1)               9572     9043
+cor(length1,resolution1:length1:finality1)                  11524     8706
+cor(finality1,resolution1:length1:finality1)                 9309     9434
+cor(resolution1:length1,resolution1:length1:finality1)       9479    10133
+cor(resolution1:finality1,resolution1:length1:finality1)     9787    10975
+cor(length1:finality1,resolution1:length1:finality1)        11174    10532
 
 ~participant (Number of levels: 225) 
                                                          Estimate Est.Error
-sd(Intercept)                                              233.01     12.60
-sd(resolution1)                                             74.99      8.24
-sd(length1)                                                 59.30      8.50
-sd(finality1)                                              107.79      8.45
-sd(resolution1:length1)                                     65.13      8.43
-sd(resolution1:finality1)                                   59.48      8.70
-sd(length1:finality1)                                       49.22      8.69
-sd(resolution1:length1:finality1)                           66.90      9.06
+sd(Intercept)                                              232.47     12.42
+sd(resolution1)                                             74.80      8.25
+sd(length1)                                                 58.94      8.67
+sd(finality1)                                              107.63      8.36
+sd(resolution1:length1)                                     65.37      8.61
+sd(resolution1:finality1)                                   59.66      8.81
+sd(length1:finality1)                                       49.68      8.69
+sd(resolution1:length1:finality1)                           67.67      8.86
 cor(Intercept,resolution1)                                   0.39      0.09
-cor(Intercept,length1)                                       0.38      0.11
-cor(resolution1,length1)                                    -0.06      0.15
-cor(Intercept,finality1)                                     0.37      0.08
-cor(resolution1,finality1)                                  -0.28      0.11
-cor(length1,finality1)                                       0.67      0.11
+cor(Intercept,length1)                                       0.39      0.11
+cor(resolution1,length1)                                    -0.05      0.15
+cor(Intercept,finality1)                                     0.38      0.08
+cor(resolution1,finality1)                                  -0.28      0.12
+cor(length1,finality1)                                       0.66      0.11
 cor(Intercept,resolution1:length1)                           0.03      0.11
 cor(resolution1,resolution1:length1)                         0.37      0.13
 cor(length1,resolution1:length1)                             0.43      0.15
 cor(finality1,resolution1:length1)                           0.32      0.12
-cor(Intercept,resolution1:finality1)                        -0.26      0.11
-cor(resolution1,resolution1:finality1)                       0.19      0.15
-cor(length1,resolution1:finality1)                           0.22      0.17
+cor(Intercept,resolution1:finality1)                        -0.25      0.11
+cor(resolution1,resolution1:finality1)                       0.18      0.15
+cor(length1,resolution1:finality1)                           0.22      0.18
 cor(finality1,resolution1:finality1)                         0.27      0.13
 cor(resolution1:length1,resolution1:finality1)               0.70      0.12
-cor(Intercept,length1:finality1)                             0.50      0.12
-cor(resolution1,length1:finality1)                           0.17      0.18
+cor(Intercept,length1:finality1)                             0.49      0.12
+cor(resolution1,length1:finality1)                           0.18      0.17
 cor(length1,length1:finality1)                               0.67      0.13
-cor(finality1,length1:finality1)                             0.42      0.14
-cor(resolution1:length1,length1:finality1)                   0.18      0.18
+cor(finality1,length1:finality1)                             0.43      0.14
+cor(resolution1:length1,length1:finality1)                   0.17      0.17
 cor(resolution1:finality1,length1:finality1)                -0.02      0.18
 cor(Intercept,resolution1:length1:finality1)                -0.05      0.11
-cor(resolution1,resolution1:length1:finality1)               0.47      0.13
+cor(resolution1,resolution1:length1:finality1)               0.48      0.13
 cor(length1,resolution1:length1:finality1)                   0.14      0.16
-cor(finality1,resolution1:length1:finality1)                 0.05      0.13
-cor(resolution1:length1,resolution1:length1:finality1)       0.57      0.13
-cor(resolution1:finality1,resolution1:length1:finality1)     0.38      0.16
-cor(length1:finality1,resolution1:length1:finality1)         0.35      0.17
+cor(finality1,resolution1:length1:finality1)                 0.06      0.13
+cor(resolution1:length1,resolution1:length1:finality1)       0.56      0.13
+cor(resolution1:finality1,resolution1:length1:finality1)     0.36      0.16
+cor(length1:finality1,resolution1:length1:finality1)         0.36      0.17
                                                          l-95% CI u-95% CI Rhat
-sd(Intercept)                                              209.32   259.15 1.00
-sd(resolution1)                                             59.13    91.52 1.00
-sd(length1)                                                 42.81    76.10 1.00
-sd(finality1)                                               91.55   125.10 1.00
-sd(resolution1:length1)                                     48.83    81.78 1.00
-sd(resolution1:finality1)                                   42.55    76.63 1.00
-sd(length1:finality1)                                       32.29    66.64 1.00
-sd(resolution1:length1:finality1)                           49.22    84.65 1.00
-cor(Intercept,resolution1)                                   0.20     0.56 1.00
-cor(Intercept,length1)                                       0.15     0.59 1.00
-cor(resolution1,length1)                                    -0.34     0.23 1.00
-cor(Intercept,finality1)                                     0.22     0.52 1.00
-cor(resolution1,finality1)                                  -0.49    -0.05 1.00
+sd(Intercept)                                              209.31   258.16 1.00
+sd(resolution1)                                             59.01    91.41 1.00
+sd(length1)                                                 42.00    76.14 1.00
+sd(finality1)                                               91.88   124.68 1.00
+sd(resolution1:length1)                                     48.84    82.41 1.00
+sd(resolution1:finality1)                                   42.35    76.85 1.00
+sd(length1:finality1)                                       32.57    66.73 1.00
+sd(resolution1:length1:finality1)                           50.28    84.81 1.00
+cor(Intercept,resolution1)                                   0.19     0.56 1.00
+cor(Intercept,length1)                                       0.17     0.60 1.00
+cor(resolution1,length1)                                    -0.34     0.25 1.00
+cor(Intercept,finality1)                                     0.22     0.53 1.00
+cor(resolution1,finality1)                                  -0.49    -0.04 1.00
 cor(length1,finality1)                                       0.44     0.86 1.00
-cor(Intercept,resolution1:length1)                          -0.19     0.24 1.00
-cor(resolution1,resolution1:length1)                         0.10     0.62 1.00
-cor(length1,resolution1:length1)                             0.11     0.69 1.00
+cor(Intercept,resolution1:length1)                          -0.18     0.25 1.00
+cor(resolution1,resolution1:length1)                         0.09     0.62 1.00
+cor(length1,resolution1:length1)                             0.10     0.70 1.00
 cor(finality1,resolution1:length1)                           0.06     0.55 1.00
 cor(Intercept,resolution1:finality1)                        -0.47    -0.03 1.00
-cor(resolution1,resolution1:finality1)                      -0.12     0.47 1.00
-cor(length1,resolution1:finality1)                          -0.13     0.55 1.00
-cor(finality1,resolution1:finality1)                        -0.00     0.52 1.00
+cor(resolution1,resolution1:finality1)                      -0.13     0.47 1.00
+cor(length1,resolution1:finality1)                          -0.14     0.55 1.00
+cor(finality1,resolution1:finality1)                        -0.01     0.52 1.00
 cor(resolution1:length1,resolution1:finality1)               0.44     0.89 1.00
 cor(Intercept,length1:finality1)                             0.25     0.72 1.00
-cor(resolution1,length1:finality1)                          -0.19     0.50 1.00
-cor(length1,length1:finality1)                               0.39     0.88 1.00
+cor(resolution1,length1:finality1)                          -0.17     0.51 1.00
+cor(length1,length1:finality1)                               0.38     0.88 1.00
 cor(finality1,length1:finality1)                             0.14     0.69 1.00
-cor(resolution1:length1,length1:finality1)                  -0.17     0.52 1.00
-cor(resolution1:finality1,length1:finality1)                -0.36     0.34 1.00
+cor(resolution1:length1,length1:finality1)                  -0.17     0.51 1.00
+cor(resolution1:finality1,length1:finality1)                -0.36     0.33 1.00
 cor(Intercept,resolution1:length1:finality1)                -0.27     0.16 1.00
-cor(resolution1,resolution1:length1:finality1)               0.19     0.70 1.00
+cor(resolution1,resolution1:length1:finality1)               0.20     0.71 1.00
 cor(length1,resolution1:length1:finality1)                  -0.18     0.45 1.00
-cor(finality1,resolution1:length1:finality1)                -0.20     0.30 1.00
-cor(resolution1:length1,resolution1:length1:finality1)       0.30     0.81 1.00
-cor(resolution1:finality1,resolution1:length1:finality1)     0.06     0.68 1.00
+cor(finality1,resolution1:length1:finality1)                -0.19     0.30 1.00
+cor(resolution1:length1,resolution1:length1:finality1)       0.27     0.80 1.00
+cor(resolution1:finality1,resolution1:length1:finality1)     0.05     0.67 1.00
 cor(length1:finality1,resolution1:length1:finality1)        -0.01     0.66 1.00
                                                          Bulk_ESS Tail_ESS
-sd(Intercept)                                                3110     5380
-sd(resolution1)                                              4667     7859
-sd(length1)                                                  4146     6372
-sd(finality1)                                                5353     8044
-sd(resolution1:length1)                                      4181     7448
-sd(resolution1:finality1)                                    3988     7153
-sd(length1:finality1)                                        3572     5463
-sd(resolution1:length1:finality1)                            3469     5523
-cor(Intercept,resolution1)                                   6666     8284
-cor(Intercept,length1)                                       7605     7743
-cor(resolution1,length1)                                     4239     6868
-cor(Intercept,finality1)                                     5892     9005
-cor(resolution1,finality1)                                   3420     5881
-cor(length1,finality1)                                       1778     3348
-cor(Intercept,resolution1:length1)                           8776     9338
-cor(resolution1,resolution1:length1)                         3220     6607
-cor(length1,resolution1:length1)                             3057     5968
-cor(finality1,resolution1:length1)                           6195     9043
-cor(Intercept,resolution1:finality1)                         8289     8476
-cor(resolution1,resolution1:finality1)                       3461     6023
-cor(length1,resolution1:finality1)                           2796     4979
-cor(finality1,resolution1:finality1)                         7235     9424
-cor(resolution1:length1,resolution1:finality1)               4721     8160
-cor(Intercept,length1:finality1)                             7898     8080
-cor(resolution1,length1:finality1)                           3470     6448
-cor(length1,length1:finality1)                               4045     7056
-cor(finality1,length1:finality1)                             6292     7758
-cor(resolution1:length1,length1:finality1)                   5833     8772
-cor(resolution1:finality1,length1:finality1)                 5587     9650
-cor(Intercept,resolution1:length1:finality1)                 7033     9320
-cor(resolution1,resolution1:length1:finality1)               2592     5237
-cor(length1,resolution1:length1:finality1)                   3389     6507
-cor(finality1,resolution1:length1:finality1)                 7234     9412
-cor(resolution1:length1,resolution1:length1:finality1)       3624     6910
-cor(resolution1:finality1,resolution1:length1:finality1)     3173     6378
-cor(length1:finality1,resolution1:length1:finality1)         4757     6922
+sd(Intercept)                                                2580     5250
+sd(resolution1)                                              5206     7473
+sd(length1)                                                  3933     6367
+sd(finality1)                                                5578     8320
+sd(resolution1:length1)                                      4230     7209
+sd(resolution1:finality1)                                    4330     6885
+sd(length1:finality1)                                        3425     5604
+sd(resolution1:length1:finality1)                            3705     6951
+cor(Intercept,resolution1)                                   7124     9111
+cor(Intercept,length1)                                       6799     8321
+cor(resolution1,length1)                                     3956     7089
+cor(Intercept,finality1)                                     6091     8725
+cor(resolution1,finality1)                                   2838     5378
+cor(length1,finality1)                                       1867     3913
+cor(Intercept,resolution1:length1)                           9420     9343
+cor(resolution1,resolution1:length1)                         3205     6154
+cor(length1,resolution1:length1)                             2755     5444
+cor(finality1,resolution1:length1)                           5445     8528
+cor(Intercept,resolution1:finality1)                         8546     8502
+cor(resolution1,resolution1:finality1)                       3368     6128
+cor(length1,resolution1:finality1)                           2416     5310
+cor(finality1,resolution1:finality1)                         6561     8745
+cor(resolution1:length1,resolution1:finality1)               5181     8792
+cor(Intercept,length1:finality1)                             7933     7417
+cor(resolution1,length1:finality1)                           2927     6261
+cor(length1,length1:finality1)                               3881     6401
+cor(finality1,length1:finality1)                             5970     7736
+cor(resolution1:length1,length1:finality1)                   5859     7502
+cor(resolution1:finality1,length1:finality1)                 5882     8212
+cor(Intercept,resolution1:length1:finality1)                 8116     9967
+cor(resolution1,resolution1:length1:finality1)               2140     4936
+cor(length1,resolution1:length1:finality1)                   2981     6104
+cor(finality1,resolution1:length1:finality1)                 6336     9327
+cor(resolution1:length1,resolution1:length1:finality1)       3392     6206
+cor(resolution1:finality1,resolution1:length1:finality1)     3501     6373
+cor(length1:finality1,resolution1:length1:finality1)         4707     7131
 
 Regression Coefficients:
                               Estimate Est.Error l-95% CI u-95% CI Rhat
-Intercept                       593.07     20.10   554.39   633.33 1.00
-resolution1                       8.79      8.63    -8.29    25.65 1.00
-length1                          36.28      8.18    20.36    52.40 1.00
-finality1                       104.09     10.73    83.46   125.27 1.00
-resolution1:length1               2.53      7.65   -12.53    17.58 1.00
-resolution1:finality1            -7.77      7.27   -22.19     6.34 1.00
-length1:finality1                23.12      7.83     7.92    38.65 1.00
-resolution1:length1:finality1    -5.85      7.41   -20.43     8.75 1.00
+Intercept                       591.00     19.69   552.58   629.79 1.00
+resolution1                       8.53      8.72    -8.35    25.75 1.00
+length1                          36.15      8.13    20.18    52.08 1.00
+finality1                       103.97     10.55    83.41   124.84 1.00
+resolution1:length1               2.75      7.62   -12.26    17.85 1.00
+resolution1:finality1            -7.67      7.34   -21.61     6.82 1.00
+length1:finality1                22.87      7.77     7.55    38.10 1.00
+resolution1:length1:finality1    -5.96      7.63   -20.78     8.97 1.00
                               Bulk_ESS Tail_ESS
-Intercept                         1982     3908
-resolution1                       5781     7579
-length1                           6881     8861
-finality1                         5551     7892
-resolution1:length1               8982     9596
-resolution1:finality1             8635     9091
-length1:finality1                 7787     8427
-resolution1:length1:finality1     8855     9220
+Intercept                         2103     4302
+resolution1                       6303     7947
+length1                           7651     9789
+finality1                         6046     8124
+resolution1:length1               9141     9729
+resolution1:finality1             9756     9235
+length1:finality1                 8444     9231
+resolution1:length1:finality1     9561     9794
 
 Further Distributional Parameters:
       Estimate Est.Error l-95% CI u-95% CI Rhat Bulk_ESS Tail_ESS
-sigma   271.09      5.51   260.45   281.98 1.00     3589     7708
+sigma   270.85      5.43   260.43   281.52 1.00     3579     7778
 
 Draws were sampled using sampling(NUTS). For each parameter, Bulk_ESS
 and Tail_ESS are effective sample size measures, and Rhat is the potential
@@ -270,22 +270,22 @@ Summary of Posterior Distribution
 
 Parameter                     | Median |           95% CI |     pd
 ------------------------------------------------------------------
-(Intercept)                   | 592.97 | [554.39, 633.33] |   100%
-resolution1                   |   8.90 | [ -8.29,  25.65] | 84.70%
-length1                       |  36.21 | [ 20.36,  52.40] |   100%
-finality1                     | 103.98 | [ 83.46, 125.27] |   100%
-resolution1:length1           |   2.39 | [-12.53,  17.58] | 62.56%
-resolution1:finality1         |  -7.66 | [-22.19,   6.34] | 86.12%
-length1:finality1             |  23.08 | [  7.92,  38.65] | 99.83%
-resolution1:length1:finality1 |  -5.79 | [-20.43,   8.75] | 78.43%
+(Intercept)                   | 590.98 | [552.58, 629.79] |   100%
+resolution1                   |   8.58 | [ -8.35,  25.75] | 83.93%
+length1                       |  36.09 | [ 20.18,  52.08] |   100%
+finality1                     | 103.92 | [ 83.41, 124.84] |   100%
+resolution1:length1           |   2.76 | [-12.26,  17.85] | 64.21%
+resolution1:finality1         |  -7.68 | [-21.61,   6.82] | 85.47%
+length1:finality1             |  22.88 | [  7.55,  38.10] | 99.81%
+resolution1:length1:finality1 |  -5.95 | [-20.78,   8.97] | 78.48%
 
-Parameter                     |            ROPE | % in ROPE |  Rhat |     ESS
------------------------------------------------------------------------------
-(Intercept)                   | [-42.72, 42.72] |        0% | 1.002 | 1972.00
-resolution1                   | [-42.72, 42.72] |      100% | 1.000 | 5766.00
-length1                       | [-42.72, 42.72] |    80.23% | 1.000 | 6827.00
-finality1                     | [-42.72, 42.72] |        0% | 1.000 | 5530.00
-resolution1:length1           | [-42.72, 42.72] |      100% | 1.001 | 8951.00
-resolution1:finality1         | [-42.72, 42.72] |      100% | 1.000 | 8607.00
-length1:finality1             | [-42.72, 42.72] |      100% | 1.001 | 7663.00
-resolution1:length1:finality1 | [-42.72, 42.72] |      100% | 1.000 | 8802.00
+Parameter                     |            ROPE | % in ROPE |  Rhat |  ESS
+--------------------------------------------------------------------------
+(Intercept)                   | [-42.70, 42.70] |        0% | 1.002 | 2087
+resolution1                   | [-42.70, 42.70] |      100% | 1.000 | 6265
+length1                       | [-42.70, 42.70] |    80.91% | 1.001 | 7566
+finality1                     | [-42.70, 42.70] |        0% | 1.001 | 5998
+resolution1:length1           | [-42.70, 42.70] |      100% | 1.000 | 9085
+resolution1:finality1         | [-42.70, 42.70] |      100% | 1.000 | 9647
+length1:finality1             | [-42.70, 42.70] |      100% | 1.000 | 8390
+resolution1:length1:finality1 | [-42.70, 42.70] |      100% | 1.000 | 9506
