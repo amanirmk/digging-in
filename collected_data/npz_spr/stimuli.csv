@@ -1,0 +1,473 @@
+item_category,item,ambiguity,length,resolution,finality,sentence,critical_word_index,final_word_index
+critical,1,ambiguous,long,,final,After the director finished filming the actors exhausted from the long day left.,12,12
+critical,1,ambiguous,short,,final,After the director finished filming the actors left.,7,7
+critical,1,unambiguous,long,comma,final,"After the director finished filming, the actors exhausted from the long day left.",12,12
+critical,1,unambiguous,short,comma,final,"After the director finished filming, the actors left.",7,7
+critical,1,unambiguous,long,object,final,After the director finished filming the final scene the actors exhausted from the long day left.,15,15
+critical,1,unambiguous,short,object,final,After the director finished filming the final scene the actors left.,10,10
+critical,1,ambiguous,long,,nonfinal,After the director finished filming the actors exhausted from the long day left to go home.,12,15
+critical,1,ambiguous,short,,nonfinal,After the director finished filming the actors left to go home.,7,10
+critical,1,unambiguous,long,comma,nonfinal,"After the director finished filming, the actors exhausted from the long day left to go home.",12,15
+critical,1,unambiguous,short,comma,nonfinal,"After the director finished filming, the actors left to go home.",7,10
+critical,1,unambiguous,long,object,nonfinal,After the director finished filming the final scene the actors exhausted from the long day left to go home.,15,18
+critical,1,unambiguous,short,object,nonfinal,After the director finished filming the final scene the actors left to go home.,10,13
+critical,2,ambiguous,long,,final,When the stern boss entered the office bustling with activity quieted.,10,10
+critical,2,ambiguous,short,,final,When the stern boss entered the office quieted.,7,7
+critical,2,unambiguous,long,comma,final,"When the stern boss entered, the office bustling with activity quieted.",10,10
+critical,2,unambiguous,short,comma,final,"When the stern boss entered, the office quieted.",7,7
+critical,2,unambiguous,long,object,final,When the stern boss entered the room the office bustling with activity quieted.,12,12
+critical,2,unambiguous,short,object,final,When the stern boss entered the room the office quieted.,9,9
+critical,2,ambiguous,long,,nonfinal,When the stern boss entered the office bustling with activity quieted down quickly.,10,12
+critical,2,ambiguous,short,,nonfinal,When the stern boss entered the office quieted down quickly.,7,9
+critical,2,unambiguous,long,comma,nonfinal,"When the stern boss entered, the office bustling with activity quieted down quickly.",10,12
+critical,2,unambiguous,short,comma,nonfinal,"When the stern boss entered, the office quieted down quickly.",7,9
+critical,2,unambiguous,long,object,nonfinal,When the stern boss entered the room the office bustling with activity quieted down quickly.,12,14
+critical,2,unambiguous,short,object,nonfinal,When the stern boss entered the room the office quieted down quickly.,9,11
+critical,3,ambiguous,long,,final,After the politician signed the bill increasing taxes passed.,8,8
+critical,3,ambiguous,short,,final,After the politician signed the bill passed.,6,6
+critical,3,unambiguous,long,comma,final,"After the politician signed, the bill increasing taxes passed.",8,8
+critical,3,unambiguous,short,comma,final,"After the politician signed, the bill passed.",6,6
+critical,3,unambiguous,long,object,final,After the politician signed the legislation the bill increasing taxes passed.,10,10
+critical,3,unambiguous,short,object,final,After the politician signed the legislation the bill passed.,8,8
+critical,3,ambiguous,long,,nonfinal,After the politician signed the bill increasing taxes passed unanimously without amendments.,8,11
+critical,3,ambiguous,short,,nonfinal,After the politician signed the bill passed unanimously without amendments.,6,9
+critical,3,unambiguous,long,comma,nonfinal,"After the politician signed, the bill increasing taxes passed unanimously without amendments.",8,11
+critical,3,unambiguous,short,comma,nonfinal,"After the politician signed, the bill passed unanimously without amendments.",6,9
+critical,3,unambiguous,long,object,nonfinal,After the politician signed the legislation the bill increasing taxes passed unanimously without amendments.,10,13
+critical,3,unambiguous,short,object,nonfinal,After the politician signed the legislation the bill passed unanimously without amendments.,8,11
+critical,4,ambiguous,long,,final,When the original members left the company that was recently acquired failed.,11,11
+critical,4,ambiguous,short,,final,When the original members left the company failed.,7,7
+critical,4,unambiguous,long,comma,final,"When the original members left, the company that was recently acquired failed.",11,11
+critical,4,unambiguous,short,comma,final,"When the original members left, the company failed.",7,7
+critical,4,unambiguous,long,object,final,When the original members left the engineering team the company that was recently acquired failed.,14,14
+critical,4,unambiguous,short,object,final,When the original members left the engineering team the company failed.,10,10
+critical,4,ambiguous,long,,nonfinal,When the original members left the company that was recently acquired failed to create a successful product.,11,16
+critical,4,ambiguous,short,,nonfinal,When the original members left the company failed to create a successful product.,7,12
+critical,4,unambiguous,long,comma,nonfinal,"When the original members left, the company that was recently acquired failed to create a successful product.",11,16
+critical,4,unambiguous,short,comma,nonfinal,"When the original members left, the company failed to create a successful product.",7,12
+critical,4,unambiguous,long,object,nonfinal,When the original members left the engineering team the company that was recently acquired failed to create a successful product.,14,19
+critical,4,unambiguous,short,object,nonfinal,When the original members left the engineering team the company failed to create a successful product.,10,15
+critical,5,ambiguous,long,,final,As the child showered the cat complaining loudly ran.,8,8
+critical,5,ambiguous,short,,final,As the child showered the cat ran.,6,6
+critical,5,unambiguous,long,comma,final,"As the child showered, the cat complaining loudly ran.",8,8
+critical,5,unambiguous,short,comma,final,"As the child showered, the cat ran.",6,6
+critical,5,unambiguous,long,object,final,As the child showered herself the cat complaining loudly ran.,9,9
+critical,5,unambiguous,short,object,final,As the child showered herself the cat ran.,7,7
+critical,5,ambiguous,long,,nonfinal,As the child showered the cat complaining loudly ran around the bathroom.,8,11
+critical,5,ambiguous,short,,nonfinal,As the child showered the cat ran around the bathroom.,6,9
+critical,5,unambiguous,long,comma,nonfinal,"As the child showered, the cat complaining loudly ran around the bathroom.",8,11
+critical,5,unambiguous,short,comma,nonfinal,"As the child showered, the cat ran around the bathroom.",6,9
+critical,5,unambiguous,long,object,nonfinal,As the child showered herself the cat complaining loudly ran around the bathroom.,9,12
+critical,5,unambiguous,short,object,nonfinal,As the child showered herself the cat ran around the bathroom.,7,10
+critical,6,ambiguous,long,,final,When the boy hid his toy from childhood fell.,8,8
+critical,6,ambiguous,short,,final,When the boy hid his toy fell.,6,6
+critical,6,unambiguous,long,comma,final,"When the boy hid, his toy from childhood fell.",8,8
+critical,6,unambiguous,short,comma,final,"When the boy hid, his toy fell.",6,6
+critical,6,unambiguous,long,object,final,When the boy hid himself his toy from childhood fell.,9,9
+critical,6,unambiguous,short,object,final,When the boy hid himself his toy fell.,7,7
+critical,6,ambiguous,long,,nonfinal,When the boy hid his toy from childhood fell off the table.,8,11
+critical,6,ambiguous,short,,nonfinal,When the boy hid his toy fell off the table.,6,9
+critical,6,unambiguous,long,comma,nonfinal,"When the boy hid, his toy from childhood fell off the table.",8,11
+critical,6,unambiguous,short,comma,nonfinal,"When the boy hid, his toy fell off the table.",6,9
+critical,6,unambiguous,long,object,nonfinal,When the boy hid himself his toy from childhood fell off the table.,9,12
+critical,6,unambiguous,short,object,nonfinal,When the boy hid himself his toy fell off the table.,7,10
+critical,7,ambiguous,long,,final,Whenever the wildlife documentary crew tries to film the bear hunting cautiously leaves.,12,12
+critical,7,ambiguous,short,,final,Whenever the wildlife documentary crew tries to film the bear leaves.,10,10
+critical,7,unambiguous,long,comma,final,"Whenever the wildlife documentary crew tries to film, the bear hunting cautiously leaves.",12,12
+critical,7,unambiguous,short,comma,final,"Whenever the wildlife documentary crew tries to film, the bear leaves.",10,10
+critical,7,unambiguous,long,object,final,Whenever the wildlife documentary crew tries to film a scene the bear hunting cautiously leaves.,14,14
+critical,7,unambiguous,short,object,final,Whenever the wildlife documentary crew tries to film a scene the bear leaves.,12,12
+critical,7,ambiguous,long,,nonfinal,Whenever the wildlife documentary crew tries to film the bear hunting cautiously leaves the area quickly.,12,15
+critical,7,ambiguous,short,,nonfinal,Whenever the wildlife documentary crew tries to film the bear leaves the area quickly.,10,13
+critical,7,unambiguous,long,comma,nonfinal,"Whenever the wildlife documentary crew tries to film, the bear hunting cautiously leaves the area quickly.",12,15
+critical,7,unambiguous,short,comma,nonfinal,"Whenever the wildlife documentary crew tries to film, the bear leaves the area quickly.",10,13
+critical,7,unambiguous,long,object,nonfinal,Whenever the wildlife documentary crew tries to film a scene the bear hunting cautiously leaves the area quickly.,14,17
+critical,7,unambiguous,short,object,nonfinal,Whenever the wildlife documentary crew tries to film a scene the bear leaves the area quickly.,12,15
+critical,8,ambiguous,long,,final,Since the company shut down their product line of streetwear disappeared.,10,10
+critical,8,ambiguous,short,,final,Since the company shut down their product line disappeared.,8,8
+critical,8,unambiguous,long,comma,final,"Since the company shut down, their product line of streetwear disappeared.",10,10
+critical,8,unambiguous,short,comma,final,"Since the company shut down, their product line disappeared.",8,8
+critical,8,unambiguous,long,object,final,Since the company shut down the clothing brand their product line of streetwear disappeared.,13,13
+critical,8,unambiguous,short,object,final,Since the company shut down the clothing brand their product line disappeared.,11,11
+critical,8,ambiguous,long,,nonfinal,Since the company shut down their product line of streetwear disappeared from the market.,10,13
+critical,8,ambiguous,short,,nonfinal,Since the company shut down their product line disappeared from the market.,8,11
+critical,8,unambiguous,long,comma,nonfinal,"Since the company shut down, their product line of streetwear disappeared from the market.",10,13
+critical,8,unambiguous,short,comma,nonfinal,"Since the company shut down, their product line disappeared from the market.",8,11
+critical,8,unambiguous,long,object,nonfinal,Since the company shut down the clothing brand their product line of streetwear disappeared from the market.,13,16
+critical,8,unambiguous,short,object,nonfinal,Since the company shut down the clothing brand their product line disappeared from the market.,11,14
+critical,9,ambiguous,long,,final,As the doctor lectured the student watching quietly listened.,8,8
+critical,9,ambiguous,short,,final,As the doctor lectured the student listened.,6,6
+critical,9,unambiguous,long,comma,final,"As the doctor lectured, the student watching quietly listened.",8,8
+critical,9,unambiguous,short,comma,final,"As the doctor lectured, the student listened.",6,6
+critical,9,unambiguous,long,object,final,As the doctor lectured the nurse the student watching quietly listened.,10,10
+critical,9,unambiguous,short,object,final,As the doctor lectured the nurse the student listened.,8,8
+critical,9,ambiguous,long,,nonfinal,As the doctor lectured the student watching quietly listened carefully for insightful tips.,8,12
+critical,9,ambiguous,short,,nonfinal,As the doctor lectured the student listened carefully for insightful tips.,6,10
+critical,9,unambiguous,long,comma,nonfinal,"As the doctor lectured, the student watching quietly listened carefully for insightful tips.",8,12
+critical,9,unambiguous,short,comma,nonfinal,"As the doctor lectured, the student listened carefully for insightful tips.",6,10
+critical,9,unambiguous,long,object,nonfinal,As the doctor lectured the nurse the student watching quietly listened carefully for insightful tips.,10,14
+critical,9,unambiguous,short,object,nonfinal,As the doctor lectured the nurse the student listened carefully for insightful tips.,8,12
+critical,10,ambiguous,long,,final,Because the bear attacked the campers barbecuing cheerfully fled.,8,8
+critical,10,ambiguous,short,,final,Because the bear attacked the campers fled.,6,6
+critical,10,unambiguous,long,comma,final,"Because the bear attacked, the campers barbecuing cheerfully fled.",8,8
+critical,10,unambiguous,short,comma,final,"Because the bear attacked, the campers fled.",6,6
+critical,10,unambiguous,long,object,final,Because the bear attacked the campground the campers barbecuing cheerfully fled.,10,10
+critical,10,unambiguous,short,object,final,Because the bear attacked the campground the campers fled.,8,8
+critical,10,ambiguous,long,,nonfinal,Because the bear attacked the campers barbecuing cheerfully fled in a panic.,8,11
+critical,10,ambiguous,short,,nonfinal,Because the bear attacked the campers fled in a panic.,6,9
+critical,10,unambiguous,long,comma,nonfinal,"Because the bear attacked, the campers barbecuing cheerfully fled in a panic.",8,11
+critical,10,unambiguous,short,comma,nonfinal,"Because the bear attacked, the campers fled in a panic.",6,9
+critical,10,unambiguous,long,object,nonfinal,Because the bear attacked the campground the campers barbecuing cheerfully fled in a panic.,10,13
+critical,10,unambiguous,short,object,nonfinal,Because the bear attacked the campground the campers fled in a panic.,8,11
+critical,11,ambiguous,long,,final,As the professor wrote the textbook on biology grew.,8,8
+critical,11,ambiguous,short,,final,As the professor wrote the textbook grew.,6,6
+critical,11,unambiguous,long,comma,final,"As the professor wrote, the textbook on biology grew.",8,8
+critical,11,unambiguous,short,comma,final,"As the professor wrote, the textbook grew.",6,6
+critical,11,unambiguous,long,object,final,As the professor wrote the new chapter the textbook on biology grew.,11,11
+critical,11,unambiguous,short,object,final,As the professor wrote the new chapter the textbook grew.,9,9
+critical,11,ambiguous,long,,nonfinal,As the professor wrote the textbook on biology grew much longer than expected.,8,12
+critical,11,ambiguous,short,,nonfinal,As the professor wrote the textbook grew much longer than expected.,6,10
+critical,11,unambiguous,long,comma,nonfinal,"As the professor wrote, the textbook on biology grew much longer than expected.",8,12
+critical,11,unambiguous,short,comma,nonfinal,"As the professor wrote, the textbook grew much longer than expected.",6,10
+critical,11,unambiguous,long,object,nonfinal,As the professor wrote the new chapter the textbook on biology grew much longer than expected.,11,15
+critical,11,unambiguous,short,object,nonfinal,As the professor wrote the new chapter the textbook grew much longer than expected.,9,13
+critical,12,ambiguous,long,,final,As the news channel broadcasted the message from the president spread.,10,10
+critical,12,ambiguous,short,,final,As the news channel broadcasted the message spread.,7,7
+critical,12,unambiguous,long,comma,final,"As the news channel broadcasted, the message from the president spread.",10,10
+critical,12,unambiguous,short,comma,final,"As the news channel broadcasted, the message spread.",7,7
+critical,12,unambiguous,long,object,final,As the news channel broadcasted the speech the message from the president spread.,12,12
+critical,12,unambiguous,short,object,final,As the news channel broadcasted the speech the message spread.,9,9
+critical,12,ambiguous,long,,nonfinal,As the news channel broadcasted the message from the president spread across the country.,10,13
+critical,12,ambiguous,short,,nonfinal,As the news channel broadcasted the message spread across the country.,7,10
+critical,12,unambiguous,long,comma,nonfinal,"As the news channel broadcasted, the message from the president spread across the country.",10,13
+critical,12,unambiguous,short,comma,nonfinal,"As the news channel broadcasted, the message spread across the country.",7,10
+critical,12,unambiguous,long,object,nonfinal,As the news channel broadcasted the speech the message from the president spread across the country.,12,15
+critical,12,unambiguous,short,object,nonfinal,As the news channel broadcasted the speech the message spread across the country.,9,12
+critical,13,ambiguous,long,,final,As the teenager drove the car for the family sputtered.,9,9
+critical,13,ambiguous,short,,final,As the teenager drove the car sputtered.,6,6
+critical,13,unambiguous,long,comma,final,"As the teenager drove, the car for the family sputtered.",9,9
+critical,13,unambiguous,short,comma,final,"As the teenager drove, the car sputtered.",6,6
+critical,13,unambiguous,long,object,final,As the teenager drove his friends the car for the family sputtered.,11,11
+critical,13,unambiguous,short,object,final,As the teenager drove his friends the car sputtered.,8,8
+critical,13,ambiguous,long,,nonfinal,As the teenager drove the car for the family sputtered to a halt.,9,12
+critical,13,ambiguous,short,,nonfinal,As the teenager drove the car sputtered to a halt.,6,9
+critical,13,unambiguous,long,comma,nonfinal,"As the teenager drove, the car for the family sputtered to a halt.",9,12
+critical,13,unambiguous,short,comma,nonfinal,"As the teenager drove, the car sputtered to a halt.",6,9
+critical,13,unambiguous,long,object,nonfinal,As the teenager drove his friends the car for the family sputtered to a halt.,11,14
+critical,13,unambiguous,short,object,nonfinal,As the teenager drove his friends the car sputtered to a halt.,8,11
+critical,14,ambiguous,long,,final,Before the recruiters could adapt the policy for hiring changed.,9,9
+critical,14,ambiguous,short,,final,Before the recruiters could adapt the policy changed.,7,7
+critical,14,unambiguous,long,comma,final,"Before the recruiters could adapt, the policy for hiring changed.",9,9
+critical,14,unambiguous,short,comma,final,"Before the recruiters could adapt, the policy changed.",7,7
+critical,14,unambiguous,long,object,final,Before the recruiters could adapt their strategies the policy for hiring changed.,11,11
+critical,14,unambiguous,short,object,final,Before the recruiters could adapt their strategies the policy changed.,9,9
+critical,14,ambiguous,long,,nonfinal,Before the recruiters could adapt the policy for hiring changed for a second time.,9,13
+critical,14,ambiguous,short,,nonfinal,Before the recruiters could adapt the policy changed for a second time.,7,11
+critical,14,unambiguous,long,comma,nonfinal,"Before the recruiters could adapt, the policy for hiring changed for a second time.",9,13
+critical,14,unambiguous,short,comma,nonfinal,"Before the recruiters could adapt, the policy changed for a second time.",7,11
+critical,14,unambiguous,long,object,nonfinal,Before the recruiters could adapt their strategies the policy for hiring changed for a second time.,11,15
+critical,14,unambiguous,short,object,nonfinal,Before the recruiters could adapt their strategies the policy changed for a second time.,9,13
+critical,15,ambiguous,long,,final,When the clumsy librarian tried to organize the stack of books leaning precariously toppled.,13,13
+critical,15,ambiguous,short,,final,When the clumsy librarian tried to organize the stack of books toppled.,11,11
+critical,15,unambiguous,long,comma,final,"When the clumsy librarian tried to organize, the stack of books leaning precariously toppled.",13,13
+critical,15,unambiguous,short,comma,final,"When the clumsy librarian tried to organize, the stack of books toppled.",11,11
+critical,15,unambiguous,long,object,final,When the clumsy librarian tried to organize the reading room the stack of books leaning precariously toppled.,16,16
+critical,15,unambiguous,short,object,final,When the clumsy librarian tried to organize the reading room the stack of books toppled.,14,14
+critical,15,ambiguous,long,,nonfinal,When the clumsy librarian tried to organize the stack of books leaning precariously toppled over onto the floor.,13,17
+critical,15,ambiguous,short,,nonfinal,When the clumsy librarian tried to organize the stack of books toppled over onto the floor.,11,15
+critical,15,unambiguous,long,comma,nonfinal,"When the clumsy librarian tried to organize, the stack of books leaning precariously toppled over onto the floor.",13,17
+critical,15,unambiguous,short,comma,nonfinal,"When the clumsy librarian tried to organize, the stack of books toppled over onto the floor.",11,15
+critical,15,unambiguous,long,object,nonfinal,When the clumsy librarian tried to organize the reading room the stack of books leaning precariously toppled over onto the floor.,16,20
+critical,15,unambiguous,short,object,nonfinal,When the clumsy librarian tried to organize the reading room the stack of books toppled over onto the floor.,14,18
+critical,16,ambiguous,long,,final,Because the majorette spun the baton made of steel flew.,9,9
+critical,16,ambiguous,short,,final,Because the majorette spun the baton flew.,6,6
+critical,16,unambiguous,long,comma,final,"Because the majorette spun, the baton made of steel flew.",9,9
+critical,16,unambiguous,short,comma,final,"Because the majorette spun, the baton flew.",6,6
+critical,16,unambiguous,long,object,final,Because the majorette spun herself the baton made of steel flew.,10,10
+critical,16,unambiguous,short,object,final,Because the majorette spun herself the baton flew.,7,7
+critical,16,ambiguous,long,,nonfinal,Because the majorette spun the baton made of steel flew from her hands.,9,12
+critical,16,ambiguous,short,,nonfinal,Because the majorette spun the baton flew from her hands.,6,9
+critical,16,unambiguous,long,comma,nonfinal,"Because the majorette spun, the baton made of steel flew from her hands.",9,12
+critical,16,unambiguous,short,comma,nonfinal,"Because the majorette spun, the baton flew from her hands.",6,9
+critical,16,unambiguous,long,object,nonfinal,Because the majorette spun herself the baton made of steel flew from her hands.,10,13
+critical,16,unambiguous,short,object,nonfinal,Because the majorette spun herself the baton flew from her hands.,7,10
+critical,17,ambiguous,long,,final,When the family packed the vases made of porcelain shattered.,9,9
+critical,17,ambiguous,short,,final,When the family packed the vases shattered.,6,6
+critical,17,unambiguous,long,comma,final,"When the family packed, the vases made of porcelain shattered.",9,9
+critical,17,unambiguous,short,comma,final,"When the family packed, the vases shattered.",6,6
+critical,17,unambiguous,long,object,final,When the family packed their belongings the vases made of porcelain shattered.,11,11
+critical,17,unambiguous,short,object,final,When the family packed their belongings the vases shattered.,8,8
+critical,17,ambiguous,long,,nonfinal,When the family packed the vases made of porcelain shattered into many pieces.,9,12
+critical,17,ambiguous,short,,nonfinal,When the family packed the vases shattered into many pieces.,6,9
+critical,17,unambiguous,long,comma,nonfinal,"When the family packed, the vases made of porcelain shattered into many pieces.",9,12
+critical,17,unambiguous,short,comma,nonfinal,"When the family packed, the vases shattered into many pieces.",6,9
+critical,17,unambiguous,long,object,nonfinal,When the family packed their belongings the vases made of porcelain shattered into many pieces.,11,14
+critical,17,unambiguous,short,object,nonfinal,When the family packed their belongings the vases shattered into many pieces.,8,11
+critical,18,ambiguous,long,,final,After the college shut down the parties in the fraternity stopped.,10,10
+critical,18,ambiguous,short,,final,After the college shut down the parties stopped.,7,7
+critical,18,unambiguous,long,comma,final,"After the college shut down, the parties in the fraternity stopped.",10,10
+critical,18,unambiguous,short,comma,final,"After the college shut down, the parties stopped.",7,7
+critical,18,unambiguous,long,object,final,After the college shut down the campus the parties in the fraternity stopped.,12,12
+critical,18,unambiguous,short,object,final,After the college shut down the campus the parties stopped.,9,9
+critical,18,ambiguous,long,,nonfinal,After the college shut down the parties in the fraternity stopped for the year.,10,13
+critical,18,ambiguous,short,,nonfinal,After the college shut down the parties stopped for the year.,7,10
+critical,18,unambiguous,long,comma,nonfinal,"After the college shut down, the parties in the fraternity stopped for the year.",10,13
+critical,18,unambiguous,short,comma,nonfinal,"After the college shut down, the parties stopped for the year.",7,10
+critical,18,unambiguous,long,object,nonfinal,After the college shut down the campus the parties in the fraternity stopped for the year.,12,15
+critical,18,unambiguous,short,object,nonfinal,After the college shut down the campus the parties stopped for the year.,9,12
+critical,19,ambiguous,long,,final,Once the contractor remodeled the house that was neglected transformed.,9,9
+critical,19,ambiguous,short,,final,Once the contractor remodeled the house transformed.,6,6
+critical,19,unambiguous,long,comma,final,"Once the contractor remodeled, the house that was neglected transformed.",9,9
+critical,19,unambiguous,short,comma,final,"Once the contractor remodeled, the house transformed.",6,6
+critical,19,unambiguous,long,object,final,Once the contractor remodeled the exterior the house that was neglected transformed.,11,11
+critical,19,unambiguous,short,object,final,Once the contractor remodeled the exterior the house transformed.,8,8
+critical,19,ambiguous,long,,nonfinal,Once the contractor remodeled the house that was neglected transformed into a modern masterpiece.,9,13
+critical,19,ambiguous,short,,nonfinal,Once the contractor remodeled the house transformed into a modern masterpiece.,6,10
+critical,19,unambiguous,long,comma,nonfinal,"Once the contractor remodeled, the house that was neglected transformed into a modern masterpiece.",9,13
+critical,19,unambiguous,short,comma,nonfinal,"Once the contractor remodeled, the house transformed into a modern masterpiece.",6,10
+critical,19,unambiguous,long,object,nonfinal,Once the contractor remodeled the exterior the house that was neglected transformed into a modern masterpiece.,11,15
+critical,19,unambiguous,short,object,nonfinal,Once the contractor remodeled the exterior the house transformed into a modern masterpiece.,8,12
+critical,20,ambiguous,long,,final,When the supervisor called the employees who were available gathered.,9,9
+critical,20,ambiguous,short,,final,When the supervisor called the employees gathered.,6,6
+critical,20,unambiguous,long,comma,final,"When the supervisor called, the employees who were available gathered.",9,9
+critical,20,unambiguous,short,comma,final,"When the supervisor called, the employees gathered.",6,6
+critical,20,unambiguous,long,object,final,When the supervisor called the team the employees who were available gathered.,11,11
+critical,20,unambiguous,short,object,final,When the supervisor called the team the employees gathered.,8,8
+critical,20,ambiguous,long,,nonfinal,When the supervisor called the employees who were available gathered in the meeting room.,9,13
+critical,20,ambiguous,short,,nonfinal,When the supervisor called the employees gathered in the meeting room.,6,10
+critical,20,unambiguous,long,comma,nonfinal,"When the supervisor called, the employees who were available gathered in the meeting room.",9,13
+critical,20,unambiguous,short,comma,nonfinal,"When the supervisor called, the employees gathered in the meeting room.",6,10
+critical,20,unambiguous,long,object,nonfinal,When the supervisor called the team the employees who were available gathered in the meeting room.,11,15
+critical,20,unambiguous,short,object,nonfinal,When the supervisor called the team the employees gathered in the meeting room.,8,12
+critical,21,ambiguous,long,,final,Once the detective investigated the politician accepting bribes resigned.,8,8
+critical,21,ambiguous,short,,final,Once the detective investigated the politician resigned.,6,6
+critical,21,unambiguous,long,comma,final,"Once the detective investigated, the politician accepting bribes resigned.",8,8
+critical,21,unambiguous,short,comma,final,"Once the detective investigated, the politician resigned.",6,6
+critical,21,unambiguous,long,object,final,Once the detective investigated him the politician accepting bribes resigned.,9,9
+critical,21,unambiguous,short,object,final,Once the detective investigated him the politician resigned.,7,7
+critical,21,ambiguous,long,,nonfinal,Once the detective investigated the politician accepting bribes resigned from office.,8,10
+critical,21,ambiguous,short,,nonfinal,Once the detective investigated the politician resigned from office.,6,8
+critical,21,unambiguous,long,comma,nonfinal,"Once the detective investigated, the politician accepting bribes resigned from office.",8,10
+critical,21,unambiguous,short,comma,nonfinal,"Once the detective investigated, the politician resigned from office.",6,8
+critical,21,unambiguous,long,object,nonfinal,Once the detective investigated him the politician accepting bribes resigned from office.,9,11
+critical,21,unambiguous,short,object,nonfinal,Once the detective investigated him the politician resigned from office.,7,9
+critical,22,ambiguous,long,,final,As the journalist recorded the demonstrators protesting angrily shouted.,8,8
+critical,22,ambiguous,short,,final,As the journalist recorded the demonstrators shouted.,6,6
+critical,22,unambiguous,long,comma,final,"As the journalist recorded, the demonstrators protesting angrily shouted.",8,8
+critical,22,unambiguous,short,comma,final,"As the journalist recorded, the demonstrators shouted.",6,6
+critical,22,unambiguous,long,object,final,As the journalist recorded the commotion the demonstrators protesting angrily shouted.,10,10
+critical,22,unambiguous,short,object,final,As the journalist recorded the commotion the demonstrators shouted.,8,8
+critical,22,ambiguous,long,,nonfinal,As the journalist recorded the demonstrators protesting angrily shouted to demand immediate change.,8,12
+critical,22,ambiguous,short,,nonfinal,As the journalist recorded the demonstrators shouted to demand immediate change.,6,10
+critical,22,unambiguous,long,comma,nonfinal,"As the journalist recorded, the demonstrators protesting angrily shouted to demand immediate change.",8,12
+critical,22,unambiguous,short,comma,nonfinal,"As the journalist recorded, the demonstrators shouted to demand immediate change.",6,10
+critical,22,unambiguous,long,object,nonfinal,As the journalist recorded the commotion the demonstrators protesting angrily shouted to demand immediate change.,10,14
+critical,22,unambiguous,short,object,nonfinal,As the journalist recorded the commotion the demonstrators shouted to demand immediate change.,8,12
+critical,23,ambiguous,long,,final,After the teacher finished grading the students studying engineering passed.,9,9
+critical,23,ambiguous,short,,final,After the teacher finished grading the students passed.,7,7
+critical,23,unambiguous,long,comma,final,"After the teacher finished grading, the students studying engineering passed.",9,9
+critical,23,unambiguous,short,comma,final,"After the teacher finished grading, the students passed.",7,7
+critical,23,unambiguous,long,object,final,After the teacher finished grading the final the students studying engineering passed.,11,11
+critical,23,unambiguous,short,object,final,After the teacher finished grading the final the students passed.,9,9
+critical,23,ambiguous,long,,nonfinal,After the teacher finished grading the students studying engineering passed the class.,9,11
+critical,23,ambiguous,short,,nonfinal,After the teacher finished grading the students passed the class.,7,9
+critical,23,unambiguous,long,comma,nonfinal,"After the teacher finished grading, the students studying engineering passed the class.",9,11
+critical,23,unambiguous,short,comma,nonfinal,"After the teacher finished grading, the students passed the class.",7,9
+critical,23,unambiguous,long,object,nonfinal,After the teacher finished grading the final the students studying engineering passed the class.,11,13
+critical,23,unambiguous,short,object,nonfinal,After the teacher finished grading the final the students passed the class.,9,11
+critical,24,ambiguous,long,,final,While the mechanic inspected the engine running on diesel hissed.,9,9
+critical,24,ambiguous,short,,final,While the mechanic inspected the engine hissed.,6,6
+critical,24,unambiguous,long,comma,final,"While the mechanic inspected, the engine running on diesel hissed.",9,9
+critical,24,unambiguous,short,comma,final,"While the mechanic inspected, the engine hissed.",6,6
+critical,24,unambiguous,long,object,final,While the mechanic inspected the vehicle the engine running on diesel hissed.,11,11
+critical,24,unambiguous,short,object,final,While the mechanic inspected the vehicle the engine hissed.,8,8
+critical,24,ambiguous,long,,nonfinal,While the mechanic inspected the engine running on diesel hissed as steam escaped.,9,12
+critical,24,ambiguous,short,,nonfinal,While the mechanic inspected the engine hissed as steam escaped.,6,9
+critical,24,unambiguous,long,comma,nonfinal,"While the mechanic inspected, the engine running on diesel hissed as steam escaped.",9,12
+critical,24,unambiguous,short,comma,nonfinal,"While the mechanic inspected, the engine hissed as steam escaped.",6,9
+critical,24,unambiguous,long,object,nonfinal,While the mechanic inspected the vehicle the engine running on diesel hissed as steam escaped.,11,14
+critical,24,unambiguous,short,object,nonfinal,While the mechanic inspected the vehicle the engine hissed as steam escaped.,8,11
+critical,25,ambiguous,long,,final,After the doctor left the patient with cardiac issues recovered.,9,9
+critical,25,ambiguous,short,,final,After the doctor left the patient recovered.,6,6
+critical,25,unambiguous,long,comma,final,"After the doctor left, the patient with cardiac issues recovered.",9,9
+critical,25,unambiguous,short,comma,final,"After the doctor left, the patient recovered.",6,6
+critical,25,unambiguous,long,object,final,After the doctor left the operating room the patient with cardiac issues recovered.,12,12
+critical,25,unambiguous,short,object,final,After the doctor left the operating room the patient recovered.,9,9
+critical,25,ambiguous,long,,nonfinal,After the doctor left the patient with cardiac issues recovered from the surgery.,9,12
+critical,25,ambiguous,short,,nonfinal,After the doctor left the patient recovered from the surgery.,6,9
+critical,25,unambiguous,long,comma,nonfinal,"After the doctor left, the patient with cardiac issues recovered from the surgery.",9,12
+critical,25,unambiguous,short,comma,nonfinal,"After the doctor left, the patient recovered from the surgery.",6,9
+critical,25,unambiguous,long,object,nonfinal,After the doctor left the operating room the patient with cardiac issues recovered from the surgery.,12,15
+critical,25,unambiguous,short,object,nonfinal,After the doctor left the operating room the patient recovered from the surgery.,9,12
+critical,26,ambiguous,long,,final,After the gardener watered the plants that were wilting revived.,9,9
+critical,26,ambiguous,short,,final,After the gardener watered the plants revived.,6,6
+critical,26,unambiguous,long,comma,final,"After the gardener watered, the plants that were wilting revived.",9,9
+critical,26,unambiguous,short,comma,final,"After the gardener watered, the plants revived.",6,6
+critical,26,unambiguous,long,object,final,After the gardener watered the flower bed the plants that were wilting revived.,12,12
+critical,26,unambiguous,short,object,final,After the gardener watered the flower bed the plants revived.,9,9
+critical,26,ambiguous,long,,nonfinal,After the gardener watered the plants that were wilting revived in the afternoon sun.,9,13
+critical,26,ambiguous,short,,nonfinal,After the gardener watered the plants revived in the afternoon sun.,6,10
+critical,26,unambiguous,long,comma,nonfinal,"After the gardener watered, the plants that were wilting revived in the afternoon sun.",9,13
+critical,26,unambiguous,short,comma,nonfinal,"After the gardener watered, the plants revived in the afternoon sun.",6,10
+critical,26,unambiguous,long,object,nonfinal,After the gardener watered the flower bed the plants that were wilting revived in the afternoon sun.,12,16
+critical,26,unambiguous,short,object,nonfinal,After the gardener watered the flower bed the plants revived in the afternoon sun.,9,13
+critical,27,ambiguous,long,,final,Because the employees mopped the bathroom downstairs sparkled.,7,7
+critical,27,ambiguous,short,,final,Because the employees mopped the bathroom sparkled.,6,6
+critical,27,unambiguous,long,comma,final,"Because the employees mopped, the bathroom downstairs sparkled.",7,7
+critical,27,unambiguous,short,comma,final,"Because the employees mopped, the bathroom sparkled.",6,6
+critical,27,unambiguous,long,object,final,Because the employees mopped the floor the bathroom downstairs sparkled.,9,9
+critical,27,unambiguous,short,object,final,Because the employees mopped the floor the bathroom sparkled.,8,8
+critical,27,ambiguous,long,,nonfinal,Because the employees mopped the bathroom downstairs sparkled brilliantly in the light.,7,11
+critical,27,ambiguous,short,,nonfinal,Because the employees mopped the bathroom sparkled brilliantly in the light.,6,10
+critical,27,unambiguous,long,comma,nonfinal,"Because the employees mopped, the bathroom downstairs sparkled brilliantly in the light.",7,11
+critical,27,unambiguous,short,comma,nonfinal,"Because the employees mopped, the bathroom sparkled brilliantly in the light.",6,10
+critical,27,unambiguous,long,object,nonfinal,Because the employees mopped the floor the bathroom downstairs sparkled brilliantly in the light.,9,13
+critical,27,unambiguous,short,object,nonfinal,Because the employees mopped the floor the bathroom sparkled brilliantly in the light.,8,12
+critical,28,ambiguous,long,,final,While the martial artists fought the spectator watching attentively cheered.,9,9
+critical,28,ambiguous,short,,final,While the martial artists fought the spectator cheered.,7,7
+critical,28,unambiguous,long,comma,final,"While the martial artists fought, the spectator watching attentively cheered.",9,9
+critical,28,unambiguous,short,comma,final,"While the martial artists fought, the spectator cheered.",7,7
+critical,28,unambiguous,long,object,final,While the martial artists fought each other the spectator watching attentively cheered.,11,11
+critical,28,unambiguous,short,object,final,While the martial artists fought each other the spectator cheered.,9,9
+critical,28,ambiguous,long,,nonfinal,While the martial artists fought the spectator watching attentively cheered for the underdog.,9,12
+critical,28,ambiguous,short,,nonfinal,While the martial artists fought the spectator cheered for the underdog.,7,10
+critical,28,unambiguous,long,comma,nonfinal,"While the martial artists fought, the spectator watching attentively cheered for the underdog.",9,12
+critical,28,unambiguous,short,comma,nonfinal,"While the martial artists fought, the spectator cheered for the underdog.",7,10
+critical,28,unambiguous,long,object,nonfinal,While the martial artists fought each other the spectator watching attentively cheered for the underdog.,11,14
+critical,28,unambiguous,short,object,nonfinal,While the martial artists fought each other the spectator cheered for the underdog.,9,12
+critical,29,ambiguous,long,,final,Before the fans notice the celebrity shopping discreetly flees.,8,8
+critical,29,ambiguous,short,,final,Before the fans notice the celebrity flees.,6,6
+critical,29,unambiguous,long,comma,final,"Before the fans notice, the celebrity shopping discreetly flees.",8,8
+critical,29,unambiguous,short,comma,final,"Before the fans notice, the celebrity flees.",6,6
+critical,29,unambiguous,long,object,final,Before the fans notice him the celebrity shopping discreetly flees.,9,9
+critical,29,unambiguous,short,object,final,Before the fans notice him the celebrity flees.,7,7
+critical,29,ambiguous,long,,nonfinal,Before the fans notice the celebrity shopping discreetly flees in his limousine.,8,11
+critical,29,ambiguous,short,,nonfinal,Before the fans notice the celebrity flees in his limousine.,6,9
+critical,29,unambiguous,long,comma,nonfinal,"Before the fans notice, the celebrity shopping discreetly flees in his limousine.",8,11
+critical,29,unambiguous,short,comma,nonfinal,"Before the fans notice, the celebrity flees in his limousine.",6,9
+critical,29,unambiguous,long,object,nonfinal,Before the fans notice him the celebrity shopping discreetly flees in his limousine.,9,12
+critical,29,unambiguous,short,object,nonfinal,Before the fans notice him the celebrity flees in his limousine.,7,10
+critical,30,ambiguous,long,,final,While the chef cooked the stew with vegetables simmered.,8,8
+critical,30,ambiguous,short,,final,While the chef cooked the stew simmered.,6,6
+critical,30,unambiguous,long,comma,final,"While the chef cooked, the stew with vegetables simmered.",8,8
+critical,30,unambiguous,short,comma,final,"While the chef cooked, the stew simmered.",6,6
+critical,30,unambiguous,long,object,final,While the chef cooked the main course the stew with vegetables simmered.,11,11
+critical,30,unambiguous,short,object,final,While the chef cooked the main course the stew simmered.,9,9
+critical,30,ambiguous,long,,nonfinal,While the chef cooked the stew with vegetables simmered on the back burner.,8,12
+critical,30,ambiguous,short,,nonfinal,While the chef cooked the stew simmered on the back burner.,6,10
+critical,30,unambiguous,long,comma,nonfinal,"While the chef cooked, the stew with vegetables simmered on the back burner.",8,12
+critical,30,unambiguous,short,comma,nonfinal,"While the chef cooked, the stew simmered on the back burner.",6,10
+critical,30,unambiguous,long,object,nonfinal,While the chef cooked the main course the stew with vegetables simmered on the back burner.,11,15
+critical,30,unambiguous,short,object,nonfinal,While the chef cooked the main course the stew simmered on the back burner.,9,13
+critical,31,ambiguous,long,,final,While the mom dressed the baby fidgeting restlessly cried.,8,8
+critical,31,ambiguous,short,,final,While the mom dressed the baby cried.,6,6
+critical,31,unambiguous,long,comma,final,"While the mom dressed, the baby fidgeting restlessly cried.",8,8
+critical,31,unambiguous,short,comma,final,"While the mom dressed, the baby cried.",6,6
+critical,31,unambiguous,long,object,final,While the mom dressed herself the baby fidgeting restlessly cried.,9,9
+critical,31,unambiguous,short,object,final,While the mom dressed herself the baby cried.,7,7
+critical,31,ambiguous,long,,nonfinal,While the mom dressed the baby fidgeting restlessly cried loudly in her crib.,8,12
+critical,31,ambiguous,short,,nonfinal,While the mom dressed the baby cried loudly in her crib.,6,10
+critical,31,unambiguous,long,comma,nonfinal,"While the mom dressed, the baby fidgeting restlessly cried loudly in her crib.",8,12
+critical,31,unambiguous,short,comma,nonfinal,"While the mom dressed, the baby cried loudly in her crib.",6,10
+critical,31,unambiguous,long,object,nonfinal,While the mom dressed herself the baby fidgeting restlessly cried loudly in her crib.,9,13
+critical,31,unambiguous,short,object,nonfinal,While the mom dressed herself the baby cried loudly in her crib.,7,11
+critical,32,ambiguous,long,,final,After the customer emailed the company providing phone service replied.,9,9
+critical,32,ambiguous,short,,final,After the customer emailed the company replied.,6,6
+critical,32,unambiguous,long,comma,final,"After the customer emailed, the company providing phone service replied.",9,9
+critical,32,unambiguous,short,comma,final,"After the customer emailed, the company replied.",6,6
+critical,32,unambiguous,long,object,final,After the customer emailed the help desk the company providing phone service replied.,12,12
+critical,32,unambiguous,short,object,final,After the customer emailed the help desk the company replied.,9,9
+critical,32,ambiguous,long,,nonfinal,After the customer emailed the company providing phone service replied within a few hours.,9,13
+critical,32,ambiguous,short,,nonfinal,After the customer emailed the company replied within a few hours.,6,10
+critical,32,unambiguous,long,comma,nonfinal,"After the customer emailed, the company providing phone service replied within a few hours.",9,13
+critical,32,unambiguous,short,comma,nonfinal,"After the customer emailed, the company replied within a few hours.",6,10
+critical,32,unambiguous,long,object,nonfinal,After the customer emailed the help desk the company providing phone service replied within a few hours.,12,16
+critical,32,unambiguous,short,object,nonfinal,After the customer emailed the help desk the company replied within a few hours.,9,13
+critical,33,ambiguous,long,,final,As the guest photographed the couple of newlyweds smiled.,8,8
+critical,33,ambiguous,short,,final,As the guest photographed the couple smiled.,6,6
+critical,33,unambiguous,long,comma,final,"As the guest photographed, the couple of newlyweds smiled.",8,8
+critical,33,unambiguous,short,comma,final,"As the guest photographed, the couple smiled.",6,6
+critical,33,unambiguous,long,object,final,As the guest photographed the ceremony the couple of newlyweds smiled.,10,10
+critical,33,unambiguous,short,object,final,As the guest photographed the ceremony the couple smiled.,8,8
+critical,33,ambiguous,long,,nonfinal,As the guest photographed the couple of newlyweds smiled for the camera.,8,11
+critical,33,ambiguous,short,,nonfinal,As the guest photographed the couple smiled for the camera.,6,9
+critical,33,unambiguous,long,comma,nonfinal,"As the guest photographed, the couple of newlyweds smiled for the camera.",8,11
+critical,33,unambiguous,short,comma,nonfinal,"As the guest photographed, the couple smiled for the camera.",6,9
+critical,33,unambiguous,long,object,nonfinal,As the guest photographed the ceremony the couple of newlyweds smiled for the camera.,10,13
+critical,33,unambiguous,short,object,nonfinal,As the guest photographed the ceremony the couple smiled for the camera.,8,11
+critical,34,ambiguous,long,,final,While the tailor was measuring the suit made of vintage tweed ripped.,11,11
+critical,34,ambiguous,short,,final,While the tailor was measuring the suit ripped.,7,7
+critical,34,unambiguous,long,comma,final,"While the tailor was measuring, the suit made of vintage tweed ripped.",11,11
+critical,34,unambiguous,short,comma,final,"While the tailor was measuring, the suit ripped.",7,7
+critical,34,unambiguous,long,object,final,While the tailor was measuring the client's inseam the suit made of vintage tweed ripped.,14,14
+critical,34,unambiguous,short,object,final,While the tailor was measuring the client's inseam the suit ripped.,10,10
+critical,34,ambiguous,long,,nonfinal,While the tailor was measuring the suit made of vintage tweed ripped along a weak seam.,11,15
+critical,34,ambiguous,short,,nonfinal,While the tailor was measuring the suit ripped along a weak seam.,7,11
+critical,34,unambiguous,long,comma,nonfinal,"While the tailor was measuring, the suit made of vintage tweed ripped along a weak seam.",11,15
+critical,34,unambiguous,short,comma,nonfinal,"While the tailor was measuring, the suit ripped along a weak seam.",7,11
+critical,34,unambiguous,long,object,nonfinal,While the tailor was measuring the client's inseam the suit made of vintage tweed ripped along a weak seam.,14,18
+critical,34,unambiguous,short,object,nonfinal,While the tailor was measuring the client's inseam the suit ripped along a weak seam.,10,14
+critical,35,ambiguous,long,,final,After our team won the tournament in basketball advanced.,8,8
+critical,35,ambiguous,short,,final,After our team won the tournament advanced.,6,6
+critical,35,unambiguous,long,comma,final,"After our team won, the tournament in basketball advanced.",8,8
+critical,35,unambiguous,short,comma,final,"After our team won, the tournament advanced.",6,6
+critical,35,unambiguous,long,object,final,After our team won the semifinals the tournament in basketball advanced.,10,10
+critical,35,unambiguous,short,object,final,After our team won the semifinals the tournament advanced.,8,8
+critical,35,ambiguous,long,,nonfinal,After our team won the tournament in basketball advanced to the final round.,8,12
+critical,35,ambiguous,short,,nonfinal,After our team won the tournament advanced to the final round.,6,10
+critical,35,unambiguous,long,comma,nonfinal,"After our team won, the tournament in basketball advanced to the final round.",8,12
+critical,35,unambiguous,short,comma,nonfinal,"After our team won, the tournament advanced to the final round.",6,10
+critical,35,unambiguous,long,object,nonfinal,After our team won the semifinals the tournament in basketball advanced to the final round.,10,14
+critical,35,unambiguous,short,object,nonfinal,After our team won the semifinals the tournament advanced to the final round.,8,12
+critical,36,ambiguous,long,,final,As the musician played the song of mourning crescendoed.,8,8
+critical,36,ambiguous,short,,final,As the musician played the song crescendoed.,6,6
+critical,36,unambiguous,long,comma,final,"As the musician played, the song of mourning crescendoed.",8,8
+critical,36,unambiguous,short,comma,final,"As the musician played, the song crescendoed.",6,6
+critical,36,unambiguous,long,object,final,As the musician played the piano the song of mourning crescendoed.,10,10
+critical,36,unambiguous,short,object,final,As the musician played the piano the song crescendoed.,8,8
+critical,36,ambiguous,long,,nonfinal,As the musician played the song of mourning crescendoed to a dramatic climax.,8,12
+critical,36,ambiguous,short,,nonfinal,As the musician played the song crescendoed to a dramatic climax.,6,10
+critical,36,unambiguous,long,comma,nonfinal,"As the musician played, the song of mourning crescendoed to a dramatic climax.",8,12
+critical,36,unambiguous,short,comma,nonfinal,"As the musician played, the song crescendoed to a dramatic climax.",6,10
+critical,36,unambiguous,long,object,nonfinal,As the musician played the piano the song of mourning crescendoed to a dramatic climax.,10,14
+critical,36,unambiguous,short,object,nonfinal,As the musician played the piano the song crescendoed to a dramatic climax.,8,12
+filler,1,,,,,The little blonde girls turned out to be daughters of one of the neighbors.,-1,13
+filler,2,,,,,After the show the famous violinist met with some of his devoted fans.,-1,12
+filler,3,,,,,The pharmacologist made sure that the new shipment of patches didn't have any tears.,-1,13
+filler,4,,,,,On returning from abroad the accountant discovered he had a serious case of malaria.,-1,13
+filler,5,,,,,The coach encouraged his team as the game turned increasingly discouraging.,-1,10
+filler,6,,,,,The photographer posed the newlyweds in front of an old oak tree that stood by the pond.,-1,16
+filler,7,,,,,The horse galloped furiously around the field before jumping over the fence.,-1,11
+filler,8,,,,,The talented cartoonists drew a huge illustration of the upcoming mall to be opened in May.,-1,15
+filler,9,,,,,The protesters rallied outside the state capital to petition the widely controversial bill.,-1,12
+filler,10,,,,,The small orange kitten climbed up the curtains behind the couch when the vacuum turned on.,-1,15
+filler,11,,,,,The captain made sure the sailors fixed the rudder before setting sail.,-1,11
+filler,12,,,,,The student felt that he hadn't prepared sufficiently after he finished the midterm.,-1,12
+filler,13,,,,,The boys rode their bikes past the yellow wall that stood in front of the old factory.,-1,16
+filler,14,,,,,The desert bandits joked that the oasis in the horizon was all but a wild fantasy.,-1,15
+filler,15,,,,,The carpenter told all the disappointed applicants that he was not taking any new apprentices.,-1,14
+filler,16,,,,,The California judges requested the opinions of various industry leaders.,-1,9
+filler,17,,,,,The dance troupe forgot most of the steps when they performed for the prime minister.,-1,14
+filler,18,,,,,There were several noblemen who kept insisting that the croutons were too soft.,-1,12
+filler,19,,,,,The priest checked twice that he had all the supplies ready for the event on Sunday.,-1,15
+filler,20,,,,,The jeweler showed off his collection of rare and precious stones at the convention.,-1,13
+filler,21,,,,,The serious man shifted his glasses to indicate the prisoners would be set free.,-1,13
+filler,22,,,,,The doctor made the nurse administer the shot because he didn't like to give shots to children.,-1,16
+filler,23,,,,,The football player performed a humorous victory dance at the end zone.,-1,11
+filler,24,,,,,The journalists were riled up to hear that the famous British actor threw a fit on the set.,-1,17
+filler,25,,,,,The salesman made sure that there were people all around to witness his biggest sale.,-1,14
+filler,26,,,,,The guides were in the process of explaining the delay when the boat started to move again.,-1,16
+filler,27,,,,,The detective's computer crashed and all the important documents were lost.,-1,10
+filler,28,,,,,The chiefs perform a ceremony for each family's oldest child every time there is a full moon.,-1,16
+filler,29,,,,,The saleslady found herself surrounded by angry shoppers who wanted their money back.,-1,12
+filler,30,,,,,The scientist forgot to make sure that the temperature was set to zero degrees.,-1,13
+filler,31,,,,,The candy shop was small but tidy and smelled deliciously of chocolate.,-1,11
+filler,32,,,,,The virus caused an unusual amount of workers at the city hall to call in sick.,-1,15
+filler,33,,,,,The furious man standing at the mayor's door was angry about the high cost of electricity.,-1,15
+filler,34,,,,,The bartender tried several times to get the woman to order from the secret menu.,-1,14
+filler,35,,,,,The seamstress fretted over whether the dress would be finished in time.,-1,11
+practice,1,,,,,The owner of the store selling jewelry gave a discount to the regular customers.,-1,13
+practice,2,,,,,The mother of the child packed him a lunch that contained chicken nuggets and leftovers from the night before.,-1,18
+practice,3,,,,,No one liked the song I wrote.,-1,6
+practice,4,,,,,"The semester will start next week, but the students and teachers are not ready.",-1,13
+practice,5,,,,,"While the teacher explained the lesson, the students took notes.",-1,9
